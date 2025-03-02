@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Category } from '@/lib/data';
 import { cn } from '@/lib/utils';
@@ -54,8 +55,8 @@ const getBookCount = (categoryId: string): number => {
 
 const getExampleVerses = (categoryId: string): string[] => {
   const verses = {
-    'redemptive-historical': ['Genesis 3:15', 'Êxodo 12:1-28', 'Isaías 53:1-12'],
-    'promise-fulfillment': ['Genesis 12:1-3', 'Isaías 7:14', 'Miquéias 5:2'],
+    'redemptive-historical': ['Gênesis 3:15', 'Êxodo 12:1-28', 'Isaías 53:1-12'],
+    'promise-fulfillment': ['Gênesis 12:1-3', 'Isaías 7:14', 'Miquéias 5:2'],
     'typology': ['Êxodo 12:1-28', 'Jonas 1:17', 'Levítico 16:1-34'],
     'analogy': ['Salmos 22:1-31', 'Isaías 54:5-8', 'Oséias 11:1'],
     'longitudinal-themes': ['Gênesis 1:26-28', 'Deuteronômio 18:15-19', 'Salmos 2:1-12'],
@@ -119,7 +120,7 @@ const CategoryCard = ({ category, index }: CategoryCardProps) => {
               <h4 className="text-sm font-medium text-primary">Exemplos de Versículos:</h4>
               <div className="flex flex-wrap gap-2">
                 {exampleVerses.map((verse, i) => (
-                  <span key={i} className="text-xs bg-accent/10 text-accent px-2 py-1 rounded-full">
+                  <span key={i} className="text-xs bg-accent/10 text-accent px-2 py-1 rounded-full bible-reference">
                     {verse}
                   </span>
                 ))}

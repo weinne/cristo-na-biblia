@@ -8,9 +8,43 @@ import { motion } from 'framer-motion';
 import { ChartPie, Book, ArrowRight, BookOpen, Info, Grid, PencilRuler, BookText } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
+// Função para carregar o RefTagger
+const loadRefTagger = () => {
+  const script = document.createElement('script');
+  script.src = 'https://api.reftagger.com/v2/RefTagger.js';
+  script.async = true;
+  document.body.appendChild(script);
+
+  // Configuração do RefTagger
+  window.refTagger = {
+    settings: {
+      bibleVersion: "NVI-PT",
+      tooltipStyle: "dark",
+      roundCorners: true,
+      socialSharing: [],
+      customStyle: {
+        heading: {
+          backgroundColor: "#7c3aed",
+          color: "#fff"
+        }
+      }
+    }
+  };
+};
+
 const Categories = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    
+    // Carrega o RefTagger quando o componente é montado
+    loadRefTagger();
+    
+    // Reinicializa o RefTagger quando o componente é atualizado
+    return () => {
+      if (window.refTagger && window.refTagger.tag) {
+        window.refTagger.tag();
+      }
+    };
   }, []);
 
   // Calcular as estatísticas das categorias
