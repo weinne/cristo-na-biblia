@@ -1,9 +1,9 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import { Category } from '@/lib/data';
 import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
-import { ChartBar, ChartLine, ChartPie, List, Grid, Folder, FolderOpen, View } from 'lucide-react';
+import { ChartBar, ChartLine, ChartPie, List, Grid, Folder, FolderOpen, View, BookOpen, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface CategoryCardProps {
   category: Category;
@@ -39,7 +39,6 @@ const getCategoryIcon = (categoryId: string) => {
 };
 
 const getBookCount = (categoryId: string): number => {
-  // This would ideally come from actual data analysis
   const counts = {
     'redemptive-historical': 42,
     'promise-fulfillment': 37,
@@ -53,7 +52,39 @@ const getBookCount = (categoryId: string): number => {
   return counts[categoryId as keyof typeof counts] || 0;
 };
 
+const getExampleVerses = (categoryId: string): string[] => {
+  const verses = {
+    'redemptive-historical': ['Genesis 3:15', 'Êxodo 12:1-28', 'Isaías 53:1-12'],
+    'promise-fulfillment': ['Genesis 12:1-3', 'Isaías 7:14', 'Miquéias 5:2'],
+    'typology': ['Êxodo 12:1-28', 'Jonas 1:17', 'Levítico 16:1-34'],
+    'analogy': ['Salmos 22:1-31', 'Isaías 54:5-8', 'Oséias 11:1'],
+    'longitudinal-themes': ['Gênesis 1:26-28', 'Deuteronômio 18:15-19', 'Salmos 2:1-12'],
+    'new-testament-references': ['Mateus 1:22-23', 'Lucas 24:27', 'João 5:39'],
+    'contrast': ['Hebreus 3:1-6', 'Hebreus 7:23-28', 'Hebreus 9:1-15']
+  };
+  
+  return verses[categoryId as keyof typeof verses] || [];
+};
+
+const getCategoryDescription = (categoryId: string): string => {
+  const descriptions = {
+    'redemptive-historical': "Esta categoria traça como as passagens se encaixam no amplo desdobramento do plano redentor de Deus ao longo da história, culminando em Cristo.",
+    'promise-fulfillment': "Identifica promessas feitas no Antigo Testamento que encontram seu cumprimento em Cristo, demonstrando a fidelidade de Deus.",
+    'typology': "Reconhece pessoas, eventos ou instituições do Antigo Testamento como 'tipos' que prefiguram aspectos de Cristo ou Sua obra.",
+    'analogy': "Estabelece paralelos entre as ações de Deus no Antigo Testamento e Suas ações através de Cristo, revelando a consistência do caráter divino.",
+    'longitudinal-themes': "Segue temas bíblicos principais à medida que se desenvolvem através das Escrituras e encontram sua culminação em Cristo.",
+    'new-testament-references': "Utiliza citações do Novo Testamento referentes a passagens do Antigo Testamento para mostrar conexões com Cristo.",
+    'contrast': "Destaca como Cristo é maior ou diferente das figuras ou instituições do Antigo Testamento, enfatizando Sua superioridade."
+  };
+  
+  return descriptions[categoryId as keyof typeof descriptions] || "";
+};
+
 const CategoryCard = ({ category, index }: CategoryCardProps) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const exampleVerses = getExampleVerses(category.id);
+  const extendedDescription = getCategoryDescription(category.id);
+  
   return (
     <motion.div 
       initial={{ opacity: 0, y: 20 }}
@@ -75,6 +106,39 @@ const CategoryCard = ({ category, index }: CategoryCardProps) => {
       <h3 className="text-xl mb-2 font-bold text-primary">{category.name}</h3>
       <p className="text-sm text-muted-foreground flex-grow mb-4">{category.description}</p>
       
+      <motion.div 
+        initial={{ opacity: 0, height: 0 }}
+        animate={{ opacity: isExpanded ? 1 : 0, height: isExpanded ? "auto" : 0 }}
+        className="overflow-hidden"
+      >
+        <div className="pt-3 pb-4">
+          <p className="text-sm text-muted-foreground mb-4">{extendedDescription}</p>
+          
+          {exampleVerses.length > 0 && (
+            <div className="mt-3 space-y-2">
+              <h4 className="text-sm font-medium text-primary">Exemplos de Versículos:</h4>
+              <div className="flex flex-wrap gap-2">
+                {exampleVerses.map((verse, i) => (
+                  <span key={i} className="text-xs bg-accent/10 text-accent px-2 py-1 rounded-full">
+                    {verse}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+          
+          <div className="mt-4">
+            <Link 
+              to="/books" 
+              className="text-xs flex items-center text-accent hover:underline"
+            >
+              Ver livros que usam esta categoria
+              <ArrowRight size={12} className="ml-1" />
+            </Link>
+          </div>
+        </div>
+      </motion.div>
+      
       <div className="mt-auto pt-4 border-t border-border/30">
         <div className="flex items-center justify-between">
           <span className="text-xs text-muted-foreground">Livros que usam esta categoria:</span>
@@ -86,6 +150,19 @@ const CategoryCard = ({ category, index }: CategoryCardProps) => {
             style={{ width: `${(getBookCount(category.id) / 66) * 100}%` }}
           ></div>
         </div>
+        
+        <button 
+          onClick={() => setIsExpanded(!isExpanded)}
+          className="w-full mt-4 text-xs font-medium text-accent flex items-center justify-center hover:underline"
+        >
+          {isExpanded ? "Mostrar menos" : "Mostrar mais"}
+          <motion.div
+            animate={{ rotate: isExpanded ? 180 : 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <ArrowRight size={12} className="ml-1 transform rotate-90" />
+          </motion.div>
+        </button>
       </div>
     </motion.div>
   );
