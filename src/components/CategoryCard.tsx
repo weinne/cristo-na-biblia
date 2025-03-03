@@ -130,10 +130,10 @@ const CategoryCard = ({ category, index }: CategoryCardProps) => {
           
           <div className="mt-4">
             <Link 
-              to={`/category/${category.id}`} 
+              to="/books" 
               className="text-xs flex items-center text-accent hover:underline"
             >
-              Ver detalhes completos desta categoria
+              Ver livros que usam esta categoria
               <ArrowRight size={12} className="ml-1" />
             </Link>
           </div>
@@ -152,28 +152,18 @@ const CategoryCard = ({ category, index }: CategoryCardProps) => {
           ></div>
         </div>
         
-        <div className="flex mt-4 space-x-2">
-          <button 
-            onClick={() => setIsExpanded(!isExpanded)}
-            className="flex-1 text-xs font-medium text-accent flex items-center justify-center hover:underline"
+        <button 
+          onClick={() => setIsExpanded(!isExpanded)}
+          className="w-full mt-4 text-xs font-medium text-accent flex items-center justify-center hover:underline"
+        >
+          {isExpanded ? "Mostrar menos" : "Mostrar mais"}
+          <motion.div
+            animate={{ rotate: isExpanded ? 180 : 0 }}
+            transition={{ duration: 0.3 }}
           >
-            {isExpanded ? "Mostrar menos" : "Mostrar mais"}
-            <motion.div
-              animate={{ rotate: isExpanded ? 180 : 0 }}
-              transition={{ duration: 0.3 }}
-            >
-              <ArrowRight size={12} className="ml-1 transform rotate-90" />
-            </motion.div>
-          </button>
-          
-          <Link 
-            to={`/category/${category.id}`}
-            className="flex-1 text-xs font-medium bg-accent text-white px-3 py-1.5 rounded-md flex items-center justify-center hover:bg-accent/90 transition-colors"
-          >
-            Ver categoria
-            <ArrowRight size={12} className="ml-1" />
-          </Link>
-        </div>
+            <ArrowRight size={12} className="ml-1 transform rotate-90" />
+          </motion.div>
+        </button>
       </div>
     </motion.div>
   );
