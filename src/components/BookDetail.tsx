@@ -1,60 +1,187 @@
 
-import React from 'react';
-import { Book, categories } from '@/lib/data';
-import { ArrowLeft } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { ArrowLeft, BookMarked, BookOpen, ExternalLink } from 'lucide-react';
+import { Link, useParams, useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { Button } from '@/components/ui/button';
+import { books, Book, ChristPointer } from '@/lib/data';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 
-interface BookDetailProps {
-  book: Book;
-}
+type BookDetailProps = {
+  standalone?: boolean;
+};
 
-const BookDetail = ({ book }: BookDetailProps) => {
-  return (
-    <div className="max-w-4xl mx-auto py-8 px-4 md:px-0 animate-fade-in">
-      <Link to="/books" className="flex items-center text-primary hover:text-accent mb-6 transition-colors">
-        <ArrowLeft size={16} className="mr-2" />
-        <span className="text-sm">Voltar para todos os livros</span>
+const BookDetail: React.FC<BookDetailProps> = ({ standalone = true }) => {
+  const { bookId } = useParams<{ bookId: string }>();
+  const navigate = useNavigate();
+  const book = books.find(b => b.id === bookId);
+  
+  useEffect(() => {
+    if (standalone) {
+      window.scrollTo(0, 0);
+    }
+  }, [standalone, bookId]);
+  
+  if (!book) {
+    return (
+      <div className="flex flex-col items-center justify-center p-8 text-center h-full min-h-[50vh]">
+        <h2 className="text-2xl font-bold mb-4">Livro não encontrado</h2>
+        <p className="mb-6 text-muted-foreground">
+          O livro que você está procurando não existe ou não está disponível.
+        </p>
+        <Button onClick={() => navigate('/books')} variant="outline">
+          <ArrowLeft className="mr-2 h-4 w-4" /> Voltar para lista de livros
+        </Button>
+      </div>
+    );
+  }
+  
+  const bookCategories = [...new Set(book.christPointers.map(pointer => pointer.category))];
+  
+  const renderCategoryBadge = (categoryId: string) => {
+    const category = getCategoryNameById(categoryId);
+    return (
+      <Link to={`/category/${categoryId}`} key={categoryId}>
+        <Badge variant="outline" className="mr-2 mb-2 cursor-pointer hover:bg-accent/10">
+          {category}
+        </Badge>
       </Link>
-
-      <div className="mb-8">
-        <div className="mb-1">
-          <span className="text-xs uppercase tracking-wide text-muted-foreground">
-            {book.testament === 'old' ? 'Antigo Testamento' : 'Novo Testamento'}
-          </span>
+    );
+  };
+  
+  const getCategoryNameById = (categoryId: string): string => {
+    const category = categories.find(cat => cat.id === categoryId);
+    return category ? category.name : categoryId;
+  };
+  
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 20 }}
+      transition={{ duration: 0.3 }}
+      className="w-full max-w-7xl mx-auto"
+    >
+      {standalone && (
+        <div className="mb-6 px-4 sm:px-6 lg:px-8 pt-6">
+          <Button variant="ghost" size="sm" onClick={() => navigate(-1)} className="mb-4">
+            <ArrowLeft className="mr-2 h-4 w-4" /> Voltar
+          </Button>
         </div>
-        <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">{book.name}</h1>
-        <p className="text-lg text-muted-foreground">{book.description}</p>
-      </div>
-
-      <div className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Como aponta para Cristo:</h2>
-        <div className="space-y-6">
-          {book.christPointers.map((pointer, index) => {
-            const category = categories.find(cat => cat.id === pointer.category);
+      )}
+      
+      <div className="px-4 sm:px-6 lg:px-8 pb-8">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
+          <div>
+            <div className="flex items-center mb-2">
+              <Badge variant={book.testament === 'old' ? 'default' : 'destructive'} className="mr-2">
+                {book.testament === 'old' ? 'Antigo Testamento' : 'Novo Testamento'}
+              </Badge>
+              <span className="text-sm text-muted-foreground">{book.shortName}</span>
+            </div>
+            <h1 className="text-3xl font-bold">{book.name}</h1>
+          </div>
+          
+          <div className="flex flex-wrap">
+            {bookCategories.map(categoryId => renderCategoryBadge(categoryId))}
+          </div>
+        </div>
+        
+        <div className="mb-8">
+          <p className="text-lg text-muted-foreground">{book.description}</p>
+        </div>
+        
+        <div className="mb-12">
+          <h2 className="text-xl font-semibold mb-4">
+            <BookMarked className="inline-block mr-2 h-5 w-5 text-accent" />
+            Conexões com Cristo
+          </h2>
+          
+          <Tabs defaultValue={book.christPointers[0]?.category || ''} className="w-full">
+            <TabsList className="mb-6 flex flex-wrap h-auto justify-start overflow-x-auto">
+              {book.christPointers.map(pointer => {
+                const categoryName = getCategoryNameById(pointer.category);
+                return (
+                  <TabsTrigger key={pointer.category} value={pointer.category} className="my-1">
+                    {categoryName}
+                  </TabsTrigger>
+                );
+              })}
+            </TabsList>
             
-            return (
-              <div key={index} className="glass-card rounded-lg p-6 relative overflow-hidden">
-                <div className="absolute top-0 left-0 w-1 h-full bg-accent"></div>
-                <div className="mb-3">
-                  <span className="text-xs rounded-full px-2 py-1 bg-accent/10 text-accent w-fit">
-                    {category?.name}
-                  </span>
-                </div>
-                <p className="mb-4 text-foreground">{pointer.description}</p>
-                <div className="flex flex-wrap gap-2">
-                  {pointer.verses.map((verse, idx) => (
-                    <span key={idx} className="px-2 py-1 bg-muted text-xs rounded text-muted-foreground bible-reference">
-                      {verse}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            );
-          })}
+            {book.christPointers.map((pointer: ChristPointer) => (
+              <TabsContent key={pointer.category} value={pointer.category}>
+                <Card>
+                  <CardHeader>
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <CardTitle className="text-lg">{getCategoryNameById(pointer.category)}</CardTitle>
+                        <CardDescription className="text-sm">
+                          <Link to={`/category/${pointer.category}`} className="text-accent hover:underline flex items-center mt-1">
+                            Ver mais sobre esta categoria
+                            <ExternalLink className="ml-1 h-3 w-3" />
+                          </Link>
+                        </CardDescription>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  
+                  <CardContent>
+                    <p className="mb-6">{pointer.description}</p>
+                    
+                    <h4 className="text-sm font-medium mb-2">Referências bíblicas:</h4>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                      {pointer.verses.map((verse, index) => (
+                        <div 
+                          key={index} 
+                          className="bg-muted p-2 rounded-md text-sm bible-reference"
+                        >
+                          {verse}
+                        </div>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              </TabsContent>
+            ))}
+          </Tabs>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
+
+const categories = [
+  {
+    id: "redemptive-historical",
+    name: "Progressão Histórico-Redentiva"
+  },
+  {
+    id: "promise-fulfillment",
+    name: "Promessa-Cumprimento"
+  },
+  {
+    id: "typology",
+    name: "Tipologia"
+  },
+  {
+    id: "analogy",
+    name: "Analogia"
+  },
+  {
+    id: "longitudinal-themes",
+    name: "Temas Longitudinais"
+  },
+  {
+    id: "new-testament-references",
+    name: "Referências do Novo Testamento"
+  },
+  {
+    id: "contrast",
+    name: "Contraste"
+  }
+];
 
 export default BookDetail;
