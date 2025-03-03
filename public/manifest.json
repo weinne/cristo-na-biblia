@@ -16,5 +16,10 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+  "description": "Um App para explorar como cada livro da Bíblia revela Jesus Cristo.",
+  "lang": "pt-BR",
+  "orientation": "portrait",
+  "scope": "/",
+  "categories": ["education", "religion", "reference"]
 }
