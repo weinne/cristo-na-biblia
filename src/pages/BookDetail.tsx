@@ -6,6 +6,7 @@ import { useParams, useNavigate, Link } from 'react-router-dom';
 import { books, categories } from '@/lib/data';
 import { motion } from 'framer-motion';
 import { ArrowLeft } from 'lucide-react';
+import RefTaggerLoader from '@/components/categories/RefTaggerLoader';
 
 const BookDetail = () => {
   const { id } = useParams();
@@ -81,6 +82,9 @@ const BookDetail = () => {
       </section>
       
       <Footer />
+      
+      {/* Carrega o RefTagger */}
+      <RefTaggerLoader />
     </div>
   );
 };
