@@ -52,7 +52,8 @@ const loadRefTagger = () => {
           color: "#fff"
         }
       }
-    }
+    },
+    tag: () => {} // Inicializa com uma função vazia que será substituída pelo script
   };
   
   // Adiciona o script ao DOM
