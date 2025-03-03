@@ -7,6 +7,7 @@ import CategoryHeader from '@/components/categories/CategoryHeader';
 import CategoryTabs from '@/components/categories/CategoryTabs';
 import CategoryList from '@/components/categories/CategoryList';
 import ExploreMoreSection from '@/components/categories/ExploreMoreSection';
+import RefTaggerLoader from '@/components/categories/RefTaggerLoader';
 
 const Categories = () => {
   useEffect(() => {
@@ -30,6 +31,9 @@ const Categories = () => {
       </section>
       
       <Footer />
+      
+      {/* Carrega o RefTagger */}
+      <RefTaggerLoader />
     </div>
   );
 };

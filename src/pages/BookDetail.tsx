@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -6,7 +7,30 @@ import { useParams, useNavigate, Link } from 'react-router-dom';
 import { books, categories } from '@/lib/data';
 import { motion } from 'framer-motion';
 import { ArrowLeft } from 'lucide-react';
-import RefTaggerLoader from '@/components/categories/RefTaggerLoader';
+
+// Função para carregar o RefTagger
+const loadRefTagger = () => {
+  const script = document.createElement('script');
+  script.src = 'https://api.reftagger.com/v2/RefTagger.js';
+  script.async = true;
+  document.body.appendChild(script);
+
+  // Configuração do RefTagger
+  window.refTagger = {
+    settings: {
+      bibleVersion: "NVI-PT",
+      tooltipStyle: "dark",
+      roundCorners: true,
+      socialSharing: [],
+      customStyle: {
+        heading: {
+          backgroundColor: "#7c3aed",
+          color: "#fff"
+        }
+      }
+    }
+  };
+};
 
 const BookDetail = () => {
   const { id } = useParams();
@@ -19,6 +43,16 @@ const BookDetail = () => {
       navigate('/books');
     }
     window.scrollTo(0, 0);
+    
+    // Carrega o RefTagger quando o componente é montado
+    loadRefTagger();
+    
+    // Reinicializa o RefTagger quando o componente é atualizado
+    return () => {
+      if (window.refTagger && window.refTagger.tag) {
+        window.refTagger.tag();
+      }
+    };
   }, [book, navigate]);
   
   if (!book) return null;
@@ -82,9 +116,6 @@ const BookDetail = () => {
       </section>
       
       <Footer />
-      
-      {/* Carrega o RefTagger */}
-      <RefTaggerLoader />
     </div>
   );
 };
