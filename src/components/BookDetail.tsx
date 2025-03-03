@@ -11,12 +11,13 @@ import { Badge } from '@/components/ui/badge';
 
 type BookDetailProps = {
   standalone?: boolean;
+  book?: Book;
 };
 
-const BookDetail: React.FC<BookDetailProps> = ({ standalone = true }) => {
+const BookDetail: React.FC<BookDetailProps> = ({ standalone = true, book: propBook }) => {
   const { bookId } = useParams<{ bookId: string }>();
   const navigate = useNavigate();
-  const book = books.find(b => b.id === bookId);
+  const book = propBook || books.find(b => b.id === bookId);
   
   useEffect(() => {
     if (standalone) {
