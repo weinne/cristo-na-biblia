@@ -42,9 +42,9 @@ const BookDetail = ({ book }: BookDetailProps) => {
                 <p className="mb-4 text-foreground">{pointer.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {pointer.verses.map((verse, idx) => (
-                    <span key={idx} className="px-2 py-1 bg-muted text-xs rounded text-muted-foreground bible-reference">
+                    <a key={idx} href={`https://www.bible.com/bible/111/${verse.replace(' ', '.')}`} className="px-2 py-1 bg-muted text-xs rounded text-muted-foreground">
                       {verse}
-                    </span>
+                    </a>
                   ))}
                 </div>
               </div>
