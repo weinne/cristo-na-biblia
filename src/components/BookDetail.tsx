@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Book, categories } from '@/lib/data';
 import { ArrowLeft } from 'lucide-react';
