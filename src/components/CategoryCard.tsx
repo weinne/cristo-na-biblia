@@ -230,7 +230,7 @@ const CategoryCard = ({ category, index }: CategoryCardProps) => {
             </div>
           )}
           
-          <div className="mt-4">
+          {/*<div className="mt-4">
             <Link 
               to={`/categories/${category.id}`}
               className="text-xs flex items-center text-accent hover:underline"
@@ -238,7 +238,7 @@ const CategoryCard = ({ category, index }: CategoryCardProps) => {
               Ver livros que usam esta categoria
               <ArrowRight size={12} className="ml-1" />
             </Link>
-          </div>
+          </div>*/}
         </div>
       </motion.div>
       
