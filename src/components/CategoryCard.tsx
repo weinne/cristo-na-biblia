@@ -1,9 +1,8 @@
-
 import React, { useState } from 'react';
 import { Category } from '@/lib/data';
 import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
-import { ChartBar, ChartLine, ChartPie, List, Grid, Folder, FolderOpen, View, BookOpen, ArrowRight } from 'lucide-react';
+import { ChartBar, ChartLine, ChartPie, List, Grid, Folder, FolderOpen, View, BookOpen, ArrowRight, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 interface CategoryCardProps {
@@ -120,9 +119,16 @@ const CategoryCard = ({ category, index }: CategoryCardProps) => {
               <h4 className="text-sm font-medium text-primary">Exemplos de Versículos:</h4>
               <div className="flex flex-wrap gap-2">
                 {exampleVerses.map((verse, i) => (
-                  <span key={i} className="text-xs bg-accent/10 text-accent px-2 py-1 rounded-full bible-reference">
+                  <a
+                    key={i}
+                    href={`https://www.bible.com/pt/bible/129/${encodeURIComponent(verse)}`}
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="text-xs bg-accent/10 text-accent px-2 py-1 rounded-full bible-reference flex items-center hover:bg-accent/20 transition-colors"
+                  >
                     {verse}
-                  </span>
+                    <ExternalLink size={10} className="ml-1" />
+                  </a>
                 ))}
               </div>
             </div>
@@ -130,7 +136,7 @@ const CategoryCard = ({ category, index }: CategoryCardProps) => {
           
           <div className="mt-4">
             <Link 
-              to="/books" 
+              to={`/categories/${category.id}`}
               className="text-xs flex items-center text-accent hover:underline"
             >
               Ver livros que usam esta categoria

@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Book, categories } from '@/lib/data';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 interface BookDetailProps {
@@ -36,16 +36,26 @@ const BookDetail = ({ book }: BookDetailProps) => {
               <div key={index} className="glass-card rounded-lg p-6 relative overflow-hidden">
                 <div className="absolute top-0 left-0 w-1 h-full bg-accent"></div>
                 <div className="mb-3">
-                  <span className="text-xs rounded-full px-2 py-1 bg-accent/10 text-accent w-fit">
+                  <Link 
+                    to={`/categories/${pointer.category}`} 
+                    className="text-xs rounded-full px-2 py-1 bg-accent/10 text-accent w-fit hover:bg-accent/20 transition-colors"
+                  >
                     {category?.name}
-                  </span>
+                  </Link>
                 </div>
                 <p className="mb-4 text-foreground">{pointer.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {pointer.verses.map((verse, idx) => (
-                    <span key={idx} className="px-2 py-1 bg-muted text-xs rounded text-muted-foreground bible-reference">
+                    <a
+                      key={idx}
+                      href={`https://www.bible.com/pt/bible/129/${encodeURIComponent(verse)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-2 py-1 bg-muted text-xs rounded text-muted-foreground bible-reference flex items-center hover:bg-muted/80 transition-colors"
+                    >
                       {verse}
-                    </span>
+                      <ExternalLink size={10} className="ml-1" />
+                    </a>
                   ))}
                 </div>
               </div>
