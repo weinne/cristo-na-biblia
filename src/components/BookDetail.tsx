@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Book, categories } from '@/lib/data';
 import { ArrowLeft, ExternalLink } from 'lucide-react';
@@ -7,6 +6,35 @@ import { Link } from 'react-router-dom';
 interface BookDetailProps {
   book: Book;
 }
+
+const formatBibleReference = (reference: string): string => {
+  const bookDictionary: Record<string, string> = {
+    'Gênesis': 'GEN', 'Genesis': 'GEN', 'Gên': 'GEN', 'Gen': 'GEN',
+    'Êxodo': 'EXO', 'Exodo': 'EXO', 'Êx': 'EXO', 'Ex': 'EXO',
+    // ... keeping the rest of the dictionary from RefTaggerLoader
+  };
+
+  const regex = /^((?:\d+\s+)?[A-Za-zÀ-ú]+)(?:\s+(\d+)(?:[:\.](\d+)(?:-(\d+))?)?)?/;
+  const match = reference.match(regex);
+  
+  if (!match) return reference;
+  
+  const [, bookName, chapter, startVerse, endVerse] = match;
+  
+  const bookCode = bookDictionary[bookName];
+  if (!bookCode) return reference;
+  
+  if (chapter && startVerse) {
+    if (endVerse) {
+      return `${bookCode}.${chapter}.${startVerse}-${endVerse}`;
+    }
+    return `${bookCode}.${chapter}.${startVerse}`;
+  } else if (chapter) {
+    return `${bookCode}.${chapter}`;
+  } else {
+    return bookCode;
+  }
+};
 
 const BookDetail = ({ book }: BookDetailProps) => {
   return (
@@ -45,18 +73,21 @@ const BookDetail = ({ book }: BookDetailProps) => {
                 </div>
                 <p className="mb-4 text-foreground">{pointer.description}</p>
                 <div className="flex flex-wrap gap-2">
-                  {pointer.verses.map((verse, idx) => (
-                    <a
-                      key={idx}
-                      href={`https://www.bible.com/pt/bible/129/${encodeURIComponent(verse)}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-2 py-1 bg-muted text-xs rounded text-muted-foreground bible-reference flex items-center hover:bg-muted/80 transition-colors"
-                    >
-                      {verse}
-                      <ExternalLink size={10} className="ml-1" />
-                    </a>
-                  ))}
+                  {pointer.verses.map((verse, idx) => {
+                    const formattedVerse = formatBibleReference(verse);
+                    return (
+                      <a
+                        key={idx}
+                        href={`https://www.bible.com/pt/bible/1608/${formattedVerse}.ARA`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-2 py-1 bg-muted text-xs rounded text-muted-foreground bible-reference flex items-center hover:bg-muted/80 transition-colors"
+                      >
+                        {verse}
+                        <ExternalLink size={10} className="ml-1" />
+                      </a>
+                    );
+                  })}
                 </div>
               </div>
             );
