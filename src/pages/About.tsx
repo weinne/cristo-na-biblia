@@ -67,9 +67,6 @@ const About = () => {
               <li>Demonstrar como o Antigo e o Novo Testamento formam uma história coesa</li>
               <li>Aprofundar a apreciação pela riqueza e profundidade das Escrituras</li>
             </ul>
-            
-            <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Contato</h2>
-            <p>Se você tiver dúvidas, sugestões ou feedback sobre este projeto, não hesite em entrar em contato conosco através do e-mail: <a href="mailto:contato@cristonabiblia.com" className="text-accent hover:underline">contato@cristonabiblia.com</a></p>
           </div>
         </div>
       </section>
