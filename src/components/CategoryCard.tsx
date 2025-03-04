@@ -112,7 +112,7 @@ const formatBibleReference = (reference: string): string => {
     'Oséias': 'HOS', 'Oseias': 'HOS', 'Os': 'HOS',
     'Joel': 'JOL', 'Jl': 'JOL',
     'Amós': 'AMO', 'Amos': 'AMO', 'Am': 'AMO',
-    'Obadias': 'OBA', 'Ob': 'OBA', 'Obadias': 'OBA',
+    'Obadias': 'OBA', 'Ob': 'OBA',
     'Jonas': 'JON', 'Jn': 'JON',
     'Miquéias': 'MIC', 'Miqueias': 'MIC', 'Mq': 'MIC',
     'Naum': 'NAM', 'Na': 'NAM',
