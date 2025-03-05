@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -11,6 +10,7 @@ import BookDetail from "./pages/BookDetail";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import RefTaggerLoader from "./components/categories/RefTaggerLoader";
+import PWAPrompt from "./components/PWAPrompt"; // Pb2ed
 
 const queryClient = new QueryClient();
 
@@ -30,6 +30,7 @@ const App = () => (
         </Routes>
       </HashRouter>
       <RefTaggerLoader />
+      <PWAPrompt /> {/* P7a8e */}
     </TooltipProvider>
   </QueryClientProvider>
 );
