@@ -1,69 +1,71 @@
-# Welcome to your Lovable project
+# Cristo na Bíblia
 
-## Project info
+## Descrição do Projeto
 
-**URL**: https://lovable.dev/projects/5acc0dd6-dbb9-4247-95cc-e659e8360d19
+Este projeto é dedicado ao estudo e visualização de Cristo na Bíblia, utilizando as tecnologias mais recentes para criar uma experiência de usuário envolvente e interativa.
 
-## How can I edit this code?
+## Tecnologias Utilizadas
 
-There are several ways of editing your application.
+- **Vite**
+- **TypeScript**
+- **React**
+- **shadcn-ui**
+- **Tailwind CSS**
 
-**Use Lovable**
+## Estrutura do Projeto
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/5acc0dd6-dbb9-4247-95cc-e659e8360d19) and start prompting.
+O projeto contém a seguinte estrutura de diretórios e arquivos principais:
 
-Changes made via Lovable will be committed automatically to this repo.
+- `/src`: Código-fonte principal do projeto.
+- `/public`: Arquivos públicos e estáticos.
+- `/components`: Componentes React reutilizáveis.
+- `/styles`: Arquivos de estilo CSS e Tailwind.
 
-**Use your preferred IDE**
+## Instalação
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Para rodar o projeto localmente, siga os passos abaixo:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Clone o repositório:
+    ```sh
+    git clone https://github.com/weinne/cristo-na-biblia.git
+    ```
+2. Navegue até o diretório do projeto:
+    ```sh
+    cd cristo-na-biblia
+    ```
+3. Instale as dependências necessárias:
+    ```sh
+    npm install
+    ```
+4. Inicie o servidor de desenvolvimento:
+    ```sh
+    npm run dev
+    ```
 
-Follow these steps:
+## Como Contribuir
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Contribuições são bem-vindas! Siga os passos abaixo para contribuir:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+1. Faça um fork do projeto.
+2. Crie uma nova branch:
+    ```sh
+    git checkout -b minha-nova-funcionalidade
+    ```
+3. Faça suas alterações e commit:
+    ```sh
+    git commit -m 'Adiciona nova funcionalidade'
+    ```
+4. Envie para o repositório:
+    ```sh
+    git push origin minha-nova-funcionalidade
+    ```
+5. Crie um Pull Request.
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Comandos Úteis
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- `npm run build`: Compila o projeto para produção.
+- `npm run test`: Executa os testes.
 
-**Edit a file directly in GitHub**
+## Licença
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/5acc0dd6-dbb9-4247-95cc-e659e8360d19) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
