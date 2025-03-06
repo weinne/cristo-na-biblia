@@ -26,7 +26,7 @@ const formatBibleReference = (reference: string): string => {
     'Esdras': 'EZR', 'Esd': 'EZR',
     'Neemias': 'NEH', 'Ne': 'NEH',
     'Ester': 'EST', 'Est': 'EST',
-    'Jó': 'JOB', 'Jo': 'JOB',
+    'Jó': 'JOB', 'Job': 'JOB',
     'Salmos': 'PSA', 'Salmo': 'PSA', 'Sl': 'PSA', 'Slm': 'PSA',
     'Provérbios': 'PRO', 'Proverbios': 'PRO', 'Pv': 'PRO',
     'Eclesiastes': 'ECC', 'Ecles': 'ECC', 'Ec': 'ECC',
