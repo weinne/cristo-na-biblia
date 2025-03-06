@@ -101,7 +101,7 @@ const bookDictionary: Record<string, string> = {
   'Esdras': 'EZR', 'Esd': 'EZR', 'Ed': 'EZR',
   'Neemias': 'NEH', 'Ne': 'NEH',
   'Ester': 'EST', 'Est': 'EST', 'Et': 'EST',
-  'Jó': 'JOB', 'Jo': 'JOB',
+  'Jó': 'JOB', 'Job': 'JOB',
   'Salmos': 'PSA', 'Sl': 'PSA', 'Salmo': 'PSA',
   'Provérbios': 'PRO', 'Proverbios': 'PRO', 'Pv': 'PRO', 'Pr': 'PRO',
   'Eclesiastes': 'ECC', 'Ec': 'ECC',

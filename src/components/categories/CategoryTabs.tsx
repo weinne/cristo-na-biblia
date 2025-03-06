@@ -135,7 +135,7 @@ const CategoryTabs = ({ books }: TabProps) => {
           className="mb-12"
         >
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-gradient-to-br from-secondary/20 to-white p-6 rounded-lg shadow-sm">
+            <div className="glass-card rounded-lg p-6 h-full flex flex-col transition-all duration-300 hover:shadow-lg overflow-hidden bg-gradient-to-br ${getGradient(index)} dark:border-gray-800">
               <ChartPie className="h-8 w-8 text-accent mb-3" />
               <h3 className="text-lg font-bold text-primary mb-1">7 Categorias</h3>
               <p className="text-sm text-muted-foreground">Formas diferentes de ver como a Bíblia aponta para Cristo</p>
@@ -151,7 +151,7 @@ const CategoryTabs = ({ books }: TabProps) => {
               </div>
             </div>
             
-            <div className="bg-gradient-to-br from-secondary/20 to-white p-6 rounded-lg shadow-sm">
+            <div className="glass-card rounded-lg p-6 h-full flex flex-col transition-all duration-300 hover:shadow-lg overflow-hidden bg-gradient-to-br ${getGradient(index)} dark:border-gray-800">
               <Book className="h-8 w-8 text-accent mb-3" />
               <h3 className="text-lg font-bold text-primary mb-1">{stats.total} Livros da Bíblia</h3>
               <p className="text-sm text-muted-foreground">{stats.oldTestament} do Antigo Testamento, {stats.newTestament} do Novo Testamento</p>
@@ -171,7 +171,7 @@ const CategoryTabs = ({ books }: TabProps) => {
               </div>
             </div>
             
-            <div className="bg-gradient-to-br from-accent/10 to-white p-6 rounded-lg shadow-sm">
+            <div className="glass-card rounded-lg p-6 h-full flex flex-col transition-all duration-300 hover:shadow-lg overflow-hidden bg-gradient-to-br ${getGradient(index)} dark:border-gray-800">
               <Grid className="h-8 w-8 text-accent mb-3" />
               <h3 className="text-lg font-bold text-primary mb-1">Distribuição por Categoria</h3>
               <p className="text-sm text-muted-foreground">Ocorrências de cada categoria</p>
