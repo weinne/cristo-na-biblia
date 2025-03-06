@@ -37,6 +37,11 @@ const Footer = () => {
                   Sobre
                 </Link>
               </li>
+              <li>
+                <Link to="https://weinne.teo.br" className="text-sm text-muted-foreground hover:text-primary dark:text-muted-foreground dark:hover:text-primary transition-colors">
+                  Quem sou eu
+                </Link>
+              </li>
             </ul>
           </div>
           
@@ -50,7 +55,7 @@ const Footer = () => {
         
         <div className="mt-12 pt-6 border-t border-border dark:border-border/50">
           <p className="text-sm text-center text-muted-foreground dark:text-muted-foreground">
-            © {new Date().getFullYear()} Cristo na Bíblia. Todos os direitos reservados.
+            © {new Date().getFullYear()} <Link to="https://weinne.teo.br" className="text-sm text-muted-foreground hover:text-primary dark:text-muted-foreground dark:hover:text-primary transition-colors">Weinne Santos</Link>. Todos os direitos reservados.
           </p>
         </div>
       </div>
