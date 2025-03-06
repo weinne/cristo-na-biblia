@@ -12,15 +12,32 @@ import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import RefTaggerLoader from "./components/categories/RefTaggerLoader";
 import { ThemeProvider } from "./components/ThemeProvider";
+import { useEffect } from "react";
 
-const queryClient = new QueryClient();
+// Create a global query client instance
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+      retry: 1,
+    },
+  },
+});
+
+// Helper function to get initial theme
+const getInitialTheme = () => {
+  const savedTheme = localStorage.getItem("cristo-biblia-theme");
+  if (savedTheme && (savedTheme === "dark" || savedTheme === "light" || savedTheme === "system")) {
+    return savedTheme;
+  }
+  
+  return "light"; // Default theme if none saved
+};
 
 const App = () => (
-  <ThemeProvider defaultTheme="light" storageKey="cristo-biblia-theme">
+  <ThemeProvider defaultTheme={getInitialTheme()} storageKey="cristo-biblia-theme">
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <Toaster />
-        <Sonner />
         <HashRouter>
           <Routes>
             <Route path="/" element={<Index />} />
@@ -32,6 +49,8 @@ const App = () => (
           </Routes>
         </HashRouter>
         <RefTaggerLoader />
+        <Toaster />
+        <Sonner />
       </TooltipProvider>
     </QueryClientProvider>
   </ThemeProvider>

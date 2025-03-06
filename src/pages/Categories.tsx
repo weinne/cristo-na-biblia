@@ -15,12 +15,12 @@ const Categories = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
       
       <CategoryHeader />
       
-      <section className="py-8 px-6 md:px-12 bg-white">
+      <section className="py-8 px-6 md:px-12 bg-background">
         <div className="max-w-7xl mx-auto">
           <CategoryTabs books={books} />
           
