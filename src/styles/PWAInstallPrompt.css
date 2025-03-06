@@ -1,0 +1,171 @@
+/* Estilos base */
+.pwa-install-prompt {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  @keyframes slide-up {
+    from {
+      transform: translate(-50%, 20px);
+      opacity: 0;
+    }
+    to {
+      transform: translate(-50%, 0);
+      opacity: 1;
+    }
+  }
+  
+  .pwa-prompt-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .pwa-prompt-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+  }
+  
+  .pwa-prompt-text {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  
+  .pwa-prompt-text h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .pwa-prompt-text p {
+    margin: 0 0 16px;
+    font-size: 14px;
+  }
+  
+  .pwa-prompt-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .pwa-install-button,
+  .pwa-dismiss-button {
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+    font-size: 14px;
+  }
+  
+  .pwa-install-button {
+    background-color: #4a90e2;
+    color: white;
+  }
+  
+  .pwa-install-button:hover {
+    background-color: #3a80d2;
+  }
+  
+  .pwa-dismiss-button {
+    background-color: transparent;
+    color: #666;
+    border: 1px solid #ddd;
+  }
+  
+  .pwa-dismiss-button:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Tema claro */
+  .light-theme {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .light-theme .pwa-prompt-text h3 {
+    color: #1a1a1a;
+  }
+  
+  .light-theme .pwa-prompt-text p {
+    color: #666666;
+  }
+  
+  .light-theme .pwa-install-button {
+    background-color: #4F46E5; /* Cor primária */
+    color: white;
+  }
+  
+  .light-theme .pwa-install-button:hover {
+    background-color: #4338CA;
+  }
+  
+  .light-theme .pwa-dismiss-button {
+    background-color: #f5f5f5;
+    color: #333333;
+  }
+  
+  .light-theme .pwa-dismiss-button:hover {
+    background-color: #e5e5e5;
+  }
+  
+  /* Tema escuro */
+  .dark-theme {
+    background-color: #1e1e2e; /* Cor de fundo escura */
+    color: #e2e2e2;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .dark-theme .pwa-prompt-text h3 {
+    color: #ffffff;
+  }
+  
+  .dark-theme .pwa-prompt-text p {
+    color: #a0a0a0;
+  }
+  
+  .dark-theme .pwa-install-button {
+    background-color: #6366F1; /* Versão mais clara do primário */
+    color: white;
+  }
+  
+  .dark-theme .pwa-install-button:hover {
+    background-color: #818CF8;
+  }
+  
+  .dark-theme .pwa-dismiss-button {
+    background-color: #313144;
+    color: #e2e2e2;
+  }
+  
+  .dark-theme .pwa-dismiss-button:hover {
+    background-color: #414156;
+  }
+  
+  @media (max-width: 480px) {
+    .pwa-install-prompt {
+      width: 95%;
+      bottom: 10px;
+    }
+    
+    .pwa-prompt-content {
+      padding: 12px;
+    }
+  }
+  

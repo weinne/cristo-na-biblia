@@ -42,6 +42,10 @@
   @apply bg-blue-600 hover:bg-blue-700 text-white;
 }
 
+.dark a:not(.btn):not(.nav-link) {
+  @apply text-white;
+}
+
 .dark .bg-card {
   @apply bg-gray-800/90;
 }

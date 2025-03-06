@@ -7,6 +7,7 @@ import { categories } from '@/lib/data';
 import CategoryCard from '@/components/CategoryCard';
 import BookGrid from '@/components/BookGrid';
 import { ChevronRight } from 'lucide-react';
+import PWAInstallPrompt from '@/components/PWAInstallPrompt';
 
 const Index = () => {
   useEffect(() => {
@@ -16,7 +17,7 @@ const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      
+      <PWAInstallPrompt />
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6 md:px-12 bg-gradient-to-b from-secondary dark:from-gray-800 to-background">
         <div className="max-w-5xl mx-auto text-center space-y-6">
