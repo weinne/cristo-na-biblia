@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const CategoryHeader = () => {
   return (
-    <section className="pt-32 pb-10 px-6 md:px-12 bg-gradient-to-b from-secondary to-white">
+    <section className="pt-32 pb-10 px-6 md:px-12 bg-gradient-to-b from-secondary to-background">
       <div className="max-w-5xl mx-auto text-center space-y-6">
         <motion.span 
           initial={{ opacity: 0 }}

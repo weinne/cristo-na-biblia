@@ -60,7 +60,7 @@ const TestamentButton = ({ active, onClick, children }: TestamentButtonProps) =>
       className={`px-4 py-2 rounded-full text-sm transition-all duration-300 ${
         active 
           ? 'bg-accent text-white shadow-md' 
-          : 'bg-muted hover:bg-muted/80 text-foreground'
+          : 'bg-muted hover:bg-muted/80 text-foreground dark:text-gray-200'
       }`}
     >
       {children}
@@ -83,7 +83,7 @@ const BookCard = ({ book }: BookCardProps) => {
         <p className="text-xs text-muted-foreground mb-2">
           {book.testament === 'old' ? 'Antigo Testamento' : 'Novo Testamento'}
         </p>
-        <span className="text-[10px] px-2 py-1 rounded-full bg-primary/10 text-primary">
+        <span className="text-[10px] px-2 py-1 rounded-full bg-primary/10 text-primary dark:text-gray-200">
           {book.categories.length} categorias
         </span>
       </div>

@@ -18,7 +18,7 @@ const Index = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6 md:px-12 bg-gradient-to-b from-secondary to-white">
+      <section className="pt-32 pb-20 px-6 md:px-12 bg-gradient-to-b from-secondary to-background">
         <div className="max-w-5xl mx-auto text-center space-y-6">
           <span className="inline-block text-sm bg-accent/10 text-accent px-3 py-1 rounded-full animate-fade-in">
             Cristo em toda a Bíblia
@@ -38,7 +38,7 @@ const Index = () => {
             </Link>
             <Link
               to="/categories"
-              className="px-6 py-3 bg-white text-primary rounded-md hover:bg-secondary transition-colors border border-border shadow-sm hover:shadow-md"
+              className="px-6 py-3 bg-white dark:bg-gray-800 text-primary dark:text-gray-200 rounded-md hover:bg-secondary dark:hover:bg-gray-700 transition-colors border border-border shadow-sm hover:shadow-md"
             >
               Ver Categorias
             </Link>
@@ -47,7 +47,7 @@ const Index = () => {
       </section>
       
       {/* Categories Section */}
-      <section className="py-20 px-6 md:px-12 bg-white">
+      <section className="py-20 px-6 md:px-12 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Categorias de Greidanus</h2>
@@ -75,7 +75,7 @@ const Index = () => {
       </section>
       
       {/* Featured Books Section */}
-      <section className="py-20 px-6 md:px-12 bg-muted">
+      <section className="py-20 px-6 md:px-12 bg-muted dark:bg-gray-800">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Livros em Destaque</h2>

@@ -194,6 +194,27 @@
   @apply outline-none ring-2 ring-blue-500/50;
 }
 
+/* Specific fixes for dark mode text contrast */
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+  @apply text-gray-100;
+}
+
+.dark .text-primary {
+  @apply text-gray-100;
+}
+
+.dark span.text-primary {
+  @apply text-gray-200;
+}
+
+.dark .glass-card h3 {
+  @apply text-gray-100;
+}
+
+.dark .glass-card p {
+  @apply text-gray-300;
+}
+
 @keyframes text-shimmer {
   0% { background-position: -200% 0; }
   100% { background-position: 200% 0; }
