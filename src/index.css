@@ -67,7 +67,7 @@
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 217.2 32.6% 17.5%;
+    --accent: 221 83% 41%;
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
@@ -117,5 +117,22 @@
 }
 
 .glass-card {
-  @apply bg-white/50 backdrop-blur-sm border border-white/20 shadow-md;
+  @apply bg-white/50 dark:bg-white/10 backdrop-blur-sm border border-white/20 dark:border-white/10 shadow-md;
+}
+
+/* Fix for ReactTags to work well with dark mode */
+.dark .ReactTags__tag {
+  @apply bg-secondary/50 text-foreground;
+}
+
+.dark .ReactTags__suggestions {
+  @apply bg-background border-border;
+}
+
+.dark .ReactTags__suggestions li {
+  @apply text-foreground;
+}
+
+.dark .ReactTags__suggestions li.ReactTags__activeSuggestion {
+  @apply bg-secondary;
 }
