@@ -13,21 +13,21 @@ const Books = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       
-      <section className="pt-32 pb-10 px-6 md:px-12 bg-gradient-to-b from-secondary to-white">
+      <section className="pt-32 pb-10 px-6 md:px-12 bg-gradient-to-b from-secondary dark:from-gray-800 to-white dark:to-gray-900">
         <div className="max-w-5xl mx-auto text-center space-y-6">
-          <span className="inline-block text-sm bg-accent/10 text-accent px-3 py-1 rounded-full">
+          <span className="inline-block text-sm bg-accent/10 dark:bg-accent/20 text-accent px-3 py-1 rounded-full">
             Todos os Livros
           </span>
-          <h1 className="text-4xl md:text-5xl font-bold text-primary">
+          <h1 className="text-4xl md:text-5xl font-bold text-primary dark:text-gray-100">
             Livros da Bíblia
           </h1>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground dark:text-gray-300 max-w-3xl mx-auto">
             Explore como cada livro da Bíblia revela Jesus Cristo de maneiras únicas e poderosas.
           </p>
         </div>
       </section>
       
-      <section className="py-12 px-6 md:px-12 bg-white flex-grow">
+      <section className="py-12 px-6 md:px-12 bg-white dark:bg-gray-900 flex-grow">
         <div className="max-w-7xl mx-auto">
           <BookGrid />
         </div>

@@ -1,0 +1,73 @@
+
+/* Dark mode adjustments for better contrast */
+.dark p {
+  @apply text-gray-300;
+}
+
+.dark .text-muted-foreground {
+  @apply text-gray-400;
+}
+
+.dark code {
+  @apply bg-gray-800 text-gray-200;
+}
+
+.dark blockquote {
+  @apply border-l-4 border-gray-700 bg-gray-800/40;
+}
+
+/* Dark mode adjustments for better contrast */
+.dark .bg-white {
+  @apply bg-gray-900;
+}
+
+.dark .bg-gray-50 {
+  @apply bg-gray-900;
+}
+
+.dark .bg-gray-100 {
+  @apply bg-gray-800;
+}
+
+/* Extra dark mode improvements */
+.dark .glass-card {
+  @apply shadow-lg shadow-black/20;
+}
+
+.dark a:not(.btn):not(.nav-link) {
+  @apply text-blue-400 hover:text-blue-300;
+}
+
+.dark button.btn-primary {
+  @apply bg-blue-600 hover:bg-blue-700 text-white;
+}
+
+.dark .bg-card {
+  @apply bg-gray-800/90;
+}
+
+/* Improve focus styles in dark mode */
+.dark *:focus-visible {
+  @apply outline-none ring-2 ring-blue-500/50;
+}
+
+/* Specific fixes for dark mode text contrast */
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+  @apply text-gray-100;
+}
+
+.dark .text-primary {
+  @apply text-gray-100;
+}
+
+.dark span.text-primary {
+  @apply text-gray-200;
+}
+
+.dark .glass-card h3 {
+  @apply text-gray-100;
+}
+
+.dark .glass-card p {
+  @apply text-gray-300;
+}

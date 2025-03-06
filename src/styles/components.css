@@ -1,0 +1,17 @@
+
+/* Fix for ReactTags to work well with dark mode */
+.dark .ReactTags__tag {
+  @apply bg-secondary/50 text-foreground;
+}
+
+.dark .ReactTags__suggestions {
+  @apply bg-background border-border;
+}
+
+.dark .ReactTags__suggestions li {
+  @apply text-foreground;
+}
+
+.dark .ReactTags__suggestions li.ReactTags__activeSuggestion {
+  @apply bg-secondary;
+}

@@ -1,0 +1,24 @@
+
+@keyframes text-shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.text-shimmer {
+  background: linear-gradient(
+    to right,
+    hsl(var(--primary)) 10%,
+    hsl(var(--accent)) 50%,
+    hsl(var(--primary)) 90%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-shimmer 4s linear infinite;
+}
+
+.glass-card {
+  @apply bg-white/50 dark:bg-slate-900/60 backdrop-blur-sm border border-white/20 dark:border-white/5 shadow-md;
+}

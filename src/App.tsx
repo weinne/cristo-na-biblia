@@ -12,7 +12,6 @@ import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import RefTaggerLoader from "./components/categories/RefTaggerLoader";
 import { ThemeProvider } from "./components/ThemeProvider";
-import { useEffect } from "react";
 
 // Create a global query client instance
 const queryClient = new QueryClient({
