@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Category } from '@/lib/data';
 import { cn } from '@/lib/utils';
@@ -12,13 +13,13 @@ interface CategoryCardProps {
 
 const getGradient = (index: number): string => {
   const gradients = [
-    "from-blue-100 to-purple-100",
-    "from-green-100 to-yellow-100",
-    "from-pink-100 to-red-100",
-    "from-purple-100 to-indigo-100",
-    "from-yellow-100 to-orange-100",
-    "from-indigo-100 to-blue-100",
-    "from-red-100 to-pink-100",
+    "from-blue-100 to-purple-100 dark:from-blue-950/40 dark:to-purple-950/40",
+    "from-green-100 to-yellow-100 dark:from-green-950/40 dark:to-yellow-950/40",
+    "from-pink-100 to-red-100 dark:from-pink-950/40 dark:to-red-950/40",
+    "from-purple-100 to-indigo-100 dark:from-purple-950/40 dark:to-indigo-950/40",
+    "from-yellow-100 to-orange-100 dark:from-yellow-950/40 dark:to-orange-950/40",
+    "from-indigo-100 to-blue-100 dark:from-indigo-950/40 dark:to-blue-950/40",
+    "from-red-100 to-pink-100 dark:from-red-950/40 dark:to-pink-950/40",
   ];
   
   return gradients[index % gradients.length];
@@ -81,7 +82,9 @@ const getCategoryDescription = (categoryId: string): string => {
 };
 
 const formatBibleReference = (reference: string): string => {
+  // Dictionary of Portuguese to English book abbreviations
   const bookDictionary: Record<string, string> = {
+    // Old Testament
     'Gênesis': 'GEN', 'Genesis': 'GEN', 'Gên': 'GEN', 'Gen': 'GEN',
     'Êxodo': 'EXO', 'Exodo': 'EXO', 'Êx': 'EXO', 'Ex': 'EXO',
     'Levítico': 'LEV', 'Levitico': 'LEV', 'Lev': 'LEV', 'Lv': 'LEV',
@@ -103,7 +106,7 @@ const formatBibleReference = (reference: string): string => {
     'Salmos': 'PSA', 'Sl': 'PSA', 'Salmo': 'PSA',
     'Provérbios': 'PRO', 'Proverbios': 'PRO', 'Pv': 'PRO', 'Pr': 'PRO',
     'Eclesiastes': 'ECC', 'Ec': 'ECC',
-    'Cantares': 'SNG', 'Cânticos': 'SNG', 'Ct': 'SNG', 'Cantares de Salomão': 'SNG',
+    'Cantares': 'SNG', 'Cânticos': 'SNG', 'Ct': 'SNG',
     'Isaías': 'ISA', 'Isaias': 'ISA', 'Is': 'ISA',
     'Jeremias': 'JER', 'Jr': 'JER',
     'Lamentações': 'LAM', 'Lamentacoes': 'LAM', 'Lm': 'LAM',
@@ -112,7 +115,7 @@ const formatBibleReference = (reference: string): string => {
     'Oséias': 'HOS', 'Oseias': 'HOS', 'Os': 'HOS',
     'Joel': 'JOL', 'Jl': 'JOL',
     'Amós': 'AMO', 'Amos': 'AMO', 'Am': 'AMO',
-    'Obadias': 'OBA', 'Ob': 'OBA', 'Obadias': 'OBA',
+    'Obadias': 'OBA', 'Ob': 'OBA',
     'Jonas': 'JON', 'Jn': 'JON',
     'Miquéias': 'MIC', 'Miqueias': 'MIC', 'Mq': 'MIC',
     'Naum': 'NAM', 'Na': 'NAM',
@@ -122,6 +125,7 @@ const formatBibleReference = (reference: string): string => {
     'Zacarias': 'ZEC', 'Zc': 'ZEC',
     'Malaquias': 'MAL', 'Ml': 'MAL',
     
+    // New Testament
     'Mateus': 'MAT', 'Mt': 'MAT',
     'Marcos': 'MRK', 'Mc': 'MRK',
     'Lucas': 'LUK', 'Lc': 'LUK',
@@ -151,6 +155,7 @@ const formatBibleReference = (reference: string): string => {
     'Apocalipse': 'REV', 'Ap': 'REV'
   };
 
+  // Regular expression to extract book name, chapter and verse
   const regex = /^((?:\d+\s+)?[A-Za-zÀ-ú]+)(?:\s+(\d+)(?:[:\.](\d+)(?:-(\d+))?)?)?/;
   const match = reference.match(regex);
   
@@ -158,9 +163,11 @@ const formatBibleReference = (reference: string): string => {
   
   const [, bookName, chapter, startVerse, endVerse] = match;
   
+  // Get the English abbreviation for the book
   const bookCode = bookDictionary[bookName];
   if (!bookCode) return reference;
   
+  // Format the reference for YouVersion
   if (chapter && startVerse) {
     if (endVerse) {
       return `${bookCode}.${chapter}.${startVerse}-${endVerse}`;
@@ -184,7 +191,7 @@ const CategoryCard = ({ category, index }: CategoryCardProps) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       whileHover={{ scale: 1.03, transition: { duration: 0.2 } }}
-      className={`glass-card rounded-lg p-6 h-full flex flex-col transition-all duration-300 hover:shadow-lg overflow-hidden bg-gradient-to-br ${getGradient(index)}`}
+      className={`glass-card rounded-lg p-6 h-full flex flex-col transition-all duration-300 hover:shadow-lg overflow-hidden bg-gradient-to-br ${getGradient(index)} dark:border-gray-800`}
     >
       <div className="absolute top-0 left-0 w-1 h-full bg-accent"></div>
       <div className="flex justify-between items-start mb-4">
@@ -196,7 +203,7 @@ const CategoryCard = ({ category, index }: CategoryCardProps) => {
         </div>
       </div>
       
-      <h3 className="text-xl mb-2 font-bold text-primary">{category.name}</h3>
+      <h3 className="text-xl mb-2 font-bold text-primary dark:text-primary-foreground">{category.name}</h3>
       <p className="text-sm text-muted-foreground flex-grow mb-4">{category.description}</p>
       
       <motion.div 
@@ -209,7 +216,7 @@ const CategoryCard = ({ category, index }: CategoryCardProps) => {
           
           {exampleVerses.length > 0 && (
             <div className="mt-3 space-y-2">
-              <h4 className="text-sm font-medium text-primary">Exemplos de Versículos:</h4>
+              <h4 className="text-sm font-medium text-primary dark:text-primary-foreground">Exemplos de Versículos:</h4>
               <div className="flex flex-wrap gap-2">
                 {exampleVerses.map((verse, i) => {
                   const formattedVerse = formatBibleReference(verse);
@@ -219,7 +226,7 @@ const CategoryCard = ({ category, index }: CategoryCardProps) => {
                       href={`https://www.bible.com/pt/bible/1608/${formattedVerse}.ARA`}
                       target="_blank"
                       rel="noopener noreferrer" 
-                      className="text-xs bg-accent/10 text-accent px-2 py-1 rounded-full bible-reference flex items-center hover:bg-accent/20 transition-colors"
+                      className="text-xs bg-accent/10 text-accent px-2 py-1 rounded-full bible-reference flex items-center hover:bg-accent/20 transition-colors dark:bg-accent/20 dark:hover:bg-accent/30"
                     >
                       {verse}
                       <ExternalLink size={10} className="ml-1" />
@@ -229,25 +236,15 @@ const CategoryCard = ({ category, index }: CategoryCardProps) => {
               </div>
             </div>
           )}
-          
-          {/*<div className="mt-4">
-            <Link 
-              to={`/categories/${category.id}`}
-              className="text-xs flex items-center text-accent hover:underline"
-            >
-              Ver livros que usam esta categoria
-              <ArrowRight size={12} className="ml-1" />
-            </Link>
-          </div>*/}
         </div>
       </motion.div>
       
-      <div className="mt-auto pt-4 border-t border-border/30">
+      <div className="mt-auto pt-4 border-t border-border/30 dark:border-border/10">
         <div className="flex items-center justify-between">
           <span className="text-xs text-muted-foreground">Livros que usam esta categoria:</span>
           <span className="text-lg font-bold text-accent">{getBookCount(category.id)}</span>
         </div>
-        <div className="w-full bg-muted/30 h-2 rounded-full mt-2 overflow-hidden">
+        <div className="w-full bg-muted/30 h-2 rounded-full mt-2 overflow-hidden dark:bg-muted/10">
           <div 
             className="h-full bg-accent/70 rounded-full" 
             style={{ width: `${(getBookCount(category.id) / 66) * 100}%` }}

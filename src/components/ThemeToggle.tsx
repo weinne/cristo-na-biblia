@@ -17,7 +17,8 @@ export function ThemeToggle({ className }: ThemeToggleProps) {
         "p-2 rounded-md transition-colors hover:bg-muted",
         className
       )}
-      aria-label="Toggle theme"
+      aria-label={theme === "light" ? "Ativar modo escuro" : "Ativar modo claro"}
+      title={theme === "light" ? "Ativar modo escuro" : "Ativar modo claro"}
     >
       <Sun
         className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
