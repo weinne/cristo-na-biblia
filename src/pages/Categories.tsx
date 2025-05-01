@@ -32,7 +32,7 @@ const Categories = () => {
       
       <Footer />
       
-      {/* Carrega o RefTagger */}
+      {/* Load RefTagger */}
       <RefTaggerLoader />
     </div>
   );

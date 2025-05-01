@@ -12,6 +12,7 @@ import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import RefTaggerLoader from "./components/categories/RefTaggerLoader";
 import { ThemeProvider } from "./components/ThemeProvider";
+import { LanguageProvider } from "./contexts/LanguageContext";
 
 // Create a global query client instance
 const queryClient = new QueryClient({
@@ -35,23 +36,25 @@ const getInitialTheme = () => {
 
 const App = () => (
   <ThemeProvider defaultTheme={getInitialTheme()} storageKey="cristo-biblia-theme">
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <HashRouter>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/books" element={<Books />} />
-            <Route path="/books/:id" element={<BookDetail />} />
-            <Route path="/categories" element={<Categories />} />
-            <Route path="/about" element={<About />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </HashRouter>
-        <RefTaggerLoader />
-        <Toaster />
-        <Sonner />
-      </TooltipProvider>
-    </QueryClientProvider>
+    <LanguageProvider>
+      <QueryClientProvider client={queryClient}>
+        <TooltipProvider>
+          <HashRouter>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/books" element={<Books />} />
+              <Route path="/books/:id" element={<BookDetail />} />
+              <Route path="/categories" element={<Categories />} />
+              <Route path="/about" element={<About />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </HashRouter>
+          <RefTaggerLoader />
+          <Toaster />
+          <Sonner />
+        </TooltipProvider>
+      </QueryClientProvider>
+    </LanguageProvider>
   </ThemeProvider>
 );
 

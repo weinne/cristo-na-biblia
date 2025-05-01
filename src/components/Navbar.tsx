@@ -4,10 +4,13 @@ import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
 import { ThemeToggle } from './ThemeToggle';
+import LanguageSwitcher from './LanguageSwitcher';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,20 +36,24 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Link to="/" className="flex items-center space-x-2">
-          <span className="text-xl md:text-2xl font-playfair font-bold text-primary">Cristo na Bíblia</span>
+          <span className="text-xl md:text-2xl font-playfair font-bold text-primary">{t('christ-in-bible')}</span>
         </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
-          <NavLink to="/">Início</NavLink>
-          <NavLink to="/about">Sobre</NavLink>
-          <NavLink to="/books">Livros</NavLink>
-          <NavLink to="/categories">Categorias</NavLink>
-          <ThemeToggle />
+          <NavLink to="/">{t('home')}</NavLink>
+          <NavLink to="/about">{t('about')}</NavLink>
+          <NavLink to="/books">{t('books')}</NavLink>
+          <NavLink to="/categories">{t('categories')}</NavLink>
+          <div className="flex items-center space-x-4">
+            <LanguageSwitcher />
+            <ThemeToggle />
+          </div>
         </div>
 
         {/* Mobile Menu Button */}
         <div className="md:hidden flex items-center gap-4">
+          <LanguageSwitcher />
           <ThemeToggle />
           <button 
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -61,10 +68,10 @@ const Navbar = () => {
       {mobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-white dark:bg-background shadow-md animate-fade-in">
           <div className="flex flex-col space-y-4 py-4 px-6">
-            <MobileNavLink to="/" onClick={() => setMobileMenuOpen(false)}>Início</MobileNavLink>
-            <MobileNavLink to="/about" onClick={() => setMobileMenuOpen(false)}>Sobre</MobileNavLink>
-            <MobileNavLink to="/books" onClick={() => setMobileMenuOpen(false)}>Livros</MobileNavLink>
-            <MobileNavLink to="/categories" onClick={() => setMobileMenuOpen(false)}>Categorias</MobileNavLink>
+            <MobileNavLink to="/" onClick={() => setMobileMenuOpen(false)}>{t('home')}</MobileNavLink>
+            <MobileNavLink to="/about" onClick={() => setMobileMenuOpen(false)}>{t('about')}</MobileNavLink>
+            <MobileNavLink to="/books" onClick={() => setMobileMenuOpen(false)}>{t('books')}</MobileNavLink>
+            <MobileNavLink to="/categories" onClick={() => setMobileMenuOpen(false)}>{t('categories')}</MobileNavLink>
           </div>
         </div>
       )}

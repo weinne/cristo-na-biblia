@@ -2,12 +2,14 @@
 import React, { useState } from 'react';
 import { Book, books } from '@/lib/data';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 interface BookGridProps {
   filter?: 'old' | 'new' | 'all';
 }
 
 const BookGrid = ({ filter = 'all' }: BookGridProps) => {
+  const { t } = useLanguage();
   const [selectedTestament, setSelectedTestament] = useState<'old' | 'new' | 'all'>(filter);
 
   const filteredBooks = books.filter(book => {
@@ -22,19 +24,19 @@ const BookGrid = ({ filter = 'all' }: BookGridProps) => {
           active={selectedTestament === 'all'} 
           onClick={() => setSelectedTestament('all')}
         >
-          Todos
+          {t('all')}
         </TestamentButton>
         <TestamentButton 
           active={selectedTestament === 'old'} 
           onClick={() => setSelectedTestament('old')}
         >
-          Antigo Testamento
+          {t('old-testament')}
         </TestamentButton>
         <TestamentButton 
           active={selectedTestament === 'new'} 
           onClick={() => setSelectedTestament('new')}
         >
-          Novo Testamento
+          {t('new-testament')}
         </TestamentButton>
       </div>
 
@@ -73,6 +75,8 @@ interface BookCardProps {
 }
 
 const BookCard = ({ book }: BookCardProps) => {
+  const { t } = useLanguage();
+  
   return (
     <Link 
       to={`/books/${book.id}`}
@@ -81,10 +85,10 @@ const BookCard = ({ book }: BookCardProps) => {
       <div className="glass-card p-4 rounded-md flex flex-col items-center justify-center text-center h-32 transition-all duration-300 group-hover:shadow-md group-hover:scale-[1.03]">
         <h3 className="font-bold text-lg text-primary mb-1">{book.shortName}</h3>
         <p className="text-xs text-muted-foreground mb-2">
-          {book.testament === 'old' ? 'Antigo Testamento' : 'Novo Testamento'}
+          {book.testament === 'old' ? t('old-testament') : t('new-testament')}
         </p>
         <span className="text-[10px] px-2 py-1 rounded-full bg-primary/10 text-primary dark:text-gray-200">
-          {book.categories.length} categorias
+          {book.categories.length} {t('categories-count')}
         </span>
       </div>
     </Link>

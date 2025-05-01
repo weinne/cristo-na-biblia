@@ -7,10 +7,12 @@ import { useParams, useNavigate, Link } from 'react-router-dom';
 import { books, categories } from '@/lib/data';
 import { motion } from 'framer-motion';
 import { ArrowLeft } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const BookDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
+  const { t, language } = useLanguage();
   
   const book = books.find(book => book.id === id);
   
@@ -23,10 +25,18 @@ const BookDetail = () => {
   
   if (!book) return null;
 
-  // Obter detalhes completos das categorias usadas pelo livro
+  // Get full details of categories used by the book
   const bookCategories = categories.filter(cat => 
     book.categories.includes(cat.id)
   );
+  
+  const getTestamentTranslation = (testament: string) => {
+    return testament === 'old' ? 
+      (language === 'pt' ? 'Antigo Testamento' : 
+       language === 'en' ? 'Old Testament' : 'Antiguo Testamento') : 
+      (language === 'pt' ? 'Novo Testamento' : 
+       language === 'en' ? 'New Testament' : 'Nuevo Testamento');
+  };
   
   return (
     <div className="min-h-screen flex flex-col">
@@ -39,7 +49,7 @@ const BookDetail = () => {
             className="inline-flex items-center text-accent hover:text-accent/80 transition-colors mb-6"
           >
             <ArrowLeft size={16} className="mr-1" />
-            Voltar para todos os livros
+            {t('back-to-books')}
           </Link>
           
           <motion.div 
@@ -49,7 +59,7 @@ const BookDetail = () => {
             className="mb-6"
           >
             <span className="inline-block text-sm bg-accent/10 dark:bg-accent/20 text-accent px-3 py-1 rounded-full mb-2">
-              {book.testament === 'old' ? 'Antigo Testamento' : 'Novo Testamento'}
+              {getTestamentTranslation(book.testament)}
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-primary dark:text-gray-100">
               {book.name}

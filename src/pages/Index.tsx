@@ -8,8 +8,11 @@ import CategoryCard from '@/components/CategoryCard';
 import BookGrid from '@/components/BookGrid';
 import { ChevronRight } from 'lucide-react';
 import PWAInstallPrompt from '@/components/PWAInstallPrompt';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Index = () => {
+  const { t } = useLanguage();
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -22,26 +25,26 @@ const Index = () => {
       <section className="pt-32 pb-20 px-6 md:px-12 bg-gradient-to-b from-secondary dark:from-gray-800 to-background">
         <div className="max-w-5xl mx-auto text-center space-y-6">
           <span className="inline-block text-sm bg-accent/10 dark:bg-accent/20 text-accent px-3 py-1 rounded-full animate-fade-in">
-            Cristo em toda a Bíblia
+            {t('christ-in-all-bible')}
           </span>
           <h1 className="text-4xl md:text-6xl font-bold text-primary dark:text-gray-100 animate-fade-in">
-            Descobrindo Cristo em <span className="text-shimmer font-bold">Cada Livro</span> da Bíblia
+            {t('discovering-christ')} <span className="text-shimmer font-bold">{t('each-book')}</span> {t('of-bible')}
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground dark:text-gray-300 max-w-3xl mx-auto animate-fade-in">
-            Explorando como o Antigo e o Novo Testamento apontam para Jesus Cristo através das categorias hermenêuticas de Sidney Greidanus.
+            {t('exploring-how')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4 animate-fade-in">
             <Link
               to="/books"
               className="px-6 py-3 bg-accent text-white rounded-md hover:bg-accent/90 transition-colors shadow-md hover:shadow-lg"
             >
-              Explorar Livros
+              {t('explore-books')}
             </Link>
             <Link
               to="/categories"
               className="px-6 py-3 bg-white dark:bg-gray-800 text-primary dark:text-gray-200 rounded-md hover:bg-secondary dark:hover:bg-gray-700 transition-colors border border-border shadow-sm hover:shadow-md"
             >
-              Ver Categorias
+              {t('view-categories')}
             </Link>
           </div>
         </div>
@@ -51,9 +54,9 @@ const Index = () => {
       <section className="py-20 px-6 md:px-12 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary dark:text-gray-100 mb-4">Categorias de Greidanus</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary dark:text-gray-100 mb-4">{t('greidanus-categories')}</h2>
             <p className="text-muted-foreground dark:text-gray-300 max-w-2xl mx-auto">
-              Sidney Greidanus identificou estas sete maneiras pelas quais a Bíblia aponta para Cristo, ajudando-nos a ver Jesus em toda a Escritura.
+              {t('greidanus-identified')}
             </p>
           </div>
           
@@ -68,7 +71,7 @@ const Index = () => {
               to="/categories"
               className="inline-flex items-center text-accent hover:text-accent/80 transition-colors"
             >
-              Ver todas as categorias
+              {t('view-all-categories')}
               <ChevronRight size={16} className="ml-1" />
             </Link>
           </div>
@@ -79,9 +82,9 @@ const Index = () => {
       <section className="py-20 px-6 md:px-12 bg-muted dark:bg-gray-800">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary dark:text-gray-100 mb-4">Livros em Destaque</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary dark:text-gray-100 mb-4">{t('featured-books')}</h2>
             <p className="text-muted-foreground dark:text-gray-300 max-w-2xl mx-auto">
-              Explore como estes e outros livros da Bíblia apontam para Cristo de maneiras únicas e reveladoras.
+              {t('explore-these-books')}
             </p>
           </div>
           
@@ -92,7 +95,7 @@ const Index = () => {
               to="/books"
               className="inline-flex items-center text-accent hover:text-accent/80 transition-colors"
             >
-              Ver todos os livros
+              {t('view-all-books')}
               <ChevronRight size={16} className="ml-1" />
             </Link>
           </div>
@@ -102,15 +105,15 @@ const Index = () => {
       {/* CTA Section */}
       <section className="py-20 px-6 md:px-12 bg-accent text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Comece sua jornada de descoberta hoje</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">{t('start-journey')}</h2>
           <p className="text-lg mb-8 text-white/90">
-            Explore como toda a Escritura, do Gênesis ao Apocalipse, revela a pessoa e a obra de Jesus Cristo.
+            {t('explore-scripture')}
           </p>
           <Link
             to="/books"
             className="px-8 py-3 bg-white text-accent rounded-md hover:bg-white/90 transition-colors shadow-md hover:shadow-lg inline-block"
           >
-            Explorar todos os livros
+            {t('explore-all-books')}
           </Link>
         </div>
       </section>
