@@ -11,7 +11,6 @@ export const es = {
   'books': 'Libros',
   'categories': 'Categorías',
   'settings': 'Configuración',
-  'blog': 'Blog',
   
   // Home Page
   'christ-in-all-bible': 'Cristo a través de toda la Escritura',

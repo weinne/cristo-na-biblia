@@ -11,7 +11,6 @@ export const pt = {
   'books': 'Livros',
   'categories': 'Categorias',
   'settings': 'Configurações',
-  'blog': 'Blog',
   
   // Home Page
   'christ-in-all-bible': 'Cristo em toda a Escritura',

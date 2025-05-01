@@ -33,7 +33,7 @@ const Navbar = () => {
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out py-4 px-6 md:px-12',
         scrolled 
           ? 'bg-white/80 dark:bg-gray-900/90 backdrop-blur-md shadow-sm' 
-          : 'bg-transparent'
+          : 'bg-transparent dark:bg-transparent'
       )}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
@@ -90,7 +90,7 @@ const NavLink = ({ to, children }: NavLinkProps) => {
   return (
     <Link 
       to={to} 
-      className="relative font-medium text-primary/80 hover:text-primary dark:text-gray-200 dark:hover:text-white transition-colors after:absolute after:bottom-[-4px] after:left-0 after:right-0 after:h-[2px] after:bg-accent after:scale-x-0 after:origin-right after:transition-transform hover:after:scale-x-100 hover:after:origin-left"
+      className="relative font-medium text-primary/80 hover:text-primary dark:text-gray-300 dark:hover:text-white transition-colors after:absolute after:bottom-[-4px] after:left-0 after:right-0 after:h-[2px] after:bg-accent after:scale-x-0 after:origin-right after:transition-transform hover:after:scale-x-100 hover:after:origin-left"
     >
       {children}
     </Link>
@@ -107,7 +107,7 @@ const MobileNavLink = ({ to, children, onClick }: MobileNavLinkProps) => {
   return (
     <Link 
       to={to} 
-      className="py-2 block text-primary/80 hover:text-primary dark:text-gray-200 dark:hover:text-white transition-colors"
+      className="py-2 block text-primary/80 hover:text-primary dark:text-gray-300 dark:hover:text-white transition-colors"
       onClick={onClick}
     >
       {children}

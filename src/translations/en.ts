@@ -11,7 +11,6 @@ export const en = {
   'books': 'Books',
   'categories': 'Categories',
   'settings': 'Settings',
-  'blog': 'Blog',
 
   // Home Page
   'christ-in-all-bible': 'Christ across all Scripture',
@@ -57,11 +56,11 @@ export const en = {
   'mission-title': 'Our Mission',
   'mission-description': 'Our mission is to help believers understand how Jesus Christ is revealed throughout all of Scripture, from the first pages of Genesis to the final chapters of Revelation. We believe that seeing Christ as the central theme of the Bible transforms how we read, understand, and apply God\'s Word.',
   'greidanus-approach': 'The Greidanus Approach',
-  'greidanus-description': 'This project is inspired by the work of Sidney Greidanus, who identified several ways Christ is revealed in Scripture. We've organized our content around these methods to help you see the different ways Jesus is present in every biblical book.',
+  'greidanus-description': 'This project is inspired by the work of Sidney Greidanus, who identified several ways Christ is revealed in Scripture. We have organized our content around these methods to help you see the different ways Jesus is present in every biblical book.',
   'project-motivation': 'Project Motivation',
   'motivation-description': 'This project was created out of a desire to help Christians see the unity of Scripture and understand how the entire Bible points to Jesus Christ. When we recognize Christ as the central figure of Scripture, we gain a deeper appreciation for God\'s redemptive plan throughout history.',
   'get-involved': 'Get Involved',
-  'involved-description': 'We're continuously expanding this project and would love your feedback and contributions. If you have insights, suggestions, or want to contribute content, please reach out to us.',
+  'involved-description': 'We are continuously expanding this project and would love your feedback and contributions. If you have insights, suggestions, or want to contribute content, please reach out to us.',
 
   // Categories Page
   'all-categories': 'All Categories',

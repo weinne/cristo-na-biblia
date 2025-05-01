@@ -20,7 +20,7 @@ const LanguageSwitcher = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <button className="flex items-center text-primary hover:text-accent transition-colors">
+        <button className="flex items-center text-primary dark:text-gray-300 hover:text-accent dark:hover:text-white transition-colors">
           <Globe size={18} className="mr-1" />
           <span className="hidden md:inline text-sm">{t('language')}</span>
         </button>

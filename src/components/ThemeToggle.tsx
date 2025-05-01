@@ -24,11 +24,11 @@ export function ThemeToggle({ className }: ThemeToggleProps) {
       title={theme === "light" ? "Ativar modo escuro" : "Ativar modo claro"}
     >
       <Sun
-        className="absolute inset-0 h-5 w-5 m-auto rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 text-amber-500"
+        className="absolute inset-0 h-4 w-4 m-auto rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 text-amber-500"
         strokeWidth={1.5}
       />
       <Moon
-        className="absolute inset-0 h-5 w-5 m-auto rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 text-indigo-300"
+        className="absolute inset-0 h-4 w-4 m-auto rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 text-indigo-300"
         strokeWidth={1.5}
       />
       <span className="sr-only">

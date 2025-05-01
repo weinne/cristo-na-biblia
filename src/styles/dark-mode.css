@@ -76,3 +76,18 @@
 .dark .text-primary.hover\:text-accent {
   @apply text-gray-200 hover:text-accent-foreground;
 }
+
+/* Fix for navbar in dark mode */
+.dark nav.bg-white\/80 {
+  @apply bg-gray-900/90 shadow-gray-900/50;
+}
+
+/* Ensure buttons in dark mode have readable text */
+.dark .bg-white {
+  @apply text-gray-900;
+}
+
+/* Fix for nav links in dark mode */
+.dark nav a.text-primary\/80 {
+  @apply text-gray-300 hover:text-white;
+}
