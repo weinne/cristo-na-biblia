@@ -8,11 +8,21 @@ import CategoryTabs from '@/components/categories/CategoryTabs';
 import CategoryList from '@/components/categories/CategoryList';
 import ExploreMoreSection from '@/components/categories/ExploreMoreSection';
 import RefTaggerLoader from '@/components/categories/RefTaggerLoader';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Categories = () => {
+  const { t } = useLanguage();
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // Map categories to include translated names and descriptions
+  const translatedCategories = categories.map(category => ({
+    ...category,
+    displayName: t(`category-${category.id}`),
+    description: t(`category-${category.id}-desc`)
+  }));
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
@@ -24,7 +34,7 @@ const Categories = () => {
         <div className="max-w-7xl mx-auto">
           <CategoryTabs books={books} />
           
-          <CategoryList categories={categories} />
+          <CategoryList categories={translatedCategories} />
           
           <ExploreMoreSection />
         </div>

@@ -168,7 +168,28 @@ export const translations: Record<Language, Record<string, string>> = {
     'language': 'Idioma',
     'portuguese': 'Português',
     'english': 'English',
-    'spanish': 'Español'
+    'spanish': 'Español',
+    
+    // Data translations - Categories
+    'category-redemptive-historical': 'Progressão Histórico-Redentiva',
+    'category-promise-fulfillment': 'Promessa-Cumprimento',
+    'category-typology': 'Tipologia',
+    'category-analogy': 'Analogia',
+    'category-longitudinal-themes': 'Temas Longitudinais',
+    'category-new-testament-references': 'Referências do Novo Testamento',
+    'category-contrast': 'Contraste',
+    
+    'category-redemptive-historical-desc': 'Vê como o livro se encaixa no desdobramento do plano redentor de Deus, conduzindo a Cristo.',
+    'category-promise-fulfillment-desc': 'Identifica promessas que encontram seu cumprimento em Cristo.',
+    'category-typology-desc': 'Reconhece pessoas, eventos ou instituições como "tipos" que prefiguram Cristo.',
+    'category-analogy-desc': 'Traça paralelos entre as ações de Deus no passado e Suas ações por meio de Cristo.',
+    'category-longitudinal-themes-desc': 'Segue temas que se desenvolvem através das Escrituras e culminam em Cristo.',
+    'category-new-testament-references-desc': 'Utiliza citações no Novo Testamento para mostrar conexões com Cristo.',
+    'category-contrast-desc': 'Destaca como Cristo é maior do que as figuras ou instituições anteriores.',
+    
+    // Books - Generic descriptions
+    'book-description-general': 'Este livro revela aspectos de Cristo através de várias categorias hermenêuticas.',
+    'points-to-christ-through': 'Aponta para Cristo através de:'
   },
   
   en: {
@@ -286,7 +307,28 @@ export const translations: Record<Language, Record<string, string>> = {
     'language': 'Language',
     'portuguese': 'Português',
     'english': 'English',
-    'spanish': 'Español'
+    'spanish': 'Español',
+    
+    // Data translations - Categories
+    'category-redemptive-historical': 'Redemptive-Historical Progression',
+    'category-promise-fulfillment': 'Promise-Fulfillment',
+    'category-typology': 'Typology',
+    'category-analogy': 'Analogy',
+    'category-longitudinal-themes': 'Longitudinal Themes',
+    'category-new-testament-references': 'New Testament References',
+    'category-contrast': 'Contrast',
+    
+    'category-redemptive-historical-desc': 'Sees how the book fits into the unfolding of God\'s redemptive plan, leading to Christ.',
+    'category-promise-fulfillment-desc': 'Identifies promises that find their fulfillment in Christ.',
+    'category-typology-desc': 'Recognizes people, events, or institutions as "types" that prefigure Christ.',
+    'category-analogy-desc': 'Draws parallels between God\'s actions in the past and His actions through Christ.',
+    'category-longitudinal-themes-desc': 'Follows themes that develop throughout Scripture and culminate in Christ.',
+    'category-new-testament-references-desc': 'Uses quotations in the New Testament to show connections to Christ.',
+    'category-contrast-desc': 'Highlights how Christ is greater than previous figures or institutions.',
+    
+    // Books - Generic descriptions
+    'book-description-general': 'This book reveals aspects of Christ through various hermeneutical categories.',
+    'points-to-christ-through': 'Points to Christ through:'
   },
   
   es: {
@@ -404,6 +446,27 @@ export const translations: Record<Language, Record<string, string>> = {
     'language': 'Idioma',
     'portuguese': 'Português',
     'english': 'English',
-    'spanish': 'Español'
+    'spanish': 'Español',
+    
+    // Data translations - Categories
+    'category-redemptive-historical': 'Progresión Histórico-Redentiva',
+    'category-promise-fulfillment': 'Promesa-Cumplimiento',
+    'category-typology': 'Tipología',
+    'category-analogy': 'Analogía',
+    'category-longitudinal-themes': 'Temas Longitudinales',
+    'category-new-testament-references': 'Referencias del Nuevo Testamento',
+    'category-contrast': 'Contraste',
+    
+    'category-redemptive-historical-desc': 'Ve cómo el libro encaja en el desarrollo del plan redentor de Dios, conduciendo a Cristo.',
+    'category-promise-fulfillment-desc': 'Identifica promesas que encuentran su cumplimiento en Cristo.',
+    'category-typology-desc': 'Reconoce personas, eventos o instituciones como "tipos" que prefiguran a Cristo.',
+    'category-analogy-desc': 'Traza paralelos entre las acciones de Dios en el pasado y Sus acciones a través de Cristo.',
+    'category-longitudinal-themes-desc': 'Sigue temas que se desarrollan a lo largo de las Escrituras y culminan en Cristo.',
+    'category-new-testament-references-desc': 'Utiliza citas en el Nuevo Testamento para mostrar conexiones con Cristo.',
+    'category-contrast-desc': 'Destaca cómo Cristo es mayor que las figuras o instituciones anteriores.',
+    
+    // Books - Generic descriptions
+    'book-description-general': 'Este libro revela aspectos de Cristo a través de varias categorías hermenéuticas.',
+    'points-to-christ-through': 'Apunta a Cristo a través de:'
   }
 };
