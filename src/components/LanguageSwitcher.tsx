@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { Globe } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import {
@@ -8,14 +8,13 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { cn } from '@/lib/utils';
 
 const LanguageSwitcher = () => {
   const { language, setLanguage, t } = useLanguage();
-  const [isOpen, setIsOpen] = useState(false);
 
   const handleLanguageSelect = (lang: 'pt' | 'en' | 'es') => {
     setLanguage(lang);
-    setIsOpen(false);
   };
 
   return (
@@ -29,19 +28,19 @@ const LanguageSwitcher = () => {
       <DropdownMenuContent align="end" className="w-40">
         <DropdownMenuItem 
           onClick={() => handleLanguageSelect('pt')}
-          className={`${language === 'pt' ? 'bg-accent/10 text-accent' : ''}`}
+          className={cn(language === 'pt' ? 'bg-accent/10 text-accent' : '')}
         >
           {t('portuguese')}
         </DropdownMenuItem>
         <DropdownMenuItem 
           onClick={() => handleLanguageSelect('en')}
-          className={`${language === 'en' ? 'bg-accent/10 text-accent' : ''}`}
+          className={cn(language === 'en' ? 'bg-accent/10 text-accent' : '')}
         >
           {t('english')}
         </DropdownMenuItem>
         <DropdownMenuItem 
           onClick={() => handleLanguageSelect('es')}
-          className={`${language === 'es' ? 'bg-accent/10 text-accent' : ''}`}
+          className={cn(language === 'es' ? 'bg-accent/10 text-accent' : '')}
         >
           {t('spanish')}
         </DropdownMenuItem>

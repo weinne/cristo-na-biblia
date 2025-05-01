@@ -42,10 +42,6 @@
   @apply bg-blue-600 hover:bg-blue-700 text-white;
 }
 
-.dark a:not(.btn):not(.nav-link) {
-  @apply text-white;
-}
-
 .dark .bg-card {
   @apply bg-gray-800/90;
 }
@@ -74,4 +70,9 @@
 
 .dark .glass-card p {
   @apply text-gray-300;
+}
+
+/* Fix for language switcher and theme toggle in dark mode */
+.dark .text-primary.hover\:text-accent {
+  @apply text-gray-200 hover:text-accent-foreground;
 }

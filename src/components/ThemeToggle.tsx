@@ -17,7 +17,7 @@ export function ThemeToggle({ className }: ThemeToggleProps) {
       whileTap={{ scale: 0.95 }}
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
       className={cn(
-        "p-2 rounded-md hover:bg-muted transition-colors relative overflow-hidden w-9 h-9",
+        "p-2 rounded-md hover:bg-muted transition-colors relative overflow-hidden w-9 h-9 flex items-center justify-center",
         className
       )}
       aria-label={theme === "light" ? "Ativar modo escuro" : "Ativar modo claro"}
