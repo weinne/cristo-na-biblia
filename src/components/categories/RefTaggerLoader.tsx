@@ -1,94 +1,73 @@
 
 import { useEffect } from 'react';
-import { useLanguage } from '@/contexts/LanguageContext';
 
+// Define interface for refTagger 
+interface RefTagger {
+  settings: {
+    bibleVersion: string;
+    customStyle: {
+      heading: {
+        backgroundColor: string;
+        color: string;
+        fontFamily: string;
+        fontSize: string;
+      };
+      body: {
+        backgroundColor: string;
+        color: string;
+        fontFamily: string;
+        fontSize: string;
+        moreLink: { color: string };
+      };
+    };
+  };
+  tag: () => void;
+}
+
+// Make sure to use declare global
 declare global {
   interface Window {
-    refTagger?: {
-      settings: {
-        bibleVersion: string;
-        bibleReader: string;
-        tagChapters: boolean;
-        roundCorners: boolean;
-        socialSharing: string[];
-        customStyle: {
-          heading: {
-            backgroundColor: string;
-            color: string;
-          };
-          body: {
-            color: string;
-            moreLink: {
-              color: string;
-            };
-          };
-        };
-      };
-      tag: () => void;
-    };
+    refTagger: RefTagger;
   }
 }
 
 const RefTaggerLoader = () => {
-  const { language } = useLanguage();
-
-  // Get Bible version based on the selected language
-  const getBibleVersion = () => {
-    switch (language) {
-      case 'en': return 'ESV';
-      case 'es': return 'RVR60';
-      default: return 'ARA'; // Portuguese
-    }
-  };
-
   useEffect(() => {
-    // Dynamically load RefTagger script
-    const loadRefTagger = () => {
+    // Only load RefTagger if it hasn't been loaded yet
+    if (!window.refTagger) {
       const script = document.createElement('script');
-      script.src = 'https://api.reftagger.com/v2/RefTagger.js';
+      script.src = "https://api.reftagger.com/v2/RefTagger.js";
       script.async = true;
-      document.head.appendChild(script);
-
+      
       script.onload = () => {
+        // Configure RefTagger once the script is loaded
         if (window.refTagger) {
-          // Configure RefTagger with the user's language preference
           window.refTagger.settings = {
-            bibleVersion: getBibleVersion(),
-            bibleReader: "bible.com",
-            tagChapters: true,
-            roundCorners: true,
-            socialSharing: ["twitter", "facebook"],
+            bibleVersion: "ARA", // Almeida Revista e Atualizada
             customStyle: {
               heading: {
-                backgroundColor: "#185886",
-                color: "#ffffff"
+                backgroundColor: "#f1f5f9",
+                color: "#0f172a",
+                fontFamily: "inherit",
+                fontSize: "18px"
               },
               body: {
-                color: "#333333",
-                moreLink: {
-                  color: "#185886"
-                }
+                backgroundColor: "#ffffff",
+                color: "#334155",
+                fontFamily: "inherit",
+                fontSize: "16px",
+                moreLink: { color: "#2563eb" }
               }
             }
           };
-          
           window.refTagger.tag();
         }
       };
-    };
-
-    loadRefTagger();
-
-    // Cleanup function to remove the script when component unmounts
-    return () => {
-      const script = document.querySelector('script[src="https://api.reftagger.com/v2/RefTagger.js"]');
-      if (script) {
-        document.head.removeChild(script);
-      }
-    };
-  }, [language]); // Re-run when language changes
-
-  // No visible UI
+      
+      document.body.appendChild(script);
+    }
+  }, []);
+  
   return null;
 };
 
