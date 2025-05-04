@@ -49,6 +49,10 @@ export const es = {
   'search-books': 'Buscar libros...',
   'no-books-found': 'No se encontraron libros.',
   'books-showing': 'Mostrando {count} libros',
+  'bible-books': 'Libros de la Biblia',
+  'explore-each-book': 'Explora cada libro de la Biblia y descubre cómo Cristo es revelado en cada uno.',
+  'all': 'Todos',
+  'categories-count': 'Categorías',
 
   // About Page
   'about-title': 'Acerca de Este Proyecto',
@@ -70,26 +74,27 @@ export const es = {
   'category-books': 'Libros que presentan esta categoría',
 
   // Category Names
-  'redemptive-progression': 'Progresión Redentora',
-  'promise-fulfillment': 'Promesa-Cumplimiento',
-  'typology': 'Tipología',
-  'analogy': 'Analogía',
-  'longitudinal-themes': 'Temas Longitudinales',
-  'contrast': 'Contraste',
-  'new-testament-references': 'Referencias del Nuevo Testamento',
+  'category-redemptive-progression': 'Progresión Redentora',
+  'category-promise-fulfillment': 'Promesa-Cumplimiento',
+  'category-typology': 'Tipología',
+  'category-analogy': 'Analogía',
+  'category-longitudinal-themes': 'Temas Longitudinales',
+  'category-contrast': 'Contraste',
+  'category-new-testament-references': 'Referencias del Nuevo Testamento',
 
   // Category Descriptions
-  'redemptive-progression-desc': 'Cómo este pasaje avanza la narrativa redentora de Dios que culmina en Cristo',
-  'promise-fulfillment-desc': 'Promesas divinas en el Antiguo Testamento que encuentran su cumplimiento en Cristo',
-  'typology-desc': 'Personas, eventos o instituciones que prefiguran aspectos de la persona o obra de Cristo',
-  'analogy-desc': 'Similitudes entre las experiencias de los personajes en el texto y la experiencia de Cristo',
-  'longitudinal-themes-desc': 'Rastreando temas teológicos principales desde este texto hasta Cristo',
-  'contrast-desc': 'Formas en que Cristo es revelado al contrastar el fracaso humano o limitaciones en el texto con la perfección de Cristo',
-  'new-testament-references-desc': 'Cómo los escritores del Nuevo Testamento interpretan este texto en relación con Cristo',
+  'category-redemptive-progression-desc': 'Cómo este pasaje avanza la narrativa redentora de Dios que culmina en Cristo',
+  'category-promise-fulfillment-desc': 'Promesas divinas en el Antiguo Testamento que encuentran su cumplimiento en Cristo',
+  'category-typology-desc': 'Personas, eventos o instituciones que prefiguran aspectos de la persona o obra de Cristo',
+  'category-analogy-desc': 'Similitudes entre las experiencias de los personajes en el texto y la experiencia de Cristo',
+  'category-longitudinal-themes-desc': 'Rastreando temas teológicos principales desde este texto hasta Cristo',
+  'category-contrast-desc': 'Formas en que Cristo es revelado al contrastar el fracaso humano o limitaciones en el texto con la perfección de Cristo',
+  'category-new-testament-references-desc': 'Cómo los escritores del Nuevo Testamento interpretan este texto en relación con Cristo',
 
   // Book Detail Page
   'back-to-books': 'Volver a Libros',
   'christ-in': 'Cristo en',
+  'points-to-christ': 'Cómo este libro señala a Cristo',
   'read-chapter-online': 'Leer Capítulo en Línea',
   'category-highlight': 'Categoría Destacada',
   'all-categories-in': 'Todas las Categorías en',

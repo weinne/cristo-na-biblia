@@ -49,6 +49,10 @@ export const en = {
   'search-books': 'Search books...',
   'no-books-found': 'No books found.',
   'books-showing': 'Showing {count} books',
+  'bible-books': 'Bible Books',
+  'explore-each-book': 'Explore each book of the Bible and discover how Christ is revealed in each one.',
+  'all': 'All',
+  'categories-count': 'Categories',
 
   // About Page
   'about-title': 'About This Project',
@@ -70,26 +74,27 @@ export const en = {
   'category-books': 'Books featuring this category',
 
   // Category Names
-  'redemptive-progression': 'Redemptive Progression',
-  'promise-fulfillment': 'Promise-Fulfillment',
-  'typology': 'Typology',
-  'analogy': 'Analogy',
-  'longitudinal-themes': 'Longitudinal Themes',
-  'contrast': 'Contrast',
-  'new-testament-references': 'New Testament References',
+  'category-redemptive-progression': 'Redemptive Progression',
+  'category-promise-fulfillment': 'Promise-Fulfillment',
+  'category-typology': 'Typology',
+  'category-analogy': 'Analogy',
+  'category-longitudinal-themes': 'Longitudinal Themes',
+  'category-contrast': 'Contrast',
+  'category-new-testament-references': 'New Testament References',
 
   // Category Descriptions
-  'redemptive-progression-desc': 'How this passage advances God\'s redemptive narrative that culminates in Christ',
-  'promise-fulfillment-desc': 'Divine promises in the Old Testament that find their fulfillment in Christ',
-  'typology-desc': 'People, events, or institutions that foreshadow aspects of Christ\'s person or work',
-  'analogy-desc': 'Similarities between the experiences of characters in the text and Christ\'s experience',
-  'longitudinal-themes-desc': 'Tracing major theological themes from this text through to Christ',
-  'contrast-desc': 'Ways Christ is revealed by contrasting human failure or limitations in the text with Christ\'s perfection',
-  'new-testament-references-desc': 'How New Testament writers interpret this text in relation to Christ',
+  'category-redemptive-progression-desc': 'How this passage advances God\'s redemptive narrative that culminates in Christ',
+  'category-promise-fulfillment-desc': 'Divine promises in the Old Testament that find their fulfillment in Christ',
+  'category-typology-desc': 'People, events, or institutions that foreshadow aspects of Christ\'s person or work',
+  'category-analogy-desc': 'Similarities between the experiences of characters in the text and Christ\'s experience',
+  'category-longitudinal-themes-desc': 'Tracing major theological themes from this text through to Christ',
+  'category-contrast-desc': 'Ways Christ is revealed by contrasting human failure or limitations in the text with Christ\'s perfection',
+  'category-new-testament-references-desc': 'How New Testament writers interpret this text in relation to Christ',
 
   // Book Detail Page
   'back-to-books': 'Back to Books',
   'christ-in': 'Christ in',
+  'points-to-christ': 'How this book points to Christ',
   'read-chapter-online': 'Read Chapter Online',
   'category-highlight': 'Category Highlight',
   'all-categories-in': 'All Categories in',

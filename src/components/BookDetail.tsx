@@ -13,9 +13,9 @@ const formatBibleReference = (reference: string): string => {
   const bookDictionary: Record<string, string> = {
     'Gênesis': 'GEN', 'Genesis': 'GEN', 'Gên': 'GEN', 'Gen': 'GEN', 'Génesis': 'GEN',
     'Êxodo': 'EXO', 'Exodo': 'EXO', 'Êx': 'EXO', 'Ex': 'EXO', 'Éxodo': 'EXO',
-    'Levítico': 'LEV', 'Levitico': 'LEV', 'Lev': 'LEV', 'Levítico': 'LEV',
+    'Levítico': 'LEV', 'Levitico': 'LEV', 'Lev': 'LEV',
     'Números': 'NUM', 'Numeros': 'NUM', 'Núm': 'NUM', 'Num': 'NUM',
-    'Deuteronômio': 'DEU', 'Deuteronomio': 'DEU', 'Deut': 'DEU', 'Deuteronomio': 'DEU',
+    'Deuteronômio': 'DEU', 'Deuteronomio': 'DEU', 'Deut': 'DEU',
     'Josué': 'JOS', 'Josue': 'JOS', 'Jos': 'JOS',
     'Juízes': 'JDG', 'Juizes': 'JDG', 'Jz': 'JDG', 'Jueces': 'JDG',
     'Rute': 'RUT', 'Rut': 'RUT', 'Ruth': 'RUT',
@@ -130,7 +130,7 @@ const BookDetail = ({ book }: BookDetailProps) => {
       </div>
 
       <div className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">{t('points-to-christ')}</h2>
+        <h2 className="text-2xl font-semibold mb-4">{t('christ-in')}</h2>
         <div className="space-y-6">
           {book.christPointers.map((pointer, index) => {
             const category = categories.find(cat => cat.id === pointer.category);
