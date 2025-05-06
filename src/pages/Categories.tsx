@@ -19,9 +19,7 @@ const Categories = () => {
 
   // Map categories to include translated names and descriptions
   const translatedCategories = categories.map(category => ({
-    ...category,
-    displayName: t(`category-${category.id}`),
-    description: t(`category-${category.id}-desc`)
+    ...category
   }));
 
   return (
@@ -34,7 +32,7 @@ const Categories = () => {
         <div className="max-w-7xl mx-auto">
           <CategoryTabs books={books} />
           
-          <CategoryList categories={translatedCategories} />
+          <CategoryList categories={categories} />
           
           <ExploreMoreSection />
         </div>

@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Category } from '@/lib/data';
 import { cn } from '@/lib/utils';
@@ -172,6 +171,10 @@ const CategoryCard = ({ category, index }: CategoryCardProps) => {
   const { t } = useLanguage();
   const exampleVerses = getExampleVerses(category.id);
   
+  // Get translated category name and description
+  const categoryName = t(`category-${category.id}`);
+  const categoryDescription = t(`category-${category.id}-desc`);
+  
   return (
     <motion.div 
       initial={{ opacity: 0, y: 20 }}
@@ -190,8 +193,8 @@ const CategoryCard = ({ category, index }: CategoryCardProps) => {
         </div>
       </div>
       
-      <h3 className="text-xl mb-2 font-bold text-primary dark:text-primary-foreground">{category.displayName}</h3>
-      <p className="text-sm text-muted-foreground flex-grow mb-4">{category.description}</p>
+      <h3 className="text-xl mb-2 font-bold text-primary dark:text-primary-foreground">{categoryName}</h3>
+      <p className="text-sm text-muted-foreground flex-grow mb-4">{categoryDescription}</p>
       
       <motion.div 
         initial={{ opacity: 0, height: 0 }}
@@ -199,7 +202,7 @@ const CategoryCard = ({ category, index }: CategoryCardProps) => {
         className="overflow-hidden"
       >
         <div className="pt-3 pb-4">
-          <p className="text-sm text-muted-foreground mb-4">{category.description}</p>
+          <p className="text-sm text-muted-foreground mb-4">{categoryDescription}</p>
           
           {exampleVerses.length > 0 && (
             <div className="mt-3 space-y-2">
