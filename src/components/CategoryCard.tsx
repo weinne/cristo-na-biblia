@@ -5,6 +5,7 @@ import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
 import { ChartBar, ChartLine, ChartPie, List, Grid, Folder, FolderOpen, View, BookOpen, ArrowRight, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 interface CategoryCardProps {
   category: Category;
@@ -27,7 +28,7 @@ const getGradient = (index: number): string => {
 
 const getCategoryIcon = (categoryId: string) => {
   const icons = {
-    'redemptive-historical': <ChartLine className="h-6 w-6" />,
+    'redemptive-progression': <ChartLine className="h-6 w-6" />,
     'promise-fulfillment': <List className="h-6 w-6" />,
     'typology': <ChartPie className="h-6 w-6" />,
     'analogy': <Grid className="h-6 w-6" />,
@@ -41,7 +42,7 @@ const getCategoryIcon = (categoryId: string) => {
 
 const getBookCount = (categoryId: string): number => {
   const counts = {
-    'redemptive-historical': 42,
+    'redemptive-progression': 42,
     'promise-fulfillment': 37,
     'typology': 29,
     'analogy': 25,
@@ -55,7 +56,7 @@ const getBookCount = (categoryId: string): number => {
 
 const getExampleVerses = (categoryId: string): string[] => {
   const verses = {
-    'redemptive-historical': ['Gênesis 3:15', 'Êxodo 12:1-28', 'Isaías 53:1-12'],
+    'redemptive-progression': ['Gênesis 3:15', 'Êxodo 12:1-28', 'Isaías 53:1-12'],
     'promise-fulfillment': ['Gênesis 12:1-3', 'Isaías 7:14', 'Miquéias 5:2'],
     'typology': ['Êxodo 12:1-28', 'Jonas 1:17', 'Levítico 16:1-34'],
     'analogy': ['Salmos 22:1-31', 'Isaías 54:5-8', 'Oséias 11:1'],
@@ -65,20 +66,6 @@ const getExampleVerses = (categoryId: string): string[] => {
   };
   
   return verses[categoryId as keyof typeof verses] || [];
-};
-
-const getCategoryDescription = (categoryId: string): string => {
-  const descriptions = {
-    'redemptive-historical': "Esta categoria traça como as passagens se encaixam no amplo desdobramento do plano redentor de Deus ao longo da história, culminando em Cristo.",
-    'promise-fulfillment': "Identifica promessas feitas no Antigo Testamento que encontram seu cumprimento em Cristo, demonstrando a fidelidade de Deus.",
-    'typology': "Reconhece pessoas, eventos ou instituições do Antigo Testamento como 'tipos' que prefiguram aspectos de Cristo ou Sua obra.",
-    'analogy': "Estabelece paralelos entre as ações de Deus no Antigo Testamento e Suas ações através de Cristo, revelando a consistência do caráter divino.",
-    'longitudinal-themes': "Segue temas bíblicos principais à medida que se desenvolvem através das Escrituras e encontram sua culminação em Cristo.",
-    'new-testament-references': "Utiliza citações do Novo Testamento referentes a passagens do Antigo Testamento para mostrar conexões com Cristo.",
-    'contrast': "Destaca como Cristo é maior ou diferente das figuras ou instituições do Antigo Testamento, enfatizando Sua superioridade."
-  };
-  
-  return descriptions[categoryId as keyof typeof descriptions] || "";
 };
 
 // Book dictionary for formatting Bible references
@@ -182,8 +169,8 @@ const formatBibleReference = (reference: string): string => {
 
 const CategoryCard = ({ category, index }: CategoryCardProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const { t } = useLanguage();
   const exampleVerses = getExampleVerses(category.id);
-  const extendedDescription = getCategoryDescription(category.id);
   
   return (
     <motion.div 
@@ -196,14 +183,14 @@ const CategoryCard = ({ category, index }: CategoryCardProps) => {
       <div className="absolute top-0 left-0 w-1 h-full bg-accent"></div>
       <div className="flex justify-between items-start mb-4">
         <span className="text-xs rounded-full px-2 py-1 bg-accent/10 text-accent w-fit">
-          Categoria {index + 1}
+          {t('categories-count')} {index + 1}
         </span>
         <div className="text-accent/80">
           {getCategoryIcon(category.id)}
         </div>
       </div>
       
-      <h3 className="text-xl mb-2 font-bold text-primary dark:text-primary-foreground">{category.name}</h3>
+      <h3 className="text-xl mb-2 font-bold text-primary dark:text-primary-foreground">{category.displayName}</h3>
       <p className="text-sm text-muted-foreground flex-grow mb-4">{category.description}</p>
       
       <motion.div 
@@ -212,11 +199,11 @@ const CategoryCard = ({ category, index }: CategoryCardProps) => {
         className="overflow-hidden"
       >
         <div className="pt-3 pb-4">
-          <p className="text-sm text-muted-foreground mb-4">{extendedDescription}</p>
+          <p className="text-sm text-muted-foreground mb-4">{category.description}</p>
           
           {exampleVerses.length > 0 && (
             <div className="mt-3 space-y-2">
-              <h4 className="text-sm font-medium text-primary dark:text-primary-foreground">Exemplos de Versículos:</h4>
+              <h4 className="text-sm font-medium text-primary dark:text-primary-foreground">{t('category-books')}:</h4>
               <div className="flex flex-wrap gap-2">
                 {exampleVerses.map((verse, i) => {
                   const formattedVerse = formatBibleReference(verse);
@@ -241,7 +228,7 @@ const CategoryCard = ({ category, index }: CategoryCardProps) => {
       
       <div className="mt-auto pt-4 border-t border-border/30 dark:border-border/10">
         <div className="flex items-center justify-between">
-          <span className="text-xs text-muted-foreground">Livros que usam esta categoria:</span>
+          <span className="text-xs text-muted-foreground">{t('category-books')}:</span>
           <span className="text-lg font-bold text-accent">{getBookCount(category.id)}</span>
         </div>
         <div className="w-full bg-muted/30 h-2 rounded-full mt-2 overflow-hidden dark:bg-muted/10">
@@ -255,7 +242,7 @@ const CategoryCard = ({ category, index }: CategoryCardProps) => {
           onClick={() => setIsExpanded(!isExpanded)}
           className="w-full mt-4 text-xs font-medium text-accent flex items-center justify-center hover:underline"
         >
-          {isExpanded ? "Mostrar menos" : "Mostrar mais"}
+          {isExpanded ? t('less') : t('more')}
           <motion.div
             animate={{ rotate: isExpanded ? 180 : 0 }}
             transition={{ duration: 0.3 }}

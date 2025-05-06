@@ -1,3 +1,4 @@
+
 export const pt = {
   // Navbar
   'language': 'Idioma',
@@ -129,6 +130,8 @@ export const pt = {
   'delete': 'Excluir',
   'edit': 'Editar',
   'create': 'Criar',
+  'more': 'Mostrar mais',
+  'less': 'Mostrar menos',
   
   // Bible Books (Old Testament)
   'book-genesis': 'Gênesis',
