@@ -1,4 +1,3 @@
-
 export const pt = {
   // Navbar
   'language': 'Idioma',
@@ -205,5 +204,38 @@ export const pt = {
   'christ-in-genesis': 'Em Gênesis, Cristo é revelado como o Criador, a semente prometida da mulher, o Cordeiro de Deus, e o Filho de Abraão.',
   'christ-in-exodus': 'Em Êxodo, Cristo é prefigurado no cordeiro pascal, no maná do céu, na água da rocha, e como o mediador da aliança.',
   'christ-in-leviticus': 'Em Levítico, Cristo é visto em todo o sistema sacrificial, no sumo sacerdote, e nas festividades que apontam para Sua obra redentora.',
-  'christ-in-revelation': 'Em Apocalipse, Cristo é o Alfa e o Ômega, o Cordeiro que foi morto, o Rei dos reis que retorna em glória para julgar e reinar eternamente.'
+  'christ-in-revelation': 'Em Apocalipse, Cristo é o Alfa e o Ômega, o Cordeiro que foi morto, o Rei dos reis que retorna em glória para julgar e reinar eternamente.',
+
+  // Categories Page Additional Keys
+  'about-categories': 'Sobre Categorias',
+  'who-is-greidanus': 'Quem é Greidanus',
+  'statistics': 'Estatísticas',
+  'seeing-christ': 'Vendo Cristo em Toda a Escritura',
+  'greidanus-proposed': 'Sidney Greidanus propôs sete maneiras confiáveis de ver Cristo nas Escrituras. Estas categorias fornecem uma estrutura para entender as várias formas como Jesus é revelado em toda a Bíblia.',
+  'solid-methods': 'Métodos Hermenêuticos Sólidos',
+  'categories-represent': 'Cada categoria representa uma abordagem fundamentada em princípios hermenêuticos sólidos para conectar o texto bíblico a Cristo sem cair na alegorização ou eisegese.',
+  'christocentric-tool': 'Uma Ferramenta Cristocêntrica',
+  'guide-created': 'Este guia foi criado para ajudá-lo a ler as Escrituras com uma perspectiva centrada em Cristo, reconhecendo como toda a Escritura aponta para Ele de várias maneiras.',
+  'dr-greidanus': 'Dr. Sidney Greidanus',
+  'greidanus-bio': 'Sidney Greidanus é um respeitado estudioso e professor emérito de pregação no Seminário Teológico Calvin. Seu trabalho sobre a pregação cristocêntrica tem sido influente em ajudar pastores e professores a conectar toda a Bíblia a Cristo de maneiras responsáveis.',
+  'main-works': 'Principais Obras',
+  'greidanus-work': 'Seu trabalho fornece uma base para entender como ver Cristo em toda a Escritura, respeitando o contexto original e a intenção de cada passagem.',
+  'categories-count-title': 'Categorias',
+  'different-ways': 'Diferentes maneiras como Cristo é revelado nas Escrituras',
+  'promise-based': 'Baseadas em promessa',
+  'pattern-based': 'Baseadas em padrões',
+  'bible-books-count': 'Livros da Bíblia',
+  'old-testament-count': 'Antigo Testamento',
+  'new-testament-count': 'Novo Testamento',
+  'distribution-by-category': 'Distribuição por Categoria',
+  'occurrences-by-category': 'Ocorrências de cada categoria nas Escrituras',
+  'typology': 'Tipologia',
+  'promise-fulfillment': 'Promessa-Cumprimento',
+  'new-testament-refs': 'Referências do NT',
+  'ready-to-explore': 'Pronto para Explorar os Livros?',
+  'discover-how': 'Descubra como Cristo é revelado em cada livro da Bíblia usando estas categorias.',
+  'see-all-books': 'Ver Todos os Livros',
+  'hermeneutic-methods': 'Métodos Hermenêuticos',
+  'greidanus-categories-title': 'Categorias de Greidanus',
+  'explore-seven-ways': 'Explore sete maneiras pelas quais Cristo é revelado em todo o texto bíblico, desde promessa até tipologia e referências do Novo Testamento.'
 };
