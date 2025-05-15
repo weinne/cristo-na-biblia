@@ -17,11 +17,6 @@ const Categories = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Map categories to include translated names and descriptions
-  const translatedCategories = categories.map(category => ({
-    ...category
-  }));
-
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />

@@ -1,4 +1,3 @@
-
 export const pt = {
   // Navbar
   'language': 'Idioma',

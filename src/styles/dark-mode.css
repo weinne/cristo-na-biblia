@@ -1,40 +1,50 @@
 
-/* Dark mode adjustments for better contrast */
-.dark p {
-  @apply text-gray-300;
+/* Dark mode styles */
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 0 0% 98%;
+  --primary-foreground: 240 5.9% 10%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --ring: 240 4.9% 83.9%;
+  
+  @apply bg-gray-950 text-gray-100;
 }
 
-.dark .text-muted-foreground {
-  @apply text-gray-400;
-}
-
-.dark code {
-  @apply bg-gray-800 text-gray-200;
-}
-
-.dark blockquote {
-  @apply border-l-4 border-gray-700 bg-gray-800/40;
-}
-
-/* Dark mode adjustments for better contrast */
-.dark .bg-white {
-  @apply bg-gray-900;
-}
-
-.dark .bg-gray-50 {
-  @apply bg-gray-900;
-}
-
-.dark .bg-gray-100 {
-  @apply bg-gray-800;
-}
-
-/* Extra dark mode improvements */
 .dark .glass-card {
-  @apply shadow-lg shadow-black/20;
+  @apply bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-800 shadow-xl;
 }
 
-.dark a:not(.btn):not(.nav-link) {
+.dark .nav-link {
+  @apply text-gray-300 hover:text-white;
+}
+
+.dark .nav-link.active {
+  @apply text-white;
+}
+
+.dark .category-selector {
+  @apply bg-gray-800 text-white;
+}
+
+.dark .bible-reference {
+  @apply bg-gray-800/40 hover:bg-gray-800/60;
+}
+
+.dark a {
   @apply text-blue-400 hover:text-blue-300;
 }
 
@@ -61,51 +71,33 @@
 }
 
 .dark .bg-card {
-  @apply bg-gray-800/90;
+  @apply bg-gray-900;
 }
 
-/* Improve focus styles in dark mode */
-.dark *:focus-visible {
-  @apply outline-none ring-2 ring-blue-500/50;
+.dark .dark-card {
+  @apply bg-gray-900 border-gray-800;
 }
 
-/* Specific fixes for dark mode text contrast */
-.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
-  @apply text-gray-100;
+.dark .card-hover:hover {
+  @apply bg-gray-800;
 }
 
-.dark .text-primary {
-  @apply text-gray-100;
+.dark .form-input {
+  @apply bg-gray-800 border-gray-700 text-white;
 }
 
-.dark span.text-primary {
-  @apply text-gray-200;
+.dark .category-pill {
+  @apply bg-gray-800 text-gray-300 hover:bg-gray-700;
 }
 
-.dark .glass-card h3 {
-  @apply text-gray-100;
+.dark .category-pill.active {
+  @apply bg-blue-900 text-blue-100;
 }
 
-.dark .glass-card p {
-  @apply text-gray-300;
+.dark .scroll-button {
+  @apply bg-gray-800 hover:bg-gray-700 text-gray-300;
 }
 
-/* Fix for language switcher and theme toggle in dark mode */
-.dark .text-primary.hover\:text-accent {
-  @apply text-gray-200 hover:text-accent-foreground;
-}
-
-/* Fix for navbar in dark mode */
-.dark nav.bg-white\/80 {
-  @apply bg-gray-900/90 shadow-gray-900/50;
-}
-
-/* Ensure buttons in dark mode have readable text */
-.dark .bg-white {
-  @apply text-gray-900;
-}
-
-/* Fix for nav links in dark mode */
-.dark nav a.text-primary\/80 {
-  @apply text-gray-300 hover:text-white;
+.dark .filter-badge {
+  @apply bg-gray-800 text-gray-300;
 }

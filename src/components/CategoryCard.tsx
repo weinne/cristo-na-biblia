@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Category } from '@/lib/data';
 import { cn } from '@/lib/utils';
@@ -174,6 +175,9 @@ const CategoryCard = ({ category, index }: CategoryCardProps) => {
   // Get translated category name and description
   const categoryName = t(`category-${category.id}`);
   const categoryDescription = t(`category-${category.id}-desc`);
+  
+  // For debugging only - check the translation keys
+  console.log(`Category ID: ${category.id}, Translation Key: category-${category.id}, Result: ${categoryName}`);
   
   return (
     <motion.div 
