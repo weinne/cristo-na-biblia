@@ -23,13 +23,6 @@
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
     <script>
-      // Catch-all route to serve index.html for all routes
-      window.addEventListener('load', function() {
-        if (!location.hash) {
-          location.replace('/#' + location.pathname);
-        }
-      });
-
       // Register service worker for PWA
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
