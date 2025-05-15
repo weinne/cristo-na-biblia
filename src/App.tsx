@@ -39,7 +39,7 @@ const App = () => (
     <LanguageProvider>
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>
-          <HashRouter>
+          <HashRouter basename="/">
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/books" element={<Books />} />
@@ -48,10 +48,10 @@ const App = () => (
               <Route path="/about" element={<About />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
+            <RefTaggerLoader />
+            <Toaster />
+            <Sonner />
           </HashRouter>
-          <RefTaggerLoader />
-          <Toaster />
-          <Sonner />
         </TooltipProvider>
       </QueryClientProvider>
     </LanguageProvider>

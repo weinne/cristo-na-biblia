@@ -74,6 +74,7 @@ export const pt = {
 
   // Category Names
   'category-redemptive-progression': 'Histórico Redentivo',
+  'category-redemptive-historical': 'Histórico Redentivo',
   'category-promise-fulfillment': 'Promessa-Cumprimento',
   'category-typology': 'Tipologia',
   'category-analogy': 'Analogia',
@@ -83,6 +84,7 @@ export const pt = {
 
   // Category Descriptions
   'category-redemptive-progression-desc': 'Como esta passagem avança a narrativa redentora de Deus que culmina em Cristo',
+  'category-redemptive-historical-desc': 'Como esta passagem avança a narrativa redentora de Deus que culmina em Cristo',
   'category-promise-fulfillment-desc': 'Promessas divinas no Antigo Testamento que encontram seu cumprimento em Cristo',
   'category-typology-desc': 'Pessoas, eventos ou instituições que prefiguram aspectos da pessoa ou obra de Cristo',
   'category-analogy-desc': 'Semelhanças entre as experiências dos personagens no texto e a experiência de Cristo',

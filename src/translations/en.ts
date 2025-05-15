@@ -1,4 +1,3 @@
-
 export const en = {
   // Navbar
   'language': 'Language',
@@ -106,6 +105,7 @@ export const en = {
   
   // Category Names
   'category-redemptive-progression': 'Redemptive Progression',
+  'category-redemptive-historical': 'Redemptive Progression',
   'category-promise-fulfillment': 'Promise-Fulfillment',
   'category-typology': 'Typology',
   'category-analogy': 'Analogy',
@@ -115,6 +115,7 @@ export const en = {
 
   // Category Descriptions
   'category-redemptive-progression-desc': 'How this passage advances God\'s redemptive narrative that culminates in Christ',
+  'category-redemptive-historical-desc': 'How this passage advances God\'s redemptive narrative that culminates in Christ',
   'category-promise-fulfillment-desc': 'Divine promises in the Old Testament that find their fulfillment in Christ',
   'category-typology-desc': 'People, events, or institutions that foreshadow aspects of Christ\'s person or work',
   'category-analogy-desc': 'Similarities between the experiences of characters in the text and Christ\'s experience',
