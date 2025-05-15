@@ -3,3 +3,8 @@
 @import './styles/animations.css';
 @import './styles/dark-mode.css';
 @import './styles/components.css';
+
+/* Fix for navigation in Lovable preview */
+iframe {
+  pointer-events: auto !important;
+}

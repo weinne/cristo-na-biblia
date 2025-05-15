@@ -39,7 +39,8 @@ const App = () => (
     <LanguageProvider>
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>
-          <HashRouter basename="/">
+          {/* Removed basename prop as it's not needed with HashRouter and could be causing the issue */}
+          <HashRouter>
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/books" element={<Books />} />

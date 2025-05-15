@@ -172,12 +172,27 @@ const CategoryCard = ({ category, index }: CategoryCardProps) => {
   const { t } = useLanguage();
   const exampleVerses = getExampleVerses(category.id);
   
-  // Get translated category name and description
-  const categoryName = t(`category-${category.id}`);
-  const categoryDescription = t(`category-${category.id}-desc`);
+  // Fix for the translation issue - handle both keys properly
+  // Make sure to handle the standard ID (redemptive-historical) and the alternate ID (redemptive-progression)
+  let categoryName = '';
+  let categoryDescription = '';
   
-  // For debugging only - check the translation keys
-  console.log(`Category ID: ${category.id}, Translation Key: category-${category.id}, Result: ${categoryName}`);
+  // Map redemptive-historical to its correct translation key if needed
+  const translationKey = category.id === 'redemptive-historical' ? 
+    'category-redemptive-historical' : 
+    `category-${category.id}`;
+    
+  const descKey = category.id === 'redemptive-historical' ? 
+    'category-redemptive-historical-desc' : 
+    `category-${category.id}-desc`;
+    
+  categoryName = t(translationKey);
+  categoryDescription = t(descKey);
+  
+  // For debugging only - add detailed logging
+  console.log(`Category ID: ${category.id}`);
+  console.log(`Translation Key: ${translationKey}, Result: ${categoryName}`);
+  console.log(`Description Key: ${descKey}, Result: ${categoryDescription}`);
   
   return (
     <motion.div 
@@ -220,7 +235,7 @@ const CategoryCard = ({ category, index }: CategoryCardProps) => {
                       href={`https://www.bible.com/pt/bible/1608/${formattedVerse}.ARA`}
                       target="_blank"
                       rel="noopener noreferrer" 
-                      className="text-xs bg-accent/10 text-accent px-2 py-1 rounded-full bible-reference flex items-center hover:bg-accent/20 transition-colors dark:bg-accent/20 dark:hover:bg-accent/30"
+                      className="text-xs bg-accent/10 text-accent px-2 py-1 rounded-full bible-reference flex items-center hover:bg-accent/20 transition-colors dark:bg-gray-800/40 dark:hover:bg-gray-800/60"
                     >
                       {verse}
                       <ExternalLink size={10} className="ml-1" />
