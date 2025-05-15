@@ -1,3 +1,4 @@
+
 export const pt = {
   // Navbar
   'language': 'Idioma',
@@ -73,7 +74,7 @@ export const pt = {
   'category-books': 'Livros que apresentam esta categoria',
 
   // Category Names
-  'category-redemptive-progression': 'Progressão Redentora', 
+  'category-redemptive-progression': 'Histórico Redentivo',
   'category-promise-fulfillment': 'Promessa-Cumprimento',
   'category-typology': 'Tipologia',
   'category-analogy': 'Analogia',
