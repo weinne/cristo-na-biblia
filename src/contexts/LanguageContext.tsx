@@ -27,10 +27,26 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
   }, [language]);
 
   const t = (key: string) => {
+    // Check if the key exists in the current language
     if (!translations[language][key]) {
       console.log(`Missing translation for key "${key}" in language "${language}"`);
+      
+      // If missing in current language, try to use Portuguese as fallback
+      if (translations.pt[key]) {
+        return translations.pt[key];
+      }
+      
+      // If missing in Portuguese too, try English as second fallback
+      if (translations.en[key]) {
+        return translations.en[key];
+      }
+      
+      // Last resort: return the key itself
+      return key;
     }
-    return translations[language][key] || translations.pt[key] || key;
+    
+    // Return the translation if it exists
+    return translations[language][key];
   };
 
   const value = {

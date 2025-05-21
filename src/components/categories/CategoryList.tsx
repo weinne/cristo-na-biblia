@@ -11,9 +11,17 @@ interface CategoryListProps {
 const CategoryList = ({ categories }: CategoryListProps) => {
   const { t, language } = useLanguage();
   
-  // Add debug logging
+  // Enhanced debug logging
   console.log('Current language:', language);
   console.log('Categories being rendered:', categories);
+  
+  // Log category translations for debugging
+  categories.forEach((category, index) => {
+    const translationKey = category.id === 'redemptive-historical' ? 
+      'category-redemptive-historical' : 
+      `category-${category.id}`;
+    console.log(`Category ${index} (${category.id}) translation:`, t(translationKey));
+  });
   
   return (
     <motion.div 
