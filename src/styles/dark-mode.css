@@ -101,3 +101,41 @@
 .dark .filter-badge {
   @apply bg-gray-800 text-gray-300;
 }
+
+/* Melhorias para o seletor de abas no modo escuro */
+.dark .bg-secondary\/20 {
+  @apply bg-gray-800/30;
+}
+
+.dark button.bg-white {
+  @apply bg-indigo-600 text-white hover:bg-indigo-700;
+}
+
+.dark .bg-secondary\/10 {
+  @apply bg-gray-800/50 border border-gray-700;
+}
+
+/* Melhorias para os cards de categorias no modo escuro */
+.dark .glass-card {
+  @apply bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 shadow-lg;
+}
+
+.dark .bg-accent\/10 {
+  @apply bg-indigo-900/20 text-indigo-300;
+}
+
+.dark .text-accent {
+  @apply text-indigo-300;
+}
+
+.dark .bg-accent\/70 {
+  @apply bg-indigo-600;
+}
+
+.dark .border-border\/30 {
+  @apply border-gray-700;
+}
+
+.dark .bg-muted\/30 {
+  @apply bg-gray-700/30;
+}

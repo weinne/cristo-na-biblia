@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Category } from '@/lib/data';
 import { cn } from '@/lib/utils';
@@ -6,24 +5,37 @@ import { motion } from 'framer-motion';
 import { ChartBar, ChartLine, ChartPie, List, Grid, Folder, FolderOpen, View, BookOpen, ArrowRight, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useTheme } from '@/components/ThemeProvider';
 
 interface CategoryCardProps {
   category: Category;
   index: number;
 }
 
-const getGradient = (index: number): string => {
-  const gradients = [
-    "from-blue-100 to-purple-100 dark:from-blue-950/40 dark:to-purple-950/40",
-    "from-green-100 to-yellow-100 dark:from-green-950/40 dark:to-yellow-950/40",
-    "from-pink-100 to-red-100 dark:from-pink-950/40 dark:to-red-950/40",
-    "from-purple-100 to-indigo-100 dark:from-purple-950/40 dark:to-indigo-950/40",
-    "from-yellow-100 to-orange-100 dark:from-yellow-950/40 dark:to-orange-950/40",
-    "from-indigo-100 to-blue-100 dark:from-indigo-950/40 dark:to-blue-950/40",
-    "from-red-100 to-pink-100 dark:from-red-950/40 dark:to-pink-950/40",
+const getGradient = (index: number, isDark: boolean): string => {
+  // Gradientes para o modo claro
+  const lightGradients = [
+    "from-blue-100 to-purple-100",
+    "from-green-100 to-yellow-100",
+    "from-pink-100 to-red-100",
+    "from-purple-100 to-indigo-100",
+    "from-yellow-100 to-orange-100",
+    "from-indigo-100 to-blue-100",
+    "from-red-100 to-pink-100",
   ];
   
-  return gradients[index % gradients.length];
+  // Gradientes específicos para modo escuro com melhor visibilidade
+  const darkGradients = [
+    "from-blue-950/40 to-purple-950/40",
+    "from-green-950/40 to-yellow-950/40",
+    "from-pink-950/40 to-red-950/40",
+    "from-purple-950/40 to-indigo-950/40",
+    "from-yellow-950/40 to-orange-950/40",
+    "from-indigo-950/40 to-blue-950/40",
+    "from-red-950/40 to-pink-950/40",
+  ];
+  
+  return isDark ? darkGradients[index % darkGradients.length] : lightGradients[index % lightGradients.length];
 };
 
 const getCategoryIcon = (categoryId: string) => {
@@ -170,6 +182,8 @@ const formatBibleReference = (reference: string): string => {
 const CategoryCard = ({ category, index }: CategoryCardProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const { t } = useLanguage();
+  const { theme } = useTheme();
+  const isDark = theme === 'dark';
   const exampleVerses = getExampleVerses(category.id);
   
   // Fix for the translation issue - handle both keys properly
@@ -200,14 +214,24 @@ const CategoryCard = ({ category, index }: CategoryCardProps) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       whileHover={{ scale: 1.03, transition: { duration: 0.2 } }}
-      className={`glass-card rounded-lg p-6 h-full flex flex-col transition-all duration-300 hover:shadow-lg overflow-hidden bg-gradient-to-br ${getGradient(index)} dark:border-gray-800`}
+      className={cn(
+        "glass-card rounded-lg p-6 h-full flex flex-col transition-all duration-300 hover:shadow-lg overflow-hidden bg-gradient-to-br",
+        getGradient(index, isDark),
+        isDark ? "border-gray-800 shadow-xl" : ""
+      )}
     >
-      <div className="absolute top-0 left-0 w-1 h-full bg-accent"></div>
+      <div className={cn(
+        "absolute top-0 left-0 w-1 h-full",
+        isDark ? "bg-indigo-700" : "bg-accent"
+      )}></div>
       <div className="flex justify-between items-start mb-4">
-        <span className="text-xs rounded-full px-2 py-1 bg-accent/10 text-accent w-fit">
+        <span className={cn(
+          "text-xs rounded-full px-2 py-1 w-fit",
+          isDark ? "bg-indigo-900/30 text-indigo-300" : "bg-accent/10 text-accent"
+        )}>
           {t('categories-count')} {index + 1}
         </span>
-        <div className="text-accent/80">
+        <div className={isDark ? "text-indigo-300" : "text-accent/80"}>
           {getCategoryIcon(category.id)}
         </div>
       </div>
@@ -235,7 +259,12 @@ const CategoryCard = ({ category, index }: CategoryCardProps) => {
                       href={`https://www.bible.com/pt/bible/1608/${formattedVerse}.ARA`}
                       target="_blank"
                       rel="noopener noreferrer" 
-                      className="text-xs bg-accent/10 text-accent px-2 py-1 rounded-full bible-reference flex items-center hover:bg-accent/20 transition-colors dark:bg-gray-800/40 dark:hover:bg-gray-800/60"
+                      className={cn(
+                        "text-xs px-2 py-1 rounded-full bible-reference flex items-center transition-colors",
+                        isDark 
+                          ? "bg-gray-800/40 hover:bg-gray-800/60 text-indigo-300" 
+                          : "bg-accent/10 text-accent hover:bg-accent/20"
+                      )}
                     >
                       {verse}
                       <ExternalLink size={10} className="ml-1" />
@@ -248,21 +277,36 @@ const CategoryCard = ({ category, index }: CategoryCardProps) => {
         </div>
       </motion.div>
       
-      <div className="mt-auto pt-4 border-t border-border/30 dark:border-border/10">
+      <div className={cn(
+        "mt-auto pt-4 border-t",
+        isDark ? "border-gray-700" : "border-border/30 dark:border-border/10"
+      )}>
         <div className="flex items-center justify-between">
           <span className="text-xs text-muted-foreground">{t('category-books')}:</span>
-          <span className="text-lg font-bold text-accent">{getBookCount(category.id)}</span>
+          <span className={cn(
+            "text-lg font-bold",
+            isDark ? "text-indigo-300" : "text-accent"
+          )}>{getBookCount(category.id)}</span>
         </div>
-        <div className="w-full bg-muted/30 h-2 rounded-full mt-2 overflow-hidden dark:bg-muted/10">
+        <div className={cn(
+          "w-full h-2 rounded-full mt-2 overflow-hidden",
+          isDark ? "bg-gray-800" : "bg-muted/30 dark:bg-muted/10"
+        )}>
           <div 
-            className="h-full bg-accent/70 rounded-full" 
+            className={cn(
+              "h-full rounded-full",
+              isDark ? "bg-indigo-600" : "bg-accent/70"
+            )}
             style={{ width: `${(getBookCount(category.id) / 66) * 100}%` }}
           ></div>
         </div>
         
         <button 
           onClick={() => setIsExpanded(!isExpanded)}
-          className="w-full mt-4 text-xs font-medium text-accent flex items-center justify-center hover:underline"
+          className={cn(
+            "w-full mt-4 text-xs font-medium flex items-center justify-center hover:underline",
+            isDark ? "text-indigo-300" : "text-accent"
+          )}
         >
           {isExpanded ? t('less') : t('more')}
           <motion.div
