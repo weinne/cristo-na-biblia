@@ -81,80 +81,10 @@ const getExampleVerses = (categoryId: string): string[] => {
   return verses[categoryId as keyof typeof verses] || [];
 };
 
-// Book dictionary for formatting Bible references
-const bookDictionary: Record<string, string> = {
-  // Old Testament
-  'Gênesis': 'GEN', 'Genesis': 'GEN', 'Gên': 'GEN', 'Gen': 'GEN',
-  'Êxodo': 'EXO', 'Exodo': 'EXO', 'Êx': 'EXO', 'Ex': 'EXO',
-  'Levítico': 'LEV', 'Levitico': 'LEV', 'Lev': 'LEV', 'Lv': 'LEV',
-  'Números': 'NUM', 'Numeros': 'NUM', 'Núm': 'NUM', 'Num': 'NUM',
-  'Deuteronômio': 'DEU', 'Deuteronomio': 'DEU', 'Deut': 'DEU', 'Dt': 'DEU',
-  'Josué': 'JOS', 'Josue': 'JOS', 'Jos': 'JOS', 'Js': 'JOS',
-  'Juízes': 'JDG', 'Juizes': 'JDG', 'Juiz': 'JDG', 'Jz': 'JDG',
-  'Rute': 'RUT', 'Rt': 'RUT',
-  '1 Samuel': '1SA', '1Samuel': '1SA', '1Sm': '1SA', '1 Sm': '1SA',
-  '2 Samuel': '2SA', '2Samuel': '2SA', '2Sm': '2SA', '2 Sm': '2SA',
-  '1 Reis': '1KI', '1Reis': '1KI', '1Rs': '1KI', '1 Rs': '1KI',
-  '2 Reis': '2KI', '2Reis': '2KI', '2Rs': '2KI', '2 Rs': '2KI',
-  '1 Crônicas': '1CH', '1Cronicas': '1CH', '1Cr': '1CH', '1 Cr': '1CH',
-  '2 Crônicas': '2CH', '2Cronicas': '2CH', '2Cr': '2CH', '2 Cr': '2CH',
-  'Esdras': 'EZR', 'Esd': 'EZR', 'Ed': 'EZR',
-  'Neemias': 'NEH', 'Ne': 'NEH',
-  'Ester': 'EST', 'Est': 'EST', 'Et': 'EST',
-  'Jó': 'JOB', 'Job': 'JOB',
-  'Salmos': 'PSA', 'Sl': 'PSA', 'Salmo': 'PSA',
-  'Provérbios': 'PRO', 'Proverbios': 'PRO', 'Pv': 'PRO', 'Pr': 'PRO',
-  'Eclesiastes': 'ECC', 'Ec': 'ECC',
-  'Cantares': 'SNG', 'Cânticos': 'SNG', 'Ct': 'SNG',
-  'Isaías': 'ISA', 'Isaias': 'ISA', 'Is': 'ISA',
-  'Jeremias': 'JER', 'Jr': 'JER',
-  'Lamentações': 'LAM', 'Lamentacoes': 'LAM', 'Lm': 'LAM',
-  'Ezequiel': 'EZK', 'Ez': 'EZK',
-  'Daniel': 'DAN', 'Dn': 'DAN',
-  'Oséias': 'HOS', 'Oseias': 'HOS', 'Os': 'HOS',
-  'Joel': 'JOL', 'Jl': 'JOL',
-  'Amós': 'AMO', 'Amos': 'AMO', 'Am': 'AMO',
-  'Obadias': 'OBA', 'Ob': 'OBA',
-  'Jonas': 'JON', 'Jn': 'JON',
-  'Miquéias': 'MIC', 'Miqueias': 'MIC', 'Mq': 'MIC',
-  'Naum': 'NAM', 'Na': 'NAM',
-  'Habacuque': 'HAB', 'Hc': 'HAB',
-  'Sofonias': 'ZEP', 'Sf': 'ZEP',
-  'Ageu': 'HAG', 'Ag': 'HAG',
-  'Zacarias': 'ZEC', 'Zc': 'ZEC',
-  'Malaquias': 'MAL', 'Ml': 'MAL',
+// Function to format Bible references using the right translation
+const formatBibleReference = (reference: string, language: string): string => {
+  const { t } = useLanguage();
   
-  // New Testament
-  'Mateus': 'MAT', 'Mt': 'MAT',
-  'Marcos': 'MRK', 'Mc': 'MRK',
-  'Lucas': 'LUK', 'Lc': 'LUK',
-  'João': 'JHN', 'Joao': 'JHN', 'Jo': 'JHN',
-  'Atos': 'ACT', 'At': 'ACT',
-  'Romanos': 'ROM', 'Rm': 'ROM',
-  '1 Coríntios': '1CO', '1Corintios': '1CO', '1Co': '1CO', '1 Co': '1CO',
-  '2 Coríntios': '2CO', '2Corintios': '2CO', '2Co': '2CO', '2 Co': '2CO',
-  'Gálatas': 'GAL', 'Galatas': 'GAL', 'Gl': 'GAL',
-  'Efésios': 'EPH', 'Efesios': 'EPH', 'Ef': 'EPH',
-  'Filipenses': 'PHP', 'Fp': 'PHP',
-  'Colossenses': 'COL', 'Cl': 'COL',
-  '1 Tessalonicenses': '1TH', '1Tessalonicenses': '1TH', '1Ts': '1TH', '1 Ts': '1TH',
-  '2 Tessalonicenses': '2TH', '2Tessalonicenses': '2TH', '2Ts': '2TH', '2 Ts': '2TH',
-  '1 Timóteo': '1TI', '1Timoteo': '1TI', '1Tm': '1TI', '1 Tm': '1TI',
-  '2 Timóteo': '2TI', '2Timoteo': '2TI', '2Tm': '2TI', '2 Tm': '2TI',
-  'Tito': 'TIT', 'Tt': 'TIT',
-  'Filemom': 'PHM', 'Fm': 'PHM',
-  'Hebreus': 'HEB', 'Hb': 'HEB',
-  'Tiago': 'JAS', 'Tg': 'JAS',
-  '1 Pedro': '1PE', '1Pedro': '1PE', '1Pe': '1PE', '1 Pe': '1PE',
-  '2 Pedro': '2PE', '2Pedro': '2PE', '2Pe': '2PE', '2 Pe': '2PE',
-  '1 João': '1JN', '1Joao': '1JN', '1Jo': '1JN', '1 Jo': '1JN',
-  '2 João': '2JN', '2Joao': '2JN', '2Jo': '2JN', '2 Jo': '2JN',
-  '3 João': '3JN', '3Joao': '3JN', '3Jo': '3JN', '3 Jo': '3JN',
-  'Judas': 'JUD', 'Jd': 'JUD',
-  'Apocalipse': 'REV', 'Ap': 'REV'
-};
-
-const formatBibleReference = (reference: string): string => {
   // Regular expression to extract book name, chapter and verse
   const regex = /^((?:\d+\s+)?[A-Za-zÀ-ú]+)(?:\s+(\d+)(?:[:\.](\d+)(?:-(\d+))?)?)?/;
   const match = reference.match(regex);
@@ -163,9 +93,193 @@ const formatBibleReference = (reference: string): string => {
   
   const [, bookName, chapter, startVerse, endVerse] = match;
   
-  // Get the English abbreviation for the book
-  const bookCode = bookDictionary[bookName];
-  if (!bookCode) return reference;
+  // Generate the key for the book abbreviation based on the book name
+  const getBookKey = (name: string): string => {
+    // Remove numbers and whitespace
+    const cleanName = name.replace(/^\d+\s+/, '').trim().toLowerCase();
+    
+    // Map of Portuguese book names to standardized keys
+    const bookMap: Record<string, string> = {
+      'gênesis': 'genesis',
+      'genesis': 'genesis',
+      'êxodo': 'exodus',
+      'exodo': 'exodus',
+      'levítico': 'leviticus',
+      'levitico': 'leviticus',
+      'números': 'numbers',
+      'numeros': 'numbers',
+      'deuteronômio': 'deuteronomy',
+      'deuteronomio': 'deuteronomy',
+      'josué': 'joshua',
+      'josue': 'joshua',
+      'juízes': 'judges',
+      'juizes': 'judges',
+      'rute': 'ruth',
+      'samuel': 'samuel',
+      'reis': 'kings',
+      'crônicas': 'chronicles',
+      'cronicas': 'chronicles',
+      'esdras': 'ezra',
+      'neemias': 'nehemiah',
+      'ester': 'esther',
+      'jó': 'job',
+      'jo': 'job',
+      'salmos': 'psalms',
+      'salmo': 'psalms',
+      'provérbios': 'proverbs',
+      'proverbios': 'proverbs',
+      'eclesiastes': 'ecclesiastes',
+      'cânticos': 'song-of-solomon',
+      'canticos': 'song-of-solomon',
+      'cantares': 'song-of-solomon',
+      'isaías': 'isaiah',
+      'isaias': 'isaiah',
+      'jeremias': 'jeremiah',
+      'lamentações': 'lamentations',
+      'lamentacoes': 'lamentations',
+      'ezequiel': 'ezekiel',
+      'daniel': 'daniel',
+      'oséias': 'hosea',
+      'oseias': 'hosea',
+      'joel': 'joel',
+      'amós': 'amos',
+      'amos': 'amos',
+      'obadias': 'obadiah',
+      'jonas': 'jonah',
+      'miquéias': 'micah',
+      'miqueias': 'micah',
+      'naum': 'nahum',
+      'habacuque': 'habakkuk',
+      'sofonias': 'zephaniah',
+      'ageu': 'haggai',
+      'zacarias': 'zechariah',
+      'malaquias': 'malachi',
+      'mateus': 'matthew',
+      'marcos': 'mark',
+      'lucas': 'luke',
+      'joão': 'john',
+      'joao': 'john',
+      'atos': 'acts',
+      'romanos': 'romans',
+      'coríntios': 'corinthians',
+      'corintios': 'corinthians',
+      'gálatas': 'galatians',
+      'galatas': 'galatians',
+      'efésios': 'ephesians',
+      'efesios': 'ephesians',
+      'filipenses': 'philippians',
+      'colossenses': 'colossians',
+      'tessalonicenses': 'thessalonians',
+      'timóteo': 'timothy',
+      'timoteo': 'timothy',
+      'tito': 'titus',
+      'filemom': 'philemon',
+      'hebreus': 'hebrews',
+      'tiago': 'james',
+      'pedro': 'peter',
+      'judas': 'jude',
+      'apocalipse': 'revelation'
+    };
+    
+    // Find matching key
+    for (const [book, key] of Object.entries(bookMap)) {
+      if (cleanName.includes(book)) {
+        // Handle numbered books
+        if (/^\d+\s+/.test(name)) {
+          return `${name.match(/^\d+/)[0]}-${key}`;
+        }
+        return key;
+      }
+    }
+    
+    return cleanName; // fallback
+  };
+  
+  // Get book key from name
+  const bookKey = getBookKey(bookName);
+  
+  // Get the abbreviation from translations
+  const abbr = t(`abbr-${bookKey}`);
+  
+  // Use the English format for YouVersion Bible
+  const getYouVersionBookCode = (bookName: string): string => {
+    // Book dictionary for YouVersion Bible API codes
+    const bookDictionary: Record<string, string> = {
+      // Old Testament
+      'Gênesis': 'GEN', 'Genesis': 'GEN', 'Gên': 'GEN', 'Gen': 'GEN',
+      'Êxodo': 'EXO', 'Exodo': 'EXO', 'Êx': 'EXO', 'Ex': 'EXO',
+      'Levítico': 'LEV', 'Levitico': 'LEV', 'Lev': 'LEV', 'Lv': 'LEV',
+      'Números': 'NUM', 'Numeros': 'NUM', 'Núm': 'NUM', 'Num': 'NUM', 'Nm': 'NUM',
+      'Deuteronômio': 'DEU', 'Deuteronomio': 'DEU', 'Deut': 'DEU', 'Dt': 'DEU',
+      'Josué': 'JOS', 'Josue': 'JOS', 'Jos': 'JOS', 'Js': 'JOS',
+      'Juízes': 'JDG', 'Juizes': 'JDG', 'Juiz': 'JDG', 'Jz': 'JDG',
+      'Rute': 'RUT', 'Rt': 'RUT',
+      '1 Samuel': '1SA', '1Samuel': '1SA', '1Sm': '1SA', '1 Sm': '1SA',
+      '2 Samuel': '2SA', '2Samuel': '2SA', '2Sm': '2SA', '2 Sm': '2SA',
+      '1 Reis': '1KI', '1Reis': '1KI', '1Rs': '1KI', '1 Rs': '1KI',
+      '2 Reis': '2KI', '2Reis': '2KI', '2Rs': '2KI', '2 Rs': '2KI',
+      '1 Crônicas': '1CH', '1Cronicas': '1CH', '1Cr': '1CH', '1 Cr': '1CH',
+      '2 Crônicas': '2CH', '2Cronicas': '2CH', '2Cr': '2CH', '2 Cr': '2CH',
+      'Esdras': 'EZR', 'Esd': 'EZR', 'Ed': 'EZR',
+      'Neemias': 'NEH', 'Ne': 'NEH',
+      'Ester': 'EST', 'Est': 'EST', 'Et': 'EST',
+      'Jó': 'JOB', 'Job': 'JOB',
+      'Salmos': 'PSA', 'Sl': 'PSA', 'Salmo': 'PSA',
+      'Provérbios': 'PRO', 'Proverbios': 'PRO', 'Pv': 'PRO', 'Pr': 'PRO',
+      'Eclesiastes': 'ECC', 'Ec': 'ECC',
+      'Cantares': 'SNG', 'Cânticos': 'SNG', 'Ct': 'SNG',
+      'Isaías': 'ISA', 'Isaias': 'ISA', 'Is': 'ISA',
+      'Jeremias': 'JER', 'Jr': 'JER',
+      'Lamentações': 'LAM', 'Lamentacoes': 'LAM', 'Lm': 'LAM',
+      'Ezequiel': 'EZK', 'Ez': 'EZK',
+      'Daniel': 'DAN', 'Dn': 'DAN',
+      'Oséias': 'HOS', 'Oseias': 'HOS', 'Os': 'HOS',
+      'Joel': 'JOL', 'Jl': 'JOL',
+      'Amós': 'AMO', 'Amos': 'AMO', 'Am': 'AMO',
+      'Obadias': 'OBA', 'Ob': 'OBA',
+      'Jonas': 'JON', 'Jn': 'JON',
+      'Miquéias': 'MIC', 'Miqueias': 'MIC', 'Mq': 'MIC',
+      'Naum': 'NAM', 'Na': 'NAM',
+      'Habacuque': 'HAB', 'Hc': 'HAB',
+      'Sofonias': 'ZEP', 'Sf': 'ZEP',
+      'Ageu': 'HAG', 'Ag': 'HAG',
+      'Zacarias': 'ZEC', 'Zc': 'ZEC',
+      'Malaquias': 'MAL', 'Ml': 'MAL',
+      
+      // New Testament
+      'Mateus': 'MAT', 'Mt': 'MAT',
+      'Marcos': 'MRK', 'Mc': 'MRK',
+      'Lucas': 'LUK', 'Lc': 'LUK',
+      'João': 'JHN', 'Joao': 'JHN', 'Jo': 'JHN',
+      'Atos': 'ACT', 'At': 'ACT',
+      'Romanos': 'ROM', 'Rm': 'ROM',
+      '1 Coríntios': '1CO', '1Corintios': '1CO', '1Co': '1CO', '1 Co': '1CO',
+      '2 Coríntios': '2CO', '2Corintios': '2CO', '2Co': '2CO', '2 Co': '2CO',
+      'Gálatas': 'GAL', 'Galatas': 'GAL', 'Gl': 'GAL',
+      'Efésios': 'EPH', 'Efesios': 'EPH', 'Ef': 'EPH',
+      'Filipenses': 'PHP', 'Fp': 'PHP',
+      'Colossenses': 'COL', 'Cl': 'COL',
+      '1 Tessalonicenses': '1TH', '1Tessalonicenses': '1TH', '1Ts': '1TH', '1 Ts': '1TH',
+      '2 Tessalonicenses': '2TH', '2Tessalonicenses': '2TH', '2Ts': '2TH', '2 Ts': '2TH',
+      '1 Timóteo': '1TI', '1Timoteo': '1TI', '1Tm': '1TI', '1 Tm': '1TI',
+      '2 Timóteo': '2TI', '2Timoteo': '2TI', '2Tm': '2TI', '2 Tm': '2TI',
+      'Tito': 'TIT', 'Tt': 'TIT',
+      'Filemom': 'PHM', 'Fm': 'PHM',
+      'Hebreus': 'HEB', 'Hb': 'HEB',
+      'Tiago': 'JAS', 'Tg': 'JAS',
+      '1 Pedro': '1PE', '1Pedro': '1PE', '1Pe': '1PE', '1 Pe': '1PE',
+      '2 Pedro': '2PE', '2Pedro': '2PE', '2Pe': '2PE', '2 Pe': '2PE',
+      '1 João': '1JN', '1Joao': '1JN', '1Jo': '1JN', '1 Jo': '1JN',
+      '2 João': '2JN', '2Joao': '2JN', '2Jo': '2JN', '2 Jo': '2JN',
+      '3 João': '3JN', '3Joao': '3JN', '3Jo': '3JN', '3 Jo': '3JN',
+      'Judas': 'JUD', 'Jd': 'JUD',
+      'Apocalipse': 'REV', 'Ap': 'REV'
+    };
+    
+    return bookDictionary[bookName] || bookName;
+  };
+  
+  const bookCode = getYouVersionBookCode(bookName);
   
   // Format the reference for YouVersion
   if (chapter && startVerse) {
@@ -182,7 +296,7 @@ const formatBibleReference = (reference: string): string => {
 
 const CategoryCard = ({ category, index }: CategoryCardProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const { theme } = useTheme();
   const isDark = theme === 'dark';
   const exampleVerses = getExampleVerses(category.id);
@@ -258,7 +372,7 @@ const CategoryCard = ({ category, index }: CategoryCardProps) => {
               <h4 className="text-sm font-medium text-primary dark:text-primary-foreground">{t('category-books')}:</h4>
               <div className="flex flex-wrap gap-2">
                 {exampleVerses.map((verse, i) => {
-                  const formattedVerse = formatBibleReference(verse);
+                  const formattedVerse = formatBibleReference(verse, language);
                   return (
                     <a
                       key={i}
