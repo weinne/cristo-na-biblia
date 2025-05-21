@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Category } from '@/lib/data';
 import { cn } from '@/lib/utils';
@@ -236,7 +237,12 @@ const CategoryCard = ({ category, index }: CategoryCardProps) => {
         </div>
       </div>
       
-      <h3 className="text-xl mb-2 font-bold text-primary dark:text-primary-foreground">{categoryName}</h3>
+      <h3 className={cn(
+        "text-xl mb-2 font-bold category-card-title",
+        isDark ? "text-gray-100" : "text-primary"
+      )}>
+        {categoryName}
+      </h3>
       <p className="text-sm text-muted-foreground flex-grow mb-4">{categoryDescription}</p>
       
       <motion.div 
