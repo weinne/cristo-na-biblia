@@ -12,9 +12,11 @@ interface TabProps {
 
 const CategoryTabs = ({ books }: TabProps) => {
   const [activeTab, setActiveTab] = useState("about");
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const { theme } = useTheme();
   const isDark = theme === 'dark';
+  
+  console.log('Current language in CategoryTabs:', language);
   
   // Calculate category statistics
   const getCategoryStats = () => {

@@ -9,9 +9,10 @@ interface CategoryListProps {
 }
 
 const CategoryList = ({ categories }: CategoryListProps) => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   
   // Add debug logging
+  console.log('Current language:', language);
   console.log('Categories being rendered:', categories);
   
   return (

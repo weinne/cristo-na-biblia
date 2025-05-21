@@ -23,9 +23,13 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
   // Update localStorage when language changes
   useEffect(() => {
     localStorage.setItem('cristo-biblia-language', language);
+    console.log('Language changed to:', language);
   }, [language]);
 
   const t = (key: string) => {
+    if (!translations[language][key]) {
+      console.log(`Missing translation for key "${key}" in language "${language}"`);
+    }
     return translations[language][key] || translations.pt[key] || key;
   };
 
