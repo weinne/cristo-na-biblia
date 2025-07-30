@@ -60,6 +60,7 @@ const getBookCount = (categoryId: string): number => {
 
 const getExampleVerses = (categoryId: string): string[] => {
   const verses = {
+    'redemptive-historical': ['Gênesis 3:15', 'Êxodo 12:1-28', '2 Samuel 7:12-16'],
     'redemptive-progression': ['Gênesis 3:15', 'Êxodo 12:1-28', 'Isaías 53:1-12'],
     'promise-fulfillment': ['Gênesis 12:1-3', 'Isaías 7:14', 'Miquéias 5:2'],
     'typology': ['Êxodo 12:1-28', 'Jonas 1:17', 'Levítico 16:1-34'],
@@ -74,10 +75,8 @@ const getExampleVerses = (categoryId: string): string[] => {
 
 // Function to format Bible references using the right translation
 const formatBibleReference = (reference: string, language: string): string => {
-  const { t } = useLanguage();
-  
   // Regular expression to extract book name, chapter and verse
-  const regex = /^((?:\d+\s+)?[A-Za-zÀ-ú]+)(?:\s+(\d+)(?:[:\.](\d+)(?:-(\d+))?)?)?/;
+  const regex = /^((?:\d+\s+)?[A-Za-zÀ-ú]+)(?:\s+(\d+)(?:[:.](\d+)(?:-(\d+))?)?)?/;
   const match = reference.match(regex);
   
   if (!match) return reference;
@@ -189,8 +188,8 @@ const formatBibleReference = (reference: string, language: string): string => {
   // Get book key from name
   const bookKey = getBookKey(bookName);
   
-  // Get the abbreviation from translations
-  const abbr = t(`abbr-${bookKey}`);
+  // Get the abbreviation from translations - this function doesn't use translations anymore
+  const abbr = bookKey;
   
   // Use the English format for YouVersion Bible
   const getYouVersionBookCode = (bookName: string): string => {
@@ -308,11 +307,6 @@ const CategoryCard = ({ category, index }: CategoryCardProps) => {
     
   categoryName = t(translationKey);
   categoryDescription = t(descKey);
-  
-  // For debugging only - add detailed logging
-  console.log(`Category ID: ${category.id}`);
-  console.log(`Translation Key: ${translationKey}, Result: ${categoryName}`);
-  console.log(`Description Key: ${descKey}, Result: ${categoryDescription}`);
   
   return (
     <motion.div 
