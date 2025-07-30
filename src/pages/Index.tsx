@@ -22,7 +22,7 @@ const Index = () => {
       <Navbar />
       <PWAInstallPrompt />
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6 md:px-12 bg-gradient-to-b from-secondary dark:from-gray-800 to-background">
+      <section className="pt-32 pb-20 px-6 md:px-12 bg-gradient-to-b from-blue-50/50 dark:from-gray-800 to-background">
         <div className="max-w-5xl mx-auto text-center space-y-6">
           <span className="inline-block text-sm bg-accent/10 dark:bg-accent/20 text-accent px-3 py-1 rounded-full animate-fade-in">
             {t('christ-in-all-bible')}
@@ -51,7 +51,7 @@ const Index = () => {
       </section>
       
       {/* Categories Section */}
-      <section className="py-20 px-6 md:px-12 bg-white dark:bg-gray-900">
+      <section className="py-20 px-6 md:px-12 bg-gradient-to-br from-blue-50/30 to-indigo-50/30 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary dark:text-gray-100 mb-4">{t('greidanus-categories')}</h2>
@@ -79,7 +79,7 @@ const Index = () => {
       </section>
       
       {/* Featured Books Section */}
-      <section className="py-20 px-6 md:px-12 bg-muted dark:bg-gray-800">
+      <section className="py-20 px-6 md:px-12 bg-gradient-to-br from-slate-50 to-gray-50 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary dark:text-gray-100 mb-4">{t('featured-books')}</h2>
@@ -103,7 +103,7 @@ const Index = () => {
       </section>
       
       {/* CTA Section */}
-      <section className="py-20 px-6 md:px-12 bg-secondary dark:bg-gray-800 text-primary dark:text-gray-100">
+      <section className="py-20 px-6 md:px-12 bg-gradient-to-r from-blue-600/5 to-indigo-600/5 border-t border-blue-100 dark:bg-gray-800 dark:border-gray-700 text-primary dark:text-gray-100">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">{t('start-journey')}</h2>
           <p className="text-lg mb-8 text-muted-foreground dark:text-gray-300">
