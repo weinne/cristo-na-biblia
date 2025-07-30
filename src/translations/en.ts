@@ -155,6 +155,9 @@ export const en = {
   'loading': 'Loading...',
   'no-results': 'No results found.',
   'search-placeholder': 'Search...',
+  'search-bible-passage': 'Search Bible passage...',
+  'search-results-count': 'Found {count} results',
+  'no-passages-found': 'No passages found.',
   'clear': 'Clear',
   'apply': 'Apply',
   'cancel': 'Cancel',
@@ -371,5 +374,33 @@ export const en = {
   'christ-in-2-john': 'In 2 John, Christ is the truth who abides in us and will be with us forever.',
   'christ-in-3-john': 'In 3 John, Christ is the truth in which we must walk and for which we must work together.',
   'christ-in-jude': 'In Jude, Christ is the one able to keep us from stumbling and present us blameless before His glory.',
-  'christ-in-revelation': 'In Revelation, Christ is the Alpha and Omega, the Lamb that was slain, the King of kings who returns in glory to judge and reign eternally.'
+  'christ-in-revelation': 'In Revelation, Christ is the Alpha and Omega, the Lamb that was slain, the King of kings who returns in glory to judge and reign eternally.',
+  
+  // Christ Pointers - Detailed descriptions  
+  'genesis-promise-seed': 'The promise of the woman\'s seed who will crush the serpent\'s head (Genesis 3:15) points to Christ\'s victory over Satan.',
+  'genesis-isaac-sacrifice': 'Abraham\'s offering of Isaac prefigures God\'s sacrifice of His Son.',
+  'genesis-joseph-type': 'Joseph as a type of Christ: betrayed by brothers, apparently defeated but elevated to glory, and becoming the savior of many.',
+  'genesis-creation-theme': 'The theme of creation and its head, Adam, finds fulfillment in the last Adam, Christ, who inaugurates a new creation.',
+  'genesis-abraham-promise': 'The promise to Abraham that in his seed all families of the earth would be blessed finds fulfillment in Christ.',
+  
+  'exodus-passover-lamb': 'The Passover lamb prefigures Christ as the Lamb of God whose blood protects from judgment.',
+  'exodus-moses-mediator': 'Moses as deliverer and mediator prefigures the greater deliverance and mediation of Christ.',
+  'exodus-redemption-theme': 'The theme of redemption from slavery points to Christ\'s redemption from sin.',
+  'exodus-manna-bread': 'The manna in the wilderness prefigures Christ as the bread of life.',
+  'exodus-tabernacle-dwelling': 'The tabernacle points to Christ as God\'s dwelling among His people.',
+  
+  'leviticus-sacrificial-system': 'The sacrificial system prefigures the unique sacrifice of Christ.',
+  'leviticus-repetitive-contrast': 'The repetitive nature of Levitical sacrifices contrasts with Christ\'s perfect sacrifice, offered once for all.',
+  'leviticus-day-atonement': 'The Day of Atonement prefigures Christ\'s atoning work on the cross.',
+  'leviticus-holiness-theme': 'The theme of holiness finds its perfect expression in Christ, who is completely holy and makes His people holy.',
+  
+  'numbers-bronze-serpent': 'The bronze serpent lifted up in the wilderness prefigures Christ lifted up on the cross for healing and salvation.',
+  'numbers-rock-water': 'The rock that provided water prefigures Christ as the source of living water.',
+  'numbers-provision-theme': 'The theme of God\'s provision in the wilderness points to complete provision in Christ.',
+  'numbers-priestly-blessing': 'The priestly blessings prefigure the spiritual blessings in Christ.',
+  
+  'psalms-messianic-psalms': 'The messianic psalms directly describe Christ as King, Priest, and Sufferer.',
+  'psalms-messianic-promises': 'Promises about the Messiah that are fulfilled in Christ.',
+  'psalms-nt-references': 'Psalms frequently quoted in the New Testament in reference to Christ.',
+  'psalms-david-type': 'David as king and author of many Psalms prefigures Christ, the ultimate King.'
 };

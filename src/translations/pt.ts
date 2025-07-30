@@ -124,6 +124,9 @@ export const pt = {
   'loading': 'Carregando...',
   'no-results': 'Nenhum resultado encontrado.',
   'search-placeholder': 'Buscar...',
+  'search-bible-passage': 'Buscar passagem bíblica...',
+  'search-results-count': 'Encontrados {count} resultados',
+  'no-passages-found': 'Nenhuma passagem encontrada.',
   'clear': 'Limpar',
   'apply': 'Aplicar',
   'cancel': 'Cancelar',
@@ -340,5 +343,33 @@ export const pt = {
   'christ-in-2-john': 'Em 2 João, Cristo é a verdade que permanece em nós e estará conosco para sempre.',
   'christ-in-3-john': 'Em 3 João, Cristo é a verdade na qual devemos andar e pela qual devemos trabalhar juntos.',
   'christ-in-jude': 'Em Judas, Cristo é aquele que pode nos guardar de tropeçar e nos apresentar irrepreensíveis diante da sua glória.',
-  'christ-in-revelation': 'Em Apocalipse, Cristo é o Alfa e Ômega, o Cordeiro que foi morto, o Rei dos reis que retorna em glória para julgar e reinar eternamente.'
+  'christ-in-revelation': 'Em Apocalipse, Cristo é o Alfa e Ômega, o Cordeiro que foi morto, o Rei dos reis que retorna em glória para julgar e reinar eternamente.',
+  
+  // Christ Pointers - Detailed descriptions
+  'genesis-promise-seed': 'A promessa da semente da mulher que esmagará a cabeça da serpente (Gênesis 3:15) aponta para a vitória de Cristo sobre Satanás.',
+  'genesis-isaac-sacrifice': 'A oferta de Isaque por Abraão prefigura o sacrifício de Deus de Seu Filho.',
+  'genesis-joseph-type': 'José como um tipo de Cristo: traído pelos irmãos, aparentemente derrotado mas elevado à glória, e se tornando o salvador de muitos.',
+  'genesis-creation-theme': 'O tema da criação e seu cabeça, Adão, encontra cumprimento no último Adão, Cristo, que inaugura uma nova criação.',
+  'genesis-abraham-promise': 'A promessa a Abraão de que em sua descendência todas as famílias da terra seriam abençoadas encontra cumprimento em Cristo.',
+  
+  'exodus-passover-lamb': 'O cordeiro da Páscoa prefigura Cristo como o Cordeiro de Deus cujo sangue protege do juízo.',
+  'exodus-moses-mediator': 'Moisés como libertador e mediador prefigura a maior libertação e mediação de Cristo.',
+  'exodus-redemption-theme': 'O tema da redenção da escravidão aponta para a redenção de Cristo do pecado.',
+  'exodus-manna-bread': 'O maná no deserto prefigura Cristo como o pão da vida.',
+  'exodus-tabernacle-dwelling': 'O tabernáculo aponta para Cristo como a habitação de Deus entre o povo.',
+  
+  'leviticus-sacrificial-system': 'O sistema sacrificial prefigura o sacrifício único de Cristo.',
+  'leviticus-repetitive-contrast': 'A natureza repetitiva dos sacrifícios levíticos contrasta com o sacrifício perfeito de Cristo, oferecido uma vez por todas.',
+  'leviticus-day-atonement': 'O Dia da Expiação prefigura a obra expiatória de Cristo na cruz.',
+  'leviticus-holiness-theme': 'O tema da santidade encontra sua perfeita expressão em Cristo, que é completamente santo e torna santo o seu povo.',
+  
+  'numbers-bronze-serpent': 'A serpente de bronze levantada no deserto prefigura Cristo levantado na cruz para cura e salvação.',
+  'numbers-rock-water': 'A rocha que proveu água prefigura Cristo como a fonte da água viva.',
+  'numbers-provision-theme': 'O tema da provisão de Deus no deserto aponta para a provisão completa em Cristo.',
+  'numbers-priestly-blessing': 'As bênçãos sacerdotais prefiguram as bênçãos espirituais em Cristo.',
+  
+  'psalms-messianic-psalms': 'Os salmos messiânicos descrevem diretamente Cristo como Rei, Sacerdote e Sofredor.',
+  'psalms-messianic-promises': 'Promessas sobre o Messias que são cumpridas em Cristo.',
+  'psalms-nt-references': 'Salmos frequentemente citados no Novo Testamento em referência a Cristo.',
+  'psalms-david-type': 'Davi como rei e autor de muitos Salmos prefigura Cristo, o Rei definitivo.'
 };

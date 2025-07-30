@@ -1,61 +1,61 @@
 
 export interface Category {
   id: string;
-  name: string;
-  description: string;
+  nameKey: string; // Translation key for the name
+  descriptionKey: string; // Translation key for the description
 }
 
 export interface Book {
   id: string;
   testament: 'old' | 'new';
-  name: string;
-  shortName: string;
+  nameKey: string; // Translation key for the name
+  shortNameKey: string; // Translation key for the short name
   categories: string[];
-  description: string;
+  descriptionKey: string; // Translation key for the description
   christPointers: ChristPointer[];
 }
 
 export interface ChristPointer {
   category: string;
-  description: string;
+  descriptionKey: string; // Translation key for the description
   verses: string[];
 }
 
 export const categories: Category[] = [
   {
     id: "redemptive-historical",
-    name: "Progressão Histórico-Redentiva",
-    description: "Traça como uma passagem se encaixa no amplo desdobramento do plano redentor de Deus ao longo da história, levando a Cristo."
+    nameKey: "category-redemptive-historical",
+    descriptionKey: "category-redemptive-historical-desc"
   },
   {
     id: "promise-fulfillment",
-    name: "Promessa-Cumprimento",
-    description: "Identifica promessas feitas no Antigo Testamento que encontram seu cumprimento em Cristo."
+    nameKey: "category-promise-fulfillment",
+    descriptionKey: "category-promise-fulfillment-desc"
   },
   {
     id: "typology",
-    name: "Tipologia",
-    description: "Reconhece pessoas, eventos ou instituições do Antigo Testamento como 'tipos' que prefiguram aspectos de Cristo ou Sua obra."
+    nameKey: "category-typology",
+    descriptionKey: "category-typology-desc"
   },
   {
     id: "analogy",
-    name: "Analogia",
-    description: "Traça paralelos entre as ações de Deus no Antigo Testamento e Suas ações através de Cristo."
+    nameKey: "category-analogy",
+    descriptionKey: "category-analogy-desc"
   },
   {
     id: "longitudinal-themes",
-    name: "Temas Longitudinais",
-    description: "Segue temas bíblicos principais à medida que se desenvolvem através das Escrituras e encontram sua culminação em Cristo."
+    nameKey: "category-longitudinal-themes",
+    descriptionKey: "category-longitudinal-themes-desc"
   },
   {
     id: "new-testament-references",
-    name: "Referências do Novo Testamento",
-    description: "Utiliza citações do Novo Testamento referentes a passagens do Antigo Testamento para mostrar conexões com Cristo."
+    nameKey: "category-new-testament-references",
+    descriptionKey: "category-new-testament-references-desc"
   },
   {
     id: "contrast",
-    name: "Contraste",
-    description: "Destaca como Cristo é maior ou diferente das figuras ou instituições do Antigo Testamento."
+    nameKey: "category-contrast",
+    descriptionKey: "category-contrast-desc"
   }
 ];
 
@@ -64,34 +64,34 @@ export const books: Book[] = [
   {
     id: "genesis",
     testament: "old",
-    name: "Gênesis",
-    shortName: "Gên",
+    nameKey: "book-genesis",
+    shortNameKey: "abbr-genesis",
     categories: ["typology", "promise-fulfillment", "redemptive-historical"],
-    description: "O livro dos princípios que estabelece o plano redentor de Deus.",
+    descriptionKey: "christ-in-genesis",
     christPointers: [
       {
         category: "promise-fulfillment",
-        description: "A promessa da semente da mulher que esmagará a cabeça da serpente (Gênesis 3:15) aponta para a vitória de Cristo sobre Satanás.",
+        descriptionKey: "genesis-promise-seed",
         verses: ["Gênesis 3:15"]
       },
       {
         category: "typology",
-        description: "A oferta de Isaque por Abraão prefigura o sacrifício de Deus de Seu Filho.",
+        descriptionKey: "genesis-isaac-sacrifice",
         verses: ["Gênesis 22:1-14"]
       },
       {
         category: "typology",
-        description: "José como um tipo de Cristo: traído pelos irmãos, aparentemente derrotado mas elevado à glória, e se tornando o salvador de muitos.",
+        descriptionKey: "genesis-joseph-type",
         verses: ["Gênesis 37-50"]
       },
       {
         category: "longitudinal-themes",
-        description: "O tema da criação e seu cabeça, Adão, encontra cumprimento no último Adão, Cristo, que inaugura uma nova criação.",
+        descriptionKey: "genesis-creation-theme",
         verses: ["Gênesis 1-2"]
       },
       {
         category: "promise-fulfillment",
-        description: "A promessa a Abraão de que em sua descendência todas as famílias da terra seriam abençoadas encontra cumprimento em Cristo.",
+        descriptionKey: "genesis-abraham-promise",
         verses: ["Gênesis 12:1-3", "Gênesis 22:18"]
       }
     ]
@@ -99,34 +99,34 @@ export const books: Book[] = [
   {
     id: "exodus",
     testament: "old",
-    name: "Êxodo",
-    shortName: "Êxo",
+    nameKey: "book-exodus",
+    shortNameKey: "abbr-exodus",
     categories: ["typology", "redemptive-historical", "longitudinal-themes"],
-    description: "A história da libertação do povo de Deus da escravidão no Egito.",
+    descriptionKey: "christ-in-exodus",
     christPointers: [
       {
         category: "typology",
-        description: "O cordeiro da Páscoa prefigura Cristo como o Cordeiro de Deus cujo sangue protege do juízo.",
+        descriptionKey: "exodus-passover-lamb",
         verses: ["Êxodo 12:1-28"]
       },
       {
         category: "typology",
-        description: "Moisés como libertador e mediador prefigura a maior libertação e mediação de Cristo.",
+        descriptionKey: "exodus-moses-mediator",
         verses: ["Êxodo 3:10", "Êxodo 20:19-21"]
       },
       {
         category: "longitudinal-themes",
-        description: "O tema da redenção da escravidão aponta para a redenção de Cristo do pecado.",
+        descriptionKey: "exodus-redemption-theme",
         verses: ["Êxodo 6:6-8"]
       },
       {
         category: "typology",
-        description: "O maná no deserto prefigura Cristo como o pão da vida.",
+        descriptionKey: "exodus-manna-bread",
         verses: ["Êxodo 16:1-36"]
       },
       {
         category: "typology",
-        description: "O tabernáculo aponta para Cristo como a habitação de Deus entre o povo.",
+        descriptionKey: "exodus-tabernacle-dwelling",
         verses: ["Êxodo 25-40"]
       }
     ]
@@ -134,29 +134,29 @@ export const books: Book[] = [
   {
     id: "leviticus",
     testament: "old",
-    name: "Levítico",
-    shortName: "Lev",
+    nameKey: "book-leviticus",
+    shortNameKey: "abbr-leviticus",
     categories: ["typology", "contrast"],
-    description: "Instruções para adoração e santidade que apontam para o sacrifício perfeito e santidade de Cristo.",
+    descriptionKey: "christ-in-leviticus",
     christPointers: [
       {
         category: "typology",
-        description: "O sistema sacrificial prefigura o sacrifício único de Cristo.",
+        descriptionKey: "leviticus-sacrificial-system",
         verses: ["Levítico 16:1-34"]
       },
       {
         category: "contrast",
-        description: "A natureza repetitiva dos sacrifícios levíticos contrasta com o sacrifício perfeito de Cristo, oferecido uma vez por todas.",
+        descriptionKey: "leviticus-repetitive-contrast",
         verses: ["Levítico 1-7"]
       },
       {
         category: "typology",
-        description: "O Dia da Expiação prefigura a obra expiatória de Cristo na cruz.",
+        descriptionKey: "leviticus-day-atonement",
         verses: ["Levítico 16"]
       },
       {
         category: "longitudinal-themes",
-        description: "O tema da santidade encontra sua perfeita expressão em Cristo, que é completamente santo e torna santo o seu povo.",
+        descriptionKey: "leviticus-holiness-theme",
         verses: ["Levítico 11:44-45", "Levítico 19:2"]
       }
     ]
@@ -164,29 +164,29 @@ export const books: Book[] = [
   {
     id: "numbers",
     testament: "old",
-    name: "Números",
-    shortName: "Núm",
+    nameKey: "book-numbers",
+    shortNameKey: "abbr-numbers",
     categories: ["typology", "longitudinal-themes"],
-    description: "A jornada de Israel pelo deserto, revelando a fidelidade de Deus apesar da infidelidade do povo.",
+    descriptionKey: "christ-in-numbers",
     christPointers: [
       {
         category: "typology",
-        description: "A serpente de bronze levantada no deserto prefigura Cristo levantado na cruz para cura e salvação.",
+        descriptionKey: "numbers-bronze-serpent",
         verses: ["Números 21:4-9"]
       },
       {
         category: "typology",
-        description: "A rocha que proveu água prefigura Cristo como a fonte da água viva.",
+        descriptionKey: "numbers-rock-water",
         verses: ["Números 20:1-13"]
       },
       {
         category: "longitudinal-themes",
-        description: "O tema da provisão de Deus no deserto aponta para a provisão completa em Cristo.",
+        descriptionKey: "numbers-provision-theme",
         verses: ["Números 11:1-35"]
       },
       {
         category: "redemptive-historical",
-        description: "As bênçãos sacerdotais prefiguram as bênçãos espirituais em Cristo.",
+        descriptionKey: "numbers-priestly-blessing",
         verses: ["Números 6:22-27"]
       }
     ]
@@ -553,29 +553,29 @@ export const books: Book[] = [
   {
     id: "psalms",
     testament: "old",
-    name: "Salmos",
-    shortName: "Sal",
+    nameKey: "book-psalms",
+    shortNameKey: "abbr-psalms",
     categories: ["typology", "promise-fulfillment", "new-testament-references"],
-    description: "Coleção de canções, orações e poesia usadas na adoração.",
+    descriptionKey: "christ-in-psalms",
     christPointers: [
       {
         category: "typology",
-        description: "Os salmos messiânicos descrevem diretamente Cristo como Rei, Sacerdote e Sofredor.",
+        descriptionKey: "psalms-messianic-psalms",
         verses: ["Salmos 2", "Salmos 22", "Salmos 110"]
       },
       {
         category: "promise-fulfillment",
-        description: "Promessas sobre o Messias que são cumpridas em Cristo.",
+        descriptionKey: "psalms-messianic-promises",
         verses: ["Salmos 16:8-11", "Salmos 118:22-23"]
       },
       {
         category: "new-testament-references",
-        description: "Salmos frequentemente citados no Novo Testamento em referência a Cristo.",
+        descriptionKey: "psalms-nt-references",
         verses: ["Salmos 8:4-6", "Salmos 40:6-8", "Salmos 69:9", "Salmos 118:22-23"]
       },
       {
         category: "typology",
-        description: "Davi como rei e autor de muitos Salmos prefigura Cristo, o Rei definitivo.",
+        descriptionKey: "psalms-david-type",
         verses: ["Salmos 2", "Salmos 18", "Salmos 45", "Salmos 72"]
       }
     ]

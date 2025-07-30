@@ -5,6 +5,7 @@ import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
 import { ThemeToggle } from './ThemeToggle';
 import LanguageSwitcher from './LanguageSwitcher';
+import BiblicalPassageSearch from './BiblicalPassageSearch';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const Navbar = () => {
@@ -47,6 +48,7 @@ const Navbar = () => {
           <NavLink to="/about">{t('about')}</NavLink>
           <NavLink to="/books">{t('books')}</NavLink>
           <NavLink to="/categories">{t('categories')}</NavLink>
+          <BiblicalPassageSearch />
           <div className="flex items-center space-x-4">
             <LanguageSwitcher />
             <ThemeToggle />
@@ -70,6 +72,9 @@ const Navbar = () => {
       {mobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-white dark:bg-gray-900 shadow-md animate-fade-in">
           <div className="flex flex-col space-y-4 py-4 px-6">
+            <div className="mb-4">
+              <BiblicalPassageSearch />
+            </div>
             <MobileNavLink to="/" onClick={() => setMobileMenuOpen(false)}>{t('home')}</MobileNavLink>
             <MobileNavLink to="/about" onClick={() => setMobileMenuOpen(false)}>{t('about')}</MobileNavLink>
             <MobileNavLink to="/books" onClick={() => setMobileMenuOpen(false)}>{t('books')}</MobileNavLink>
