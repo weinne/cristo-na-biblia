@@ -88,7 +88,7 @@ const Index = () => {
             </p>
           </div>
           
-          <BookGrid />
+          <BookGrid limitBooks={12} />
           
           <div className="text-center mt-10">
             <Link
