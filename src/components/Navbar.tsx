@@ -6,6 +6,7 @@ import { Menu, X } from 'lucide-react';
 import { ThemeToggle } from './ThemeToggle';
 import LanguageSwitcher from './LanguageSwitcher';
 import BiblicalPassageSearch from './BiblicalPassageSearch';
+import ChristBibleIcon from './ChristBibleIcon';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const Navbar = () => {
@@ -39,7 +40,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Link to="/" className="flex items-center space-x-2">
-          <img src="/src/assets/christ-bible-icon.png" alt="Cristo na Bíblia" className="w-8 h-8" />
+          <ChristBibleIcon className="text-primary dark:text-gray-100" size={32} />
           <span className="text-xl md:text-2xl font-crimson font-bold text-primary dark:text-gray-100">{t('christ-in-bible')}</span>
         </Link>
 
