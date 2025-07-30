@@ -103,15 +103,15 @@ const Index = () => {
       </section>
       
       {/* CTA Section */}
-      <section className="py-20 px-6 md:px-12 bg-accent text-white">
+      <section className="py-20 px-6 md:px-12 bg-secondary dark:bg-gray-800 text-primary dark:text-gray-100">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">{t('start-journey')}</h2>
-          <p className="text-lg mb-8 text-white/90">
+          <p className="text-lg mb-8 text-muted-foreground dark:text-gray-300">
             {t('explore-scripture')}
           </p>
           <Link
             to="/books"
-            className="px-8 py-3 bg-white text-accent rounded-md hover:bg-white/90 transition-colors shadow-md hover:shadow-lg inline-block"
+            className="px-8 py-3 bg-accent text-white rounded-md hover:bg-accent/90 transition-colors shadow-md hover:shadow-lg inline-block"
           >
             {t('explore-all-books')}
           </Link>
