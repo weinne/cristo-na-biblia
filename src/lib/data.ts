@@ -650,7 +650,7 @@ export const books: Book[] = [
       },
       {
         category: "longitudinal-themes",
-        description: "O tema do amor comprometido e fiel encontra sua expressão mais plena no amor de Cristo pela Igreja.",
+        descriptionKey: "song-faithful-love",
         verses: ["Cânticos 8:6-7"]
       }
     ]
@@ -660,29 +660,29 @@ export const books: Book[] = [
   {
     id: "isaiah",
     testament: "old",
-    name: "Isaías",
-    shortName: "Isa",
+    nameKey: "book-isaiah",
+    shortNameKey: "abbr-isaiah",
     categories: ["promise-fulfillment", "typology", "new-testament-references"],
-    description: "Profecias sobre o julgamento, exílio, restauração e o Messias.",
+    descriptionKey: "christ-in-isaiah",
     christPointers: [
       {
         category: "promise-fulfillment",
-        description: "Profecias diretas sobre o nascimento, ministério e sofrimento do Messias cumpridas em Cristo.",
+        descriptionKey: "isaiah-messianic-prophecies",
         verses: ["Isaías 7:14", "Isaías 9:1-7", "Isaías 11:1-10", "Isaías 53"]
       },
       {
         category: "typology",
-        description: "O servo sofredor prefigura o sofrimento substitutivo de Cristo.",
+        descriptionKey: "isaiah-suffering-servant",
         verses: ["Isaías 42:1-4", "Isaías 49:1-6", "Isaías 50:4-9", "Isaías 52:13-53:12"]
       },
       {
         category: "new-testament-references",
-        description: "Textos de Isaías frequentemente citados no Novo Testamento em referência a Cristo.",
+        descriptionKey: "isaiah-nt-quotations",
         verses: ["Isaías 6:9-10", "Isaías 61:1-2"]
       },
       {
         category: "redemptive-historical",
-        description: "A promessa de um novo céu e nova terra aponta para a restauração definitiva em Cristo.",
+        descriptionKey: "isaiah-new-creation",
         verses: ["Isaías 65:17-25"]
       }
     ]
@@ -690,29 +690,29 @@ export const books: Book[] = [
   {
     id: "jeremiah",
     testament: "old",
-    name: "Jeremias",
-    shortName: "Jer",
+    nameKey: "book-jeremiah",
+    shortNameKey: "abbr-jeremiah",
     categories: ["promise-fulfillment", "typology", "redemptive-historical"],
-    description: "Profecias sobre o julgamento de Judá e a promessa de uma nova aliança.",
+    descriptionKey: "christ-in-jeremiah",
     christPointers: [
       {
         category: "promise-fulfillment",
-        description: "A promessa de uma nova aliança cumprida em Cristo.",
+        descriptionKey: "jeremiah-new-covenant",
         verses: ["Jeremias 31:31-34"]
       },
       {
         category: "typology",
-        description: "Jeremias como profeta rejeitado e sofredor prefigura Cristo.",
+        descriptionKey: "jeremiah-rejected-prophet",
         verses: ["Jeremias 11:18-20", "Jeremias 15:15-21", "Jeremias 20:7-18"]
       },
       {
         category: "redemptive-historical",
-        description: "O juízo sobre Judá como parte do plano redentor de Deus que culmina em Cristo.",
+        descriptionKey: "jeremiah-judgment-plan",
         verses: ["Jeremias 25:1-14", "Jeremias 29:10-14"]
       },
       {
         category: "promise-fulfillment",
-        description: "A promessa de um 'Renovo justo' da linhagem de Davi cumprida em Cristo.",
+        descriptionKey: "jeremiah-righteous-branch",
         verses: ["Jeremias 23:5-6", "Jeremias 33:14-16"]
       }
     ]
@@ -720,24 +720,24 @@ export const books: Book[] = [
   {
     id: "lamentations",
     testament: "old",
-    name: "Lamentações",
-    shortName: "Lam",
+    nameKey: "book-lamentations",
+    shortNameKey: "abbr-lamentations",
     categories: ["typology", "redemptive-historical"],
-    description: "Poemas de lamento sobre a destruição de Jerusalém.",
+    descriptionKey: "christ-in-lamentations",
     christPointers: [
       {
         category: "typology",
-        description: "O sofrimento e as lamentações do profeta prefiguram o sofrimento de Cristo pela sua cidade.",
+        descriptionKey: "lamentations-prophet-suffering",
         verses: ["Lamentações 1:12", "Lamentações 3:1-20"]
       },
       {
         category: "redemptive-historical",
-        description: "A destruição de Jerusalém como parte do plano redentor de Deus que conduz a Cristo.",
+        descriptionKey: "lamentations-destruction-plan",
         verses: ["Lamentações 4:21-22"]
       },
       {
         category: "longitudinal-themes",
-        description: "O tema da fidelidade e das misericórdias de Deus em meio ao julgamento encontra sua expressão plena em Cristo.",
+        descriptionKey: "lamentations-gods-faithfulness",
         verses: ["Lamentações 3:21-33"]
       }
     ]
@@ -745,29 +745,29 @@ export const books: Book[] = [
   {
     id: "ezekiel",
     testament: "old",
-    name: "Ezequiel",
-    shortName: "Eze",
+    nameKey: "book-ezekiel",
+    shortNameKey: "abbr-ezekiel",
     categories: ["typology", "promise-fulfillment", "redemptive-historical"],
-    description: "Visões e profecias durante o exílio babilônico.",
+    descriptionKey: "christ-in-ezekiel",
     christPointers: [
       {
         category: "typology",
-        description: "Ezequiel como sacerdote-profeta, vigilante e pastor prefigura Cristo em seus papéis.",
+        descriptionKey: "ezekiel-priest-prophet-shepherd",
         verses: ["Ezequiel 3:16-21", "Ezequiel 34:11-16"]
       },
       {
         category: "promise-fulfillment",
-        description: "A promessa de um coração novo e espírito novo cumprida através de Cristo.",
+        descriptionKey: "ezekiel-new-heart-spirit",
         verses: ["Ezequiel 36:24-32"]
       },
       {
         category: "typology",
-        description: "A visão do templo aponta para Cristo como o verdadeiro templo.",
+        descriptionKey: "ezekiel-temple-vision",
         verses: ["Ezequiel 40-48"]
       },
       {
         category: "promise-fulfillment",
-        description: "A promessa de Davi como pastor do povo de Deus cumprida em Cristo.",
+        descriptionKey: "ezekiel-david-shepherd",
         verses: ["Ezequiel 34:23-24", "Ezequiel 37:24-28"]
       }
     ]
@@ -775,29 +775,29 @@ export const books: Book[] = [
   {
     id: "daniel",
     testament: "old",
-    name: "Daniel",
-    shortName: "Dan",
+    nameKey: "book-daniel",
+    shortNameKey: "abbr-daniel",
     categories: ["typology", "promise-fulfillment", "redemptive-historical"],
-    description: "Narrativas e visões apocalípticas durante o exílio.",
+    descriptionKey: "christ-in-daniel",
     christPointers: [
       {
         category: "promise-fulfillment",
-        description: "A visão do Filho do Homem vindo com as nuvens do céu cumprida em Cristo.",
+        descriptionKey: "daniel-son-of-man",
         verses: ["Daniel 7:13-14"]
       },
       {
         category: "typology",
-        description: "Daniel como homem fiel e justo em terra estrangeira prefigura Cristo.",
+        descriptionKey: "daniel-faithful-man",
         verses: ["Daniel 6"]
       },
       {
         category: "promise-fulfillment",
-        description: "A profecia das setenta semanas que aponta para a vinda de Cristo.",
+        descriptionKey: "daniel-seventy-weeks",
         verses: ["Daniel 9:24-27"]
       },
       {
         category: "redemptive-historical",
-        description: "As visões dos reinos mundiais que culminam no reino eterno de Deus estabelecido por Cristo.",
+        descriptionKey: "daniel-eternal-kingdom",
         verses: ["Daniel 2:31-45", "Daniel 7:1-14"]
       }
     ]

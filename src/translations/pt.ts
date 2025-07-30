@@ -372,6 +372,36 @@ export const pt = {
   // Christ Pointers for Song of Solomon
   'song-bridegroom-bride': 'O amor entre o noivo e a noiva simboliza o amor entre Cristo e sua Igreja.',
   'song-love-intimacy': 'A intimidade e o deleite do amor humano refletem analogicamente o relacionamento de Cristo com seu povo.',
+  'song-faithful-love': 'O tema do amor comprometido e fiel encontra sua expressão mais plena no amor de Cristo pela Igreja.',
+
+  // Christ Pointers for Isaiah
+  'isaiah-messianic-prophecies': 'Profecias diretas sobre o nascimento, ministério e sofrimento do Messias cumpridas em Cristo.',
+  'isaiah-suffering-servant': 'O servo sofredor prefigura o sofrimento substitutivo de Cristo.',
+  'isaiah-nt-quotations': 'Textos de Isaías frequentemente citados no Novo Testamento em referência a Cristo.',
+  'isaiah-new-creation': 'A promessa de um novo céu e nova terra aponta para a restauração definitiva em Cristo.',
+
+  // Christ Pointers for Jeremiah
+  'jeremiah-new-covenant': 'A promessa de uma nova aliança cumprida em Cristo.',
+  'jeremiah-rejected-prophet': 'Jeremias como profeta rejeitado e sofredor prefigura Cristo.',
+  'jeremiah-judgment-plan': 'O juízo sobre Judá como parte do plano redentor de Deus que culmina em Cristo.',
+  'jeremiah-righteous-branch': 'A promessa de um \'Renovo justo\' da linhagem de Davi cumprida em Cristo.',
+
+  // Christ Pointers for Lamentations
+  'lamentations-prophet-suffering': 'O sofrimento e as lamentações do profeta prefiguram o sofrimento de Cristo pela sua cidade.',
+  'lamentations-destruction-plan': 'A destruição de Jerusalém como parte do plano redentor de Deus que conduz a Cristo.',
+  'lamentations-gods-faithfulness': 'O tema da fidelidade e das misericórdias de Deus em meio ao julgamento encontra sua expressão plena em Cristo.',
+
+  // Christ Pointers for Ezekiel
+  'ezekiel-priest-prophet-shepherd': 'Ezequiel como sacerdote-profeta, vigilante e pastor prefigura Cristo em seus papéis.',
+  'ezekiel-new-heart-spirit': 'A promessa de um coração novo e espírito novo cumprida através de Cristo.',
+  'ezekiel-temple-vision': 'A visão do templo aponta para Cristo como o verdadeiro templo.',
+  'ezekiel-david-shepherd': 'A promessa de Davi como pastor do povo de Deus cumprida em Cristo.',
+
+  // Christ Pointers for Daniel
+  'daniel-son-of-man': 'A visão do Filho do Homem vindo com as nuvens do céu cumprida em Cristo.',
+  'daniel-faithful-man': 'Daniel como homem fiel e justo em terra estrangeira prefigura Cristo.',
+  'daniel-seventy-weeks': 'A profecia das setenta semanas que aponta para a vinda de Cristo.',
+  'daniel-eternal-kingdom': 'As visões dos reinos mundiais que culminam no reino eterno de Deus estabelecido por Cristo.',
 
   // Book descriptions
   'christ-in-genesis': 'Em Gênesis, Cristo é revelado como o Criador, a semente prometida da mulher, o Cordeiro de Deus, e o Filho de Abraão.',
