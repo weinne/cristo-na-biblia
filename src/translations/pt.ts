@@ -351,6 +351,7 @@ export const pt = {
   '1kings-temple-type': 'O templo construído por Salomão prefigura Cristo como o verdadeiro templo.',
   '1kings-solomon-failure': 'O fracasso de Salomão e os reis subsequentes contrasta com o reinado perfeito de Cristo.',
   '1kings-solomon-wisdom': 'A sabedoria de Salomão prefigura a sabedoria superior de Cristo.',
+  '1kings-temple-redemptive': 'A construção e dedicação do templo representa um marco na história redentora, apontando para Cristo como o verdadeiro lugar de encontro entre Deus e o homem.',
 
   // Christ Pointers for 2 Kings
   '2kings-kings-failure': 'O fracasso dos reis de Israel e Judá contrasta com a fidelidade de Cristo como Rei.',

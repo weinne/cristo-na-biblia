@@ -380,6 +380,11 @@ export const books: Book[] = [
         category: "typology",
         descriptionKey: "1kings-solomon-wisdom",
         verses: ["1 Reis 3:3-28", "1 Reis 4:29-34"]
+      },
+      {
+        category: "redemptive-historical",
+        descriptionKey: "1kings-temple-redemptive",
+        verses: ["1 Reis 8:22-30", "1 Reis 8:56-61"]
       }
     ]
   },
