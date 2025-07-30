@@ -60,57 +60,25 @@ const CategoryTabs = ({ books }: TabProps) => {
 
   return (
     <div>
-      <div className="mb-12 flex justify-center">
-        <div className={cn(
-          "flex p-1 rounded-lg mb-8",
-          isDark ? "bg-gray-800/30 shadow-lg" : "bg-secondary/20"
-        )}>
-          <button 
-            onClick={() => setActiveTab("about")}
-            className={cn(
-              "px-4 py-2 rounded-md text-sm font-medium transition-colors",
-              activeTab === "about" 
-                ? isDark 
-                  ? "bg-indigo-600 text-white shadow-md" 
-                  : "bg-white text-primary shadow-sm"
-                : isDark
-                  ? "text-gray-300 hover:text-white"
-                  : "text-muted-foreground hover:text-primary"
-            )}
-          >
-            {t('about-categories')}
-          </button>
-          <button 
-            onClick={() => setActiveTab("greidanus")}
-            className={cn(
-              "px-4 py-2 rounded-md text-sm font-medium transition-colors",
-              activeTab === "greidanus" 
-                ? isDark 
-                  ? "bg-indigo-600 text-white shadow-md" 
-                  : "bg-white text-primary shadow-sm"
-                : isDark
-                  ? "text-gray-300 hover:text-white"
-                  : "text-muted-foreground hover:text-primary"
-            )}
-          >
-            {t('who-is-greidanus')}
-          </button>
-          <button 
-            onClick={() => setActiveTab("stats")}
-            className={cn(
-              "px-4 py-2 rounded-md text-sm font-medium transition-colors",
-              activeTab === "stats" 
-                ? isDark 
-                  ? "bg-indigo-600 text-white shadow-md" 
-                  : "bg-white text-primary shadow-sm"
-                : isDark
-                  ? "text-gray-300 hover:text-white"
-                  : "text-muted-foreground hover:text-primary"
-            )}
-          >
-            {t('statistics')}
-          </button>
-        </div>
+      <div className="flex justify-center mb-8 gap-2">
+        <TabButton 
+          active={activeTab === "about"} 
+          onClick={() => setActiveTab("about")}
+        >
+          {t('about-categories')}
+        </TabButton>
+        <TabButton 
+          active={activeTab === "greidanus"} 
+          onClick={() => setActiveTab("greidanus")}
+        >
+          {t('who-is-greidanus')}
+        </TabButton>
+        <TabButton 
+          active={activeTab === "stats"} 
+          onClick={() => setActiveTab("stats")}
+        >
+          {t('statistics')}
+        </TabButton>
       </div>
       
       {activeTab === "about" && (
@@ -278,6 +246,27 @@ const CategoryTabs = ({ books }: TabProps) => {
         </motion.div>
       )}
     </div>
+  );
+};
+
+interface TabButtonProps {
+  active: boolean;
+  onClick: () => void;
+  children: React.ReactNode;
+}
+
+const TabButton = ({ active, onClick, children }: TabButtonProps) => {
+  return (
+    <button
+      onClick={onClick}
+      className={`px-4 py-2 rounded-full text-sm transition-all duration-300 ${
+        active 
+          ? 'bg-accent text-white shadow-md' 
+          : 'bg-muted hover:bg-muted/80 text-foreground dark:text-gray-200'
+      }`}
+    >
+      {children}
+    </button>
   );
 };
 

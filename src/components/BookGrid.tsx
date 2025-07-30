@@ -41,7 +41,7 @@ const BookGrid = ({ filter = 'all' }: BookGridProps) => {
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-        {filteredBooks.map(book => (
+        {filteredBooks.slice(0, filter === 'all' ? 12 : filteredBooks.length).map(book => (
           <BookCard key={book.id} book={book} />
         ))}
       </div>
