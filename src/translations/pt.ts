@@ -287,19 +287,62 @@ export const pt = {
   'abbr-jude': 'Jd',
   'abbr-revelation': 'Ap',
   
-  'christ-in-deuteronomy': 'Em Deuteronômio, Cristo é o profeta maior que Moisés, que falaria as palavras de Deus e a quem devemos ouvir.',
-  'christ-in-joshua': 'Em Josué, Cristo é nosso líder e comandante que nos guia para a terra prometida e nos dá descanso de nossos inimigos.',
-  'christ-in-judges': 'Em Juízes, Cristo é o libertador perfeito que definitivamente resgata seu povo da opressão do pecado e da morte.',
-  'christ-in-ruth': 'Em Rute, Cristo é nosso parente redentor que paga o preço para nos redimir e nos traz de volta à família de Deus.',
-  'christ-in-1-samuel': 'Em 1 Samuel, Cristo é o rei ungido de Deus, o verdadeiro Davi que governa com justiça e retidão.',
-  'christ-in-2-samuel': 'Em 2 Samuel, Cristo é o descendente prometido de Davi cujo reino será estabelecido para sempre.',
-  // Additional descriptions as needed...
   
   // Christ Pointers for Deuteronomy - Detailed descriptions
   'deuteronomy-prophet-promise': 'A promessa de um profeta como Moisés encontra seu cumprimento em Cristo.',
   'deuteronomy-promised-land': 'A entrada na Terra Prometida prefigura o descanso espiritual encontrado em Cristo.',
   'deuteronomy-law-obedience': 'O tema da obediência à lei encontra seu cumprimento em Cristo, que obedeceu perfeitamente à lei de Deus.',
   'deuteronomy-blessings-curses': 'As bênçãos e maldições da aliança encontram resolução em Cristo, que levou a maldição para dar-nos a bênção.',
+
+  // Christ Pointers for Joshua
+  'joshua-leader-type': 'Josué como líder que conduz o povo à terra prometida prefigura Cristo que conduz seu povo ao descanso eterno.',
+  'joshua-kingdom-progress': 'A conquista da terra representa o progresso do reino de Deus que será completado em Cristo.',
+  'joshua-rahab-type': 'Raabe e o cordão escarlate prefiguram a salvação através do sangue de Cristo.',
+
+  // Christ Pointers for Judges
+  'judges-liberators-type': 'Os juízes como libertadores temporários prefiguram Cristo como o libertador definitivo.',
+  'judges-temporary-contrast': 'A incapacidade dos juízes de trazer libertação permanente contrasta com a libertação completa em Cristo.',
+  'judges-need-king': 'O caos e a necessidade de um rei apontam para o reinado perfeito de Cristo.',
+
+  // Christ Pointers for Ruth
+  'ruth-boaz-redeemer': 'Boaz como resgatador (goel) prefigura Cristo como nosso Resgatador.',
+  'ruth-gentile-inclusion': 'A inclusão de Rute, uma moabita, na linhagem de Davi aponta para a inclusão dos gentios no reino de Cristo.',
+  'ruth-redemption-theme': 'O tema da redenção através do parente-resgatador aponta para a redenção em Cristo.',
+
+  // Christ Pointers for 1 Samuel
+  '1samuel-david-anointed': 'Davi como rei ungido mas rejeitado prefigura Cristo.',
+  '1samuel-kingdom-established': 'O estabelecimento do reino através de Davi aponta para o reino eterno de Cristo.',
+  '1samuel-david-goliath': 'A vitória de Davi sobre Golias prefigura a vitória de Cristo sobre os inimigos do povo de Deus.',
+
+  // Christ Pointers for 2 Samuel
+  '2samuel-davidic-covenant': 'A aliança davídica promete um descendente que reinará para sempre, cumprido em Cristo.',
+  '2samuel-david-perfect-king': 'Davi como rei segundo o coração de Deus prefigura Cristo como o Rei perfeito.',
+  '2samuel-kingdom-foreshadow': 'O reino de Davi como prenúncio do reino de Cristo.',
+
+  // Christ Pointers for 1 Kings
+  '1kings-temple-type': 'O templo construído por Salomão prefigura Cristo como o verdadeiro templo.',
+  '1kings-solomon-failure': 'O fracasso de Salomão e os reis subsequentes contrasta com o reinado perfeito de Cristo.',
+  '1kings-solomon-wisdom': 'A sabedoria de Salomão prefigura a sabedoria superior de Cristo.',
+
+  // Christ Pointers for 2 Kings
+  '2kings-kings-failure': 'O fracasso dos reis de Israel e Judá contrasta com a fidelidade de Cristo como Rei.',
+  '2kings-elisha-ministry': 'O ministério de Eliseu com seus milagres de cura e ressurreição prefigura o ministério de Cristo.',
+  '2kings-exile-restoration': 'O exílio e a esperança de restauração apontam para a restauração definitiva em Cristo.',
+
+  // Christ Pointers for 1 Chronicles
+  '1chronicles-genealogies-messiah': 'As genealogias traçam a linhagem do Messias.',
+  '1chronicles-david-worship': 'Davi como rei e o estabelecimento da adoração prefiguram o reinado e a verdadeira adoração em Cristo.',
+  '1chronicles-davidic-promise': 'A aliança com Davi promete um descendente que reinará para sempre.',
+
+  // Christ Pointers for 2 Chronicles
+  '2chronicles-temple-presence': 'O tema do templo como lugar da presença de Deus encontra cumprimento em Cristo.',
+  '2chronicles-reform-apostasy': 'Os períodos de reforma seguidos de apostasia apontam para a necessidade de uma reforma definitiva em Cristo.',
+  '2chronicles-cyrus-decree': 'O decreto de Ciro para retornar e reconstruir aponta para a restauração espiritual em Cristo.',
+
+  // Christ Pointers for Ezra
+  'ezra-return-from-exile': 'O retorno do exílio como etapa na história redentiva que conduz a Cristo.',
+  'ezra-temple-reconstruction': 'A reconstrução do templo prefigura Cristo como o verdadeiro templo.',
+  'ezra-covenant-restoration': 'O tema da restauração do povo da aliança encontra sua plenitude em Cristo.',
 
   // Book descriptions
   'christ-in-genesis': 'Em Gênesis, Cristo é revelado como o Criador, a semente prometida da mulher, o Cordeiro de Deus, e o Filho de Abraão.',

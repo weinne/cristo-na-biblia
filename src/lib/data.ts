@@ -226,24 +226,24 @@ export const books: Book[] = [
   {
     id: "joshua",
     testament: "old",
-    name: "Josué",
-    shortName: "Jos",
+    nameKey: "book-joshua",
+    shortNameKey: "abbr-joshua",
     categories: ["typology", "redemptive-historical"],
-    description: "A conquista da Terra Prometida sob a liderança de Josué.",
+    descriptionKey: "christ-in-joshua",
     christPointers: [
       {
         category: "typology",
-        description: "Josué como líder que conduz o povo à terra prometida prefigura Cristo que conduz seu povo ao descanso eterno.",
+        descriptionKey: "joshua-leader-type",
         verses: ["Josué 1:1-9"]
       },
       {
         category: "redemptive-historical",
-        description: "A conquista da terra representa o progresso do reino de Deus que será completado em Cristo.",
+        descriptionKey: "joshua-kingdom-progress",
         verses: ["Josué 21:43-45"]
       },
       {
         category: "typology",
-        description: "Raabe e o cordão escarlate prefiguram a salvação através do sangue de Cristo.",
+        descriptionKey: "joshua-rahab-type",
         verses: ["Josué 2:1-21", "Josué 6:22-25"]
       }
     ]
@@ -251,24 +251,24 @@ export const books: Book[] = [
   {
     id: "judges",
     testament: "old",
-    name: "Juízes",
-    shortName: "Juí",
+    nameKey: "book-judges",
+    shortNameKey: "abbr-judges",
     categories: ["typology", "contrast", "redemptive-historical"],
-    description: "O ciclo de apostasia, opressão, clamor e libertação através de juízes.",
+    descriptionKey: "christ-in-judges",
     christPointers: [
       {
         category: "typology",
-        description: "Os juízes como libertadores temporários prefiguram Cristo como o libertador definitivo.",
+        descriptionKey: "judges-liberators-type",
         verses: ["Juízes 2:16-19"]
       },
       {
         category: "contrast",
-        description: "A incapacidade dos juízes de trazer libertação permanente contrasta com a libertação completa em Cristo.",
+        descriptionKey: "judges-temporary-contrast",
         verses: ["Juízes 3-16"]
       },
       {
         category: "redemptive-historical",
-        description: "O caos e a necessidade de um rei apontam para o reinado perfeito de Cristo.",
+        descriptionKey: "judges-need-king",
         verses: ["Juízes 17:6", "Juízes 21:25"]
       }
     ]
@@ -276,24 +276,24 @@ export const books: Book[] = [
   {
     id: "ruth",
     testament: "old",
-    name: "Rute",
-    shortName: "Rute",
+    nameKey: "book-ruth",
+    shortNameKey: "abbr-ruth",
     categories: ["redemptive-historical", "typology"],
-    description: "A história de redenção de Rute através de seu parente-resgatador Boaz.",
+    descriptionKey: "christ-in-ruth",
     christPointers: [
       {
         category: "typology",
-        description: "Boaz como resgatador (goel) prefigura Cristo como nosso Resgatador.",
+        descriptionKey: "ruth-boaz-redeemer",
         verses: ["Rute 4:1-12"]
       },
       {
         category: "redemptive-historical",
-        description: "A inclusão de Rute, uma moabita, na linhagem de Davi aponta para a inclusão dos gentios no reino de Cristo.",
+        descriptionKey: "ruth-gentile-inclusion",
         verses: ["Rute 4:13-22"]
       },
       {
         category: "longitudinal-themes",
-        description: "O tema da redenção através do parente-resgatador aponta para a redenção em Cristo.",
+        descriptionKey: "ruth-redemption-theme",
         verses: ["Rute 3:9", "Rute 4:1-12"]
       }
     ]
@@ -301,24 +301,24 @@ export const books: Book[] = [
   {
     id: "1samuel",
     testament: "old",
-    name: "1 Samuel",
-    shortName: "1 Sam",
+    nameKey: "book-1-samuel",
+    shortNameKey: "abbr-1-samuel",
     categories: ["typology", "redemptive-historical"],
-    description: "A transição de Israel dos juízes para a monarquia, com ênfase em Samuel, Saul e Davi.",
+    descriptionKey: "christ-in-1-samuel",
     christPointers: [
       {
         category: "typology",
-        description: "Davi como rei ungido mas rejeitado prefigura Cristo.",
+        descriptionKey: "1samuel-david-anointed",
         verses: ["1 Samuel 16:1-13"]
       },
       {
         category: "redemptive-historical",
-        description: "O estabelecimento do reino através de Davi aponta para o reino eterno de Cristo.",
+        descriptionKey: "1samuel-kingdom-established",
         verses: ["1 Samuel 13:14", "1 Samuel 16:1-13"]
       },
       {
         category: "typology",
-        description: "A vitória de Davi sobre Golias prefigura a vitória de Cristo sobre os inimigos do povo de Deus.",
+        descriptionKey: "1samuel-david-goliath",
         verses: ["1 Samuel 17"]
       }
     ]
@@ -326,24 +326,24 @@ export const books: Book[] = [
   {
     id: "2samuel",
     testament: "old",
-    name: "2 Samuel",
-    shortName: "2 Sam",
+    nameKey: "book-2-samuel",
+    shortNameKey: "abbr-2-samuel",
     categories: ["promise-fulfillment", "typology"],
-    description: "O reinado de Davi e a aliança davídica.",
+    descriptionKey: "christ-in-2-samuel",
     christPointers: [
       {
         category: "promise-fulfillment",
-        description: "A aliança davídica promete um descendente que reinará para sempre, cumprido em Cristo.",
+        descriptionKey: "2samuel-davidic-covenant",
         verses: ["2 Samuel 7:12-16"]
       },
       {
         category: "typology",
-        description: "Davi como rei segundo o coração de Deus prefigura Cristo como o Rei perfeito.",
+        descriptionKey: "2samuel-david-perfect-king",
         verses: ["2 Samuel 5:1-5", "2 Samuel 7:1-17"]
       },
       {
         category: "redemptive-historical",
-        description: "O reino de Davi como prenúncio do reino de Cristo.",
+        descriptionKey: "2samuel-kingdom-foreshadow",
         verses: ["2 Samuel 5-10"]
       }
     ]
@@ -351,24 +351,24 @@ export const books: Book[] = [
   {
     id: "1kings",
     testament: "old",
-    name: "1 Reis",
-    shortName: "1 Reis",
+    nameKey: "book-1-kings",
+    shortNameKey: "abbr-1-kings",
     categories: ["typology", "contrast", "redemptive-historical"],
-    description: "O reinado de Salomão e a divisão do reino.",
+    descriptionKey: "christ-in-1-kings",
     christPointers: [
       {
         category: "typology",
-        description: "O templo construído por Salomão prefigura Cristo como o verdadeiro templo.",
+        descriptionKey: "1kings-temple-type",
         verses: ["1 Reis 6-8"]
       },
       {
         category: "contrast",
-        description: "O fracasso de Salomão e os reis subsequentes contrasta com o reinado perfeito de Cristo.",
+        descriptionKey: "1kings-solomon-failure",
         verses: ["1 Reis 11:1-13"]
       },
       {
         category: "typology",
-        description: "A sabedoria de Salomão prefigura a sabedoria superior de Cristo.",
+        descriptionKey: "1kings-solomon-wisdom",
         verses: ["1 Reis 3:3-28", "1 Reis 4:29-34"]
       }
     ]
@@ -376,24 +376,24 @@ export const books: Book[] = [
   {
     id: "2kings",
     testament: "old",
-    name: "2 Reis",
-    shortName: "2 Reis",
+    nameKey: "book-2-kings",
+    shortNameKey: "abbr-2-kings",
     categories: ["contrast", "redemptive-historical"],
-    description: "O declínio dos reinos divididos e o exílio.",
+    descriptionKey: "christ-in-2-kings",
     christPointers: [
       {
         category: "contrast",
-        description: "O fracasso dos reis de Israel e Judá contrasta com a fidelidade de Cristo como Rei.",
+        descriptionKey: "2kings-kings-failure",
         verses: ["2 Reis 17:7-23", "2 Reis 24-25"]
       },
       {
         category: "typology",
-        description: "O ministério de Eliseu com seus milagres de cura e ressurreição prefigura o ministério de Cristo.",
+        descriptionKey: "2kings-elisha-ministry",
         verses: ["2 Reis 4-5"]
       },
       {
         category: "redemptive-historical",
-        description: "O exílio e a esperança de restauração apontam para a restauração definitiva em Cristo.",
+        descriptionKey: "2kings-exile-restoration",
         verses: ["2 Reis 25:27-30"]
       }
     ]
@@ -401,24 +401,24 @@ export const books: Book[] = [
   {
     id: "1chronicles",
     testament: "old",
-    name: "1 Crônicas",
-    shortName: "1 Crôn",
+    nameKey: "book-1-chronicles",
+    shortNameKey: "abbr-1-chronicles",
     categories: ["redemptive-historical", "typology"],
-    description: "Genealogias e história de Israel com ênfase em Davi e no templo.",
+    descriptionKey: "christ-in-1-chronicles",
     christPointers: [
       {
         category: "redemptive-historical",
-        description: "As genealogias traçam a linhagem do Messias.",
+        descriptionKey: "1chronicles-genealogies-messiah",
         verses: ["1 Crônicas 1-9"]
       },
       {
         category: "typology",
-        description: "Davi como rei e o estabelecimento da adoração prefiguram o reinado e a verdadeira adoração em Cristo.",
+        descriptionKey: "1chronicles-david-worship",
         verses: ["1 Crônicas 15-16"]
       },
       {
         category: "promise-fulfillment",
-        description: "A aliança com Davi promete um descendente que reinará para sempre.",
+        descriptionKey: "1chronicles-davidic-promise",
         verses: ["1 Crônicas 17:11-14"]
       }
     ]
@@ -426,24 +426,24 @@ export const books: Book[] = [
   {
     id: "2chronicles",
     testament: "old",
-    name: "2 Crônicas",
-    shortName: "2 Crôn",
+    nameKey: "book-2-chronicles",
+    shortNameKey: "abbr-2-chronicles",
     categories: ["longitudinal-themes", "redemptive-historical"],
-    description: "A história dos reis de Judá com ênfase na fidelidade à aliança.",
+    descriptionKey: "christ-in-2-chronicles",
     christPointers: [
       {
         category: "longitudinal-themes",
-        description: "O tema do templo como lugar da presença de Deus encontra cumprimento em Cristo.",
+        descriptionKey: "2chronicles-temple-presence",
         verses: ["2 Crônicas 2-7"]
       },
       {
         category: "redemptive-historical",
-        description: "Os períodos de reforma seguidos de apostasia apontam para a necessidade de uma reforma definitiva em Cristo.",
+        descriptionKey: "2chronicles-reform-apostasy",
         verses: ["2 Crônicas 29-31", "2 Crônicas 34-35"]
       },
       {
         category: "redemptive-historical",
-        description: "O decreto de Ciro para retornar e reconstruir aponta para a restauração espiritual em Cristo.",
+        descriptionKey: "2chronicles-cyrus-decree",
         verses: ["2 Crônicas 36:22-23"]
       }
     ]
@@ -451,24 +451,24 @@ export const books: Book[] = [
   {
     id: "ezra",
     testament: "old",
-    name: "Esdras",
-    shortName: "Esd",
+    nameKey: "book-ezra",
+    shortNameKey: "abbr-ezra",
     categories: ["redemptive-historical", "typology"],
-    description: "O retorno do exílio e a reconstrução do templo.",
+    descriptionKey: "christ-in-ezra",
     christPointers: [
       {
         category: "redemptive-historical",
-        description: "O retorno do exílio como etapa na história redentiva que conduz a Cristo.",
+        descriptionKey: "ezra-return-from-exile",
         verses: ["Esdras 1:1-4"]
       },
       {
         category: "typology",
-        description: "A reconstrução do templo prefigura Cristo como o verdadeiro templo.",
+        descriptionKey: "ezra-temple-reconstruction",
         verses: ["Esdras 3:8-13", "Esdras 6:13-18"]
       },
       {
         category: "longitudinal-themes",
-        description: "O tema da restauração do povo da aliança encontra sua plenitude em Cristo.",
+        descriptionKey: "ezra-covenant-restoration",
         verses: ["Esdras 9-10"]
       }
     ]
