@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Category } from '@/lib/data';
+import { Category, books } from '@/lib/data';
 import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
 import { ChartBar, ChartLine, ChartPie, List, Grid, Folder, FolderOpen, View, BookOpen, ArrowRight, ExternalLink } from 'lucide-react';
@@ -41,7 +41,7 @@ const getGradient = (index: number, isDark: boolean): string => {
 
 const getCategoryIcon = (categoryId: string) => {
   const icons = {
-    'redemptive-progression': <ChartLine className="h-6 w-6" />,
+    'redemptive-historical': <ChartLine className="h-6 w-6" />,
     'promise-fulfillment': <List className="h-6 w-6" />,
     'typology': <ChartPie className="h-6 w-6" />,
     'analogy': <Grid className="h-6 w-6" />,
@@ -54,17 +54,8 @@ const getCategoryIcon = (categoryId: string) => {
 };
 
 const getBookCount = (categoryId: string): number => {
-  const counts = {
-    'redemptive-progression': 42,
-    'promise-fulfillment': 37,
-    'typology': 29,
-    'analogy': 25,
-    'longitudinal-themes': 33,
-    'new-testament-references': 45,
-    'contrast': 21
-  };
-  
-  return counts[categoryId as keyof typeof counts] || 0;
+  // Dynamically calculate the count from the actual data
+  return books.filter(book => book.categories.includes(categoryId)).length;
 };
 
 const getExampleVerses = (categoryId: string): string[] => {

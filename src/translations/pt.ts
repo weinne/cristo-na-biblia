@@ -66,6 +66,9 @@ export const pt = {
   'involved-description': 'Estamos continuamente expandindo este projeto e adoraríamos receber seu feedback e contribuições. Se você tem insights, sugestões ou deseja contribuir com conteúdo, entre em contato conosco.',
 
   // Categories Page
+  'hermeneutic-methods': 'Métodos Hermenêuticos',
+  'greidanus-categories-title': 'Categorias de Greidanus',
+  'explore-seven-ways': 'Explore sete maneiras pelas quais Cristo é revelado no texto bíblico, desde promessas até tipologia e referências do Novo Testamento.',
   'all-categories': 'Todas as Categorias',
   'category-description': 'Explore as diferentes maneiras pelas quais Cristo é revelado nas Escrituras. Cada categoria representa um método pelo qual Jesus é apresentado no texto bíblico.',
   'explore-category': 'Explorar Categoria',
