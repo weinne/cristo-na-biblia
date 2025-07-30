@@ -376,6 +376,65 @@ export const en = {
   'christ-in-jude': 'In Jude, Christ is the one able to keep us from stumbling and present us blameless before His glory.',
   'christ-in-revelation': 'In Revelation, Christ is the Alpha and Omega, the Lamb that was slain, the King of kings who returns in glory to judge and reign eternally.',
   
+  // Christ Pointers - New Testament detailed descriptions
+  'matthew-promise-fulfillment': 'Matthew frequently notes how Jesus fulfilled Old Testament prophecies.',
+  'matthew-nt-references': 'Explicitly connects Jesus to Old Testament prophecies about the Messiah.',
+  'matthew-genealogy': 'Presents Jesus\' genealogy as fulfillment of promises to Abraham and David.',
+  'matthew-new-moses': 'Presents Jesus as the new Moses who gives the new law in the Sermon on the Mount.',
+  
+  'mark-servant-type': 'Presents Jesus as the Servant of the Lord, connecting him to the Servant Songs in Isaiah.',
+  'mark-kingdom-god': 'Emphasizes the kingdom of God breaking into history through Jesus.',
+  'mark-ot-fulfillment': 'Quotes the Old Testament to show Jesus as fulfillment of Scripture.',
+  
+  'luke-historical-context': 'Places Jesus\' life in the context of world history and God\'s redemptive plan.',
+  'luke-universal-salvation': 'Shows how Jesus fulfills promises to Israel and brings salvation to all nations.',
+  'luke-salvation-theme': 'Develops the theme of salvation for the lost and marginalized.',
+  'luke-holy-spirit': 'Emphasizes the role of the Holy Spirit in Jesus\' life and ministry.',
+  
+  'john-word-incarnate': 'Identifies Jesus as the eternal Word made flesh.',
+  'john-eternal-life': 'Presents Jesus as the giver of eternal life through faith.',
+  'john-light-darkness': 'Contrasts Jesus as the true light with the darkness of the world.',
+  'john-signs-deity': 'Jesus\' signs reveal his divinity and messiahship.',
+  'john-good-shepherd': 'Jesus identifies himself as the Good Shepherd who lays down his life for the sheep.',
+  
+  'acts-gospel-expansion': 'Shows how the gospel expands from Jerusalem to the ends of the earth, fulfilling God\'s plan.',
+  'acts-spirit-promise': 'Shows the outpouring of the Spirit as fulfillment of Jesus\' promise and Old Testament prophecies.',
+  'acts-ot-interpretation': 'The sermons frequently interpret the Old Testament in light of Christ.',
+  'acts-kingdom-theme': 'Develops the theme of God\'s kingdom continuing to expand after Christ\'s ascension.',
+  
+  'romans-adam-christ': 'Traces God\'s redemptive plan from Adam to Christ.',
+  'romans-israel-promises': 'Shows how Christ fulfills God\'s promises to Israel.',
+  'romans-justification': 'Presents justification by faith as parallel to Abraham\'s faith.',
+  'romans-sacrificial-system': 'Contrasts Christ\'s one sacrifice with the repetitive sacrificial system.',
+  
+  '1corinthians-ot-types': 'Uses Old Testament events as types pointing to realities in Christ.',
+  '1corinthians-passover-firstfruits': 'Presents Christ as the true Passover and firstfruits of resurrection.',
+  '1corinthians-new-creation': 'Places Christ as the climax of redemptive history and foundation of new creation.',
+  '1corinthians-wisdom-contrast': 'Contrasts worldly wisdom with true wisdom of God revealed in Christ.',
+  
+  '2corinthians-old-new-covenant': 'Contrasts old and new covenant, showing the superiority of the new in Christ.',
+  '2corinthians-reconciliation': 'Develops the theme of reconciliation with God through Christ.',
+  '2corinthians-promises-fulfilled': 'Presents Christ as God\'s "Yes" to all his promises.',
+  
+  'galatians-abraham-promise': 'Shows how Christ is the fulfillment of the promise to Abraham.',
+  'galatians-law-tutor': 'Presents the law as temporary tutor until Christ\'s coming.',
+  'galatians-sarah-hagar': 'Uses the allegory of Sarah and Hagar to contrast the covenants.',
+  'galatians-freedom-christ': 'Contrasts slavery under law with freedom in Christ.',
+  
+  'ephesians-unity-christ': 'Develops the theme of unity of Jews and Gentiles in Christ.',
+  'ephesians-church-body': 'Presents the church as Christ\'s body growing toward maturity.',
+  'ephesians-spiritual-warfare': 'Places Christian life as participation in Christ\'s victory over principalities and powers.',
+  'ephesians-creation-theme': 'Connects the new creation in Christ with God\'s eternal purposes.',
+  
+  'philippians-humility-exaltation': 'Presents Jesus as supreme example of humility leading to exaltation.',
+  'philippians-suffering-glory': 'Develops the theme of sharing in Christ\'s sufferings to share in his glory.',
+  'philippians-joy-christ': 'Presents Christ as the source of true joy in all circumstances.',
+  
+  'colossians-image-god': 'Presents Christ as the perfect image and fullness of God.',
+  'colossians-supremacy-christ': 'Develops the theme of Christ\'s supremacy over all creation.',
+  'colossians-shadow-reality': 'Contrasts the shadows of the law with the reality found in Christ.',
+  'colossians-hidden-christ': 'Presents Christian life as hidden with Christ in God.',
+  
   // Christ Pointers - Detailed descriptions  
   'genesis-promise-seed': 'The promise of the woman\'s seed who will crush the serpent\'s head (Genesis 3:15) points to Christ\'s victory over Satan.',
   'genesis-isaac-sacrifice': 'Abraham\'s offering of Isaac prefigures God\'s sacrifice of His Son.',

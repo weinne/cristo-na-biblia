@@ -1129,29 +1129,29 @@ export const books: Book[] = [
   {
     id: "matthew",
     testament: "new",
-    name: "Mateus",
-    shortName: "Mat",
+    nameKey: "book-matthew",
+    shortNameKey: "abbr-matthew",
     categories: ["new-testament-references", "promise-fulfillment"],
-    description: "Apresenta Jesus como o prometido Messias e Rei dos judeus.",
+    descriptionKey: "christ-in-matthew",
     christPointers: [
       {
         category: "promise-fulfillment",
-        description: "Mateus frequentemente nota como Jesus cumpriu as profecias do Antigo Testamento.",
+        descriptionKey: "matthew-promise-fulfillment",
         verses: ["Mateus 1:22-23", "Mateus 2:15", "Mateus 8:17"]
       },
       {
         category: "new-testament-references",
-        description: "Conecta explicitamente Jesus às profecias do Antigo Testamento sobre o Messias.",
+        descriptionKey: "matthew-nt-references",
         verses: ["Mateus 5:17-18"]
       },
       {
         category: "redemptive-historical",
-        description: "Apresenta a genealogia de Jesus como cumprimento das promessas a Abraão e Davi.",
+        descriptionKey: "matthew-genealogy",
         verses: ["Mateus 1:1-17"]
       },
       {
         category: "longitudinal-themes",
-        description: "Apresenta Jesus como o novo Moisés que dá a nova lei no Sermão do Monte.",
+        descriptionKey: "matthew-new-moses",
         verses: ["Mateus 5-7"]
       }
     ]
@@ -1159,24 +1159,24 @@ export const books: Book[] = [
   {
     id: "mark",
     testament: "new",
-    name: "Marcos",
-    shortName: "Mar",
+    nameKey: "book-mark",
+    shortNameKey: "abbr-mark",
     categories: ["typology", "redemptive-historical"],
-    description: "Retrata Jesus como o Servo sofredor e poderoso Filho de Deus.",
+    descriptionKey: "christ-in-mark",
     christPointers: [
       {
         category: "typology",
-        description: "Apresenta Jesus como o Servo do Senhor, conectando-o aos Cânticos do Servo em Isaías.",
+        descriptionKey: "mark-servant-type",
         verses: ["Marcos 10:45"]
       },
       {
         category: "redemptive-historical",
-        description: "Enfatiza o reino de Deus que irrompe na história através de Jesus.",
+        descriptionKey: "mark-kingdom-god",
         verses: ["Marcos 1:14-15"]
       },
       {
         category: "new-testament-references",
-        description: "Cita o Antigo Testamento para mostrar Jesus como cumprimento das Escrituras.",
+        descriptionKey: "mark-ot-fulfillment",
         verses: ["Marcos 1:2-3", "Marcos 7:6-7"]
       }
     ]
@@ -1184,29 +1184,29 @@ export const books: Book[] = [
   {
     id: "luke",
     testament: "new",
-    name: "Lucas",
-    shortName: "Luc",
+    nameKey: "book-luke",
+    shortNameKey: "abbr-luke",
     categories: ["redemptive-historical", "promise-fulfillment", "longitudinal-themes"],
-    description: "Apresenta Jesus como o Salvador para todas as pessoas.",
+    descriptionKey: "christ-in-luke",
     christPointers: [
       {
         category: "redemptive-historical",
-        description: "Situa a vida de Jesus no contexto da história mundial e do plano redentor de Deus.",
+        descriptionKey: "luke-historical-context",
         verses: ["Lucas 2:1-7", "Lucas 3:1-6"]
       },
       {
         category: "promise-fulfillment",
-        description: "Mostra como Jesus cumpre as promessas a Israel e traz salvação para todas as nações.",
+        descriptionKey: "luke-universal-salvation",
         verses: ["Lucas 1:46-55", "Lucas 2:29-32"]
       },
       {
         category: "longitudinal-themes",
-        description: "Desenvolve o tema do Espírito Santo que unge Jesus e posteriormente a Igreja.",
+        descriptionKey: "luke-holy-spirit",
         verses: ["Lucas 3:21-22", "Lucas 4:18-19"]
       },
       {
         category: "typology",
-        description: "Apresenta Jesus como o novo Adão através de sua genealogia.",
+        descriptionKey: "luke-salvation-theme",
         verses: ["Lucas 3:23-38"]
       }
     ]
@@ -1214,59 +1214,64 @@ export const books: Book[] = [
   {
     id: "john",
     testament: "new",
-    name: "João",
-    shortName: "João",
+    nameKey: "book-john",
+    shortNameKey: "abbr-john",
     categories: ["typology", "longitudinal-themes", "new-testament-references"],
-    description: "Revela Jesus como o Verbo eterno de Deus e o Cristo, o Filho de Deus.",
+    descriptionKey: "christ-in-john",
     christPointers: [
       {
         category: "typology",
-        description: "Usa imagens do Antigo Testamento como água, pão, pastor e luz para revelar a identidade de Jesus.",
+        descriptionKey: "john-word-incarnate",
         verses: ["João 4:10-14", "João 6:35-51", "João 8:12", "João 10:1-18"]
       },
       {
         category: "longitudinal-themes",
-        description: "Apresenta Jesus como a plena revelação de Deus, o clímax da auto-revelação progressiva de Deus.",
+        descriptionKey: "john-eternal-life",
         verses: ["João 1:1-18", "João 14:6-11"]
       },
       {
         category: "new-testament-references",
-        description: "Mostra como Jesus cumpre as festas e instituições judaicas.",
+        descriptionKey: "john-light-darkness",
         verses: ["João 1:29", "João 2:19-22", "João 7:37-39"]
       },
       {
         category: "promise-fulfillment",
-        description: "Conecta Jesus às profecias e expectativas messiânicas.",
+        descriptionKey: "john-signs-deity",
         verses: ["João 1:45", "João 5:46"]
+      },
+      {
+        category: "typology",
+        descriptionKey: "john-good-shepherd",
+        verses: ["João 10:1-18"]
       }
     ]
   },
   {
     id: "acts",
     testament: "new",
-    name: "Atos",
-    shortName: "Atos",
+    nameKey: "book-acts",
+    shortNameKey: "abbr-acts",
     categories: ["redemptive-historical", "promise-fulfillment", "new-testament-references"],
-    description: "Registra a continuação da obra de Jesus através do Espírito Santo na expansão da Igreja.",
+    descriptionKey: "christ-in-acts",
     christPointers: [
       {
         category: "redemptive-historical",
-        description: "Mostra como o evangelho se expande de Jerusalém para os confins da terra, cumprindo o plano de Deus.",
+        descriptionKey: "acts-gospel-expansion",
         verses: ["Atos 1:8", "Atos 2:1-41"]
       },
       {
         category: "promise-fulfillment",
-        description: "Mostra o derramamento do Espírito como cumprimento da promessa de Jesus e das profecias do Antigo Testamento.",
+        descriptionKey: "acts-spirit-promise",
         verses: ["Atos 2:14-41"]
       },
       {
         category: "new-testament-references",
-        description: "Os sermões frequentemente interpretam o Antigo Testamento à luz de Cristo.",
+        descriptionKey: "acts-ot-interpretation",
         verses: ["Atos 2:25-36", "Atos 3:17-26", "Atos 7:1-53"]
       },
       {
         category: "longitudinal-themes",
-        description: "Desenvolve o tema do reino de Deus que continua a se expandir após a ascensão de Cristo.",
+        descriptionKey: "acts-kingdom-theme",
         verses: ["Atos 1:3", "Atos 8:12", "Atos 28:23-31"]
       }
     ]
@@ -1276,59 +1281,59 @@ export const books: Book[] = [
   {
     id: "romans",
     testament: "new",
-    name: "Romanos",
-    shortName: "Rom",
+    nameKey: "book-romans",
+    shortNameKey: "abbr-romans",
     categories: ["redemptive-historical", "promise-fulfillment", "analogy"],
-    description: "A obra-prima teológica de Paulo explicando o evangelho de Cristo.",
+    descriptionKey: "christ-in-romans",
     christPointers: [
       {
         category: "redemptive-historical",
-        description: "Traça o plano redentor de Deus de Adão a Cristo.",
+        descriptionKey: "romans-adam-christ",
         verses: ["Romanos 5:12-21"]
       },
       {
         category: "promise-fulfillment",
-        description: "Mostra como Cristo cumpre as promessas de Deus a Israel.",
+        descriptionKey: "romans-israel-promises",
         verses: ["Romanos 9-11"]
       },
       {
         category: "analogy",
-        description: "Apresenta Cristo como o segundo Adão que reverte os efeitos do primeiro Adão.",
-        verses: ["Romanos 5:12-21"]
+        descriptionKey: "romans-justification",
+        verses: ["Romanos 4:1-25"]
       },
       {
-        category: "new-testament-references",
-        description: "Interpreta extensivamente as Escrituras do Antigo Testamento à luz de Cristo.",
-        verses: ["Romanos 3:9-20", "Romanos 4:1-25", "Romanos 10:5-21"]
+        category: "contrast",
+        descriptionKey: "romans-sacrificial-system",
+        verses: ["Romanos 3:9-20", "Romanos 10:5-21"]
       }
     ]
   },
   {
     id: "1corinthians",
     testament: "new",
-    name: "1 Coríntios",
-    shortName: "1 Cor",
+    nameKey: "book-1-corinthians",
+    shortNameKey: "abbr-1-corinthians",
     categories: ["typology", "analogy", "redemptive-historical"],
-    description: "Aborda problemas na igreja de Corinto e ensina sobre a sabedoria de Deus em Cristo.",
+    descriptionKey: "christ-in-1-corinthians",
     christPointers: [
       {
         category: "typology",
-        description: "Usa eventos do Antigo Testamento como tipos que apontam para realidades em Cristo.",
+        descriptionKey: "1corinthians-ot-types",
         verses: ["1 Coríntios 10:1-13"]
       },
       {
         category: "analogy",
-        description: "Apresenta Cristo como a verdadeira páscoa e primícias da ressurreição.",
+        descriptionKey: "1corinthians-passover-firstfruits",
         verses: ["1 Coríntios 5:7", "1 Coríntios 15:20-23"]
       },
       {
         category: "redemptive-historical",
-        description: "Situa Cristo como o clímax da história redentora e o fundamento da nova criação.",
+        descriptionKey: "1corinthians-new-creation",
         verses: ["1 Coríntios 15:20-28", "1 Coríntios 15:45-49"]
       },
       {
         category: "contrast",
-        description: "Contrasta a sabedoria do mundo com a verdadeira sabedoria de Deus revelada em Cristo.",
+        descriptionKey: "1corinthians-wisdom-contrast",
         verses: ["1 Coríntios 1:18-2:16"]
       }
     ]
@@ -1336,59 +1341,54 @@ export const books: Book[] = [
   {
     id: "2corinthians",
     testament: "new",
-    name: "2 Coríntios",
-    shortName: "2 Cor",
+    nameKey: "book-2-corinthians",
+    shortNameKey: "abbr-2-corinthians",
     categories: ["contrast", "longitudinal-themes", "promise-fulfillment"],
-    description: "Defesa do apostolado de Paulo e ensinamentos sobre ministério e generosidade.",
+    descriptionKey: "christ-in-2-corinthians",
     christPointers: [
       {
         category: "contrast",
-        description: "Contrasta o ministério da morte na antiga aliança com o ministério do Espírito na nova aliança em Cristo.",
+        descriptionKey: "2corinthians-old-new-covenant",
         verses: ["2 Coríntios 3:4-18"]
       },
       {
         category: "longitudinal-themes",
-        description: "Desenvolve o tema da nova criação inaugurada em Cristo.",
+        descriptionKey: "2corinthians-reconciliation",
         verses: ["2 Coríntios 5:17"]
       },
       {
         category: "promise-fulfillment",
-        description: "Apresenta Cristo como o 'sim' a todas as promessas de Deus.",
+        descriptionKey: "2corinthians-promises-fulfilled",
         verses: ["2 Coríntios 1:19-20"]
-      },
-      {
-        category: "typology",
-        description: "Usa o véu de Moisés como tipo que encontra seu antitipo em Cristo.",
-        verses: ["2 Coríntios 3:12-18"]
       }
     ]
   },
   {
     id: "galatians",
     testament: "new",
-    name: "Gálatas",
-    shortName: "Gál",
+    nameKey: "book-galatians",
+    shortNameKey: "abbr-galatians",
     categories: ["promise-fulfillment", "redemptive-historical", "analogy"],
-    description: "Defesa da justificação pela fé contra o legalismo.",
+    descriptionKey: "christ-in-galatians",
     christPointers: [
       {
         category: "promise-fulfillment",
-        description: "Mostra como Cristo é o cumprimento da promessa a Abraão.",
+        descriptionKey: "galatians-abraham-promise",
         verses: ["Gálatas 3:8-14", "Gálatas 3:15-29"]
       },
       {
         category: "redemptive-historical",
-        description: "Apresenta a lei como tutor temporário até a vinda de Cristo.",
+        descriptionKey: "galatians-law-tutor",
         verses: ["Gálatas 3:19-25", "Gálatas 4:1-7"]
       },
       {
         category: "analogy",
-        description: "Usa a alegoria de Sara e Agar para contrastar as alianças.",
+        descriptionKey: "galatians-sarah-hagar",
         verses: ["Gálatas 4:21-31"]
       },
       {
         category: "contrast",
-        description: "Contrasta a escravidão sob a lei com a liberdade em Cristo.",
+        descriptionKey: "galatians-freedom-christ",
         verses: ["Gálatas 2:15-21", "Gálatas 5:1-6"]
       }
     ]
@@ -1396,29 +1396,29 @@ export const books: Book[] = [
   {
     id: "ephesians",
     testament: "new",
-    name: "Efésios",
-    shortName: "Efé",
+    nameKey: "book-ephesians",
+    shortNameKey: "abbr-ephesians",
     categories: ["redemptive-historical", "longitudinal-themes", "contrast"],
-    description: "A unidade da Igreja em Cristo e a vida na nova comunidade.",
+    descriptionKey: "christ-in-ephesians",
     christPointers: [
       {
         category: "redemptive-historical",
-        description: "Apresenta o plano eterno de Deus que culmina em Cristo unindo todas as coisas.",
+        descriptionKey: "ephesians-creation-theme",
         verses: ["Efésios 1:3-14", "Efésios 3:1-13"]
       },
       {
         category: "longitudinal-themes",
-        description: "Desenvolve o tema do novo templo em Cristo, onde judeus e gentios são unidos.",
+        descriptionKey: "ephesians-unity-christ",
         verses: ["Efésios 2:11-22"]
       },
       {
         category: "contrast",
-        description: "Contrasta o velho homem com o novo homem em Cristo.",
+        descriptionKey: "ephesians-church-body",
         verses: ["Efésios 4:17-24"]
       },
       {
         category: "typology",
-        description: "Usa o casamento humano como tipo do relacionamento entre Cristo e a Igreja.",
+        descriptionKey: "ephesians-spiritual-warfare",
         verses: ["Efésios 5:22-33"]
       }
     ]
@@ -1426,59 +1426,54 @@ export const books: Book[] = [
   {
     id: "philippians",
     testament: "new",
-    name: "Filipenses",
-    shortName: "Fil",
+    nameKey: "book-philippians",
+    shortNameKey: "abbr-philippians",
     categories: ["typology", "contrast", "longitudinal-themes"],
-    description: "Exortação à alegria e humildade em Cristo em meio às dificuldades.",
+    descriptionKey: "christ-in-philippians",
     christPointers: [
       {
         category: "typology",
-        description: "Apresenta Paulo como modelo da vida cruciforme que segue o padrão de Cristo.",
+        descriptionKey: "philippians-suffering-glory",
         verses: ["Filipenses 3:4-14"]
       },
       {
         category: "contrast",
-        description: "Contrasta a justiça baseada na lei com a justiça baseada na fé em Cristo.",
+        descriptionKey: "philippians-joy-christ",
         verses: ["Filipenses 3:2-11"]
       },
       {
         category: "longitudinal-themes",
-        description: "Desenvolve o tema da cidadania celestial em contraste com a terrena.",
+        descriptionKey: "philippians-humility-exaltation",
         verses: ["Filipenses 3:17-21"]
-      },
-      {
-        category: "typology",
-        description: "Apresenta Cristo como o modelo supremo de humildade e serviço.",
-        verses: ["Filipenses 2:5-11"]
       }
     ]
   },
   {
     id: "colossians",
     testament: "new",
-    name: "Colossenses",
-    shortName: "Col",
+    nameKey: "book-colossians",
+    shortNameKey: "abbr-colossians",
     categories: ["analogy", "contrast", "longitudinal-themes"],
-    description: "A supremacia de Cristo sobre tudo e a vida em união com Ele.",
+    descriptionKey: "christ-in-colossians",
     christPointers: [
       {
         category: "analogy",
-        description: "Apresenta Cristo como a imagem visível do Deus invisível, análogo mas superior a qualquer representação anterior.",
+        descriptionKey: "colossians-image-god",
         verses: ["Colossenses 1:15-20"]
       },
       {
         category: "contrast",
-        description: "Contrasta a suficiência de Cristo com as filosofias e práticas religiosas humanas.",
+        descriptionKey: "colossians-shadow-reality",
         verses: ["Colossenses 2:8-15", "Colossenses 2:16-23"]
       },
       {
         category: "longitudinal-themes",
-        description: "Desenvolve o tema da sabedoria encontrada plenamente em Cristo.",
+        descriptionKey: "colossians-supremacy-christ",
         verses: ["Colossenses 2:1-5"]
       },
       {
         category: "typology",
-        description: "Apresenta a circuncisão física como tipo da circuncisão espiritual em Cristo.",
+        descriptionKey: "colossians-hidden-christ",
         verses: ["Colossenses 2:11-12"]
       }
     ]

@@ -351,6 +351,65 @@ export const es = {
   'christ-in-jude': 'En Judas, Cristo es aquel que puede guardarnos sin caída y presentarnos sin mancha delante de su gloria.',
   'christ-in-revelation': 'En Apocalipsis, Cristo es el Alfa y la Omega, el Cordero que fue inmolado, el Rey de reyes que regresa en gloria para juzgar y reinar eternamente.',
   
+  // Christ Pointers - New Testament detailed descriptions
+  'matthew-promise-fulfillment': 'Mateo frecuentemente nota cómo Jesús cumplió las profecías del Antiguo Testamento.',
+  'matthew-nt-references': 'Conecta explícitamente a Jesús con las profecías del Antiguo Testamento sobre el Mesías.',
+  'matthew-genealogy': 'Presenta la genealogía de Jesús como cumplimiento de las promesas a Abraham y David.',
+  'matthew-new-moses': 'Presenta a Jesús como el nuevo Moisés que da la nueva ley en el Sermón del Monte.',
+  
+  'mark-servant-type': 'Presenta a Jesús como el Siervo del Señor, conectándolo con los Cánticos del Siervo en Isaías.',
+  'mark-kingdom-god': 'Enfatiza el reino de Dios irrumpiendo en la historia a través de Jesús.',
+  'mark-ot-fulfillment': 'Cita el Antiguo Testamento para mostrar a Jesús como cumplimiento de las Escrituras.',
+  
+  'luke-historical-context': 'Sitúa la vida de Jesús en el contexto de la historia mundial y el plan redentor de Dios.',
+  'luke-universal-salvation': 'Muestra cómo Jesús cumple las promesas a Israel y trae salvación a todas las naciones.',
+  'luke-salvation-theme': 'Desarrolla el tema de la salvación para los perdidos y marginados.',
+  'luke-holy-spirit': 'Enfatiza el papel del Espíritu Santo en la vida y ministerio de Jesús.',
+  
+  'john-word-incarnate': 'Identifica a Jesús como el Verbo eterno hecho carne.',
+  'john-eternal-life': 'Presenta a Jesús como el dador de la vida eterna a través de la fe.',
+  'john-light-darkness': 'Contrasta a Jesús como la luz verdadera con las tinieblas del mundo.',
+  'john-signs-deity': 'As señales de Jesús revelan su divinidad y mesianidad.',
+  'john-good-shepherd': 'Jesús se identifica como el Buen Pastor que da su vida por las ovejas.',
+  
+  'acts-gospel-expansion': 'Muestra cómo el evangelio se expande de Jerusalén hasta los confines de la tierra, cumpliendo el plan de Dios.',
+  'acts-spirit-promise': 'Muestra el derramamiento del Espíritu como cumplimiento de la promesa de Jesús y las profecías del Antiguo Testamento.',
+  'acts-ot-interpretation': 'Los sermones frecuentemente interpretan el Antiguo Testamento a la luz de Cristo.',
+  'acts-kingdom-theme': 'Desarrolla el tema del reino de Dios que continúa expandiéndose después de la ascensión de Cristo.',
+  
+  'romans-adam-christ': 'Traza el plan redentor de Dios de Adán a Cristo.',
+  'romans-israel-promises': 'Muestra cómo Cristo cumple las promesas de Dios a Israel.',
+  'romans-justification': 'Presenta la justificación por la fe como paralelo a la fe de Abraham.',
+  'romans-sacrificial-system': 'Contrasta el único sacrificio de Cristo con el sistema sacrificial repetitivo.',
+  
+  '1corinthians-ot-types': 'Usa eventos del Antiguo Testamento como tipos que apuntan a realidades en Cristo.',
+  '1corinthians-passover-firstfruits': 'Presenta a Cristo como la verdadera pascua y primicias de la resurrección.',
+  '1corinthians-new-creation': 'Sitúa a Cristo como el clímax de la historia redentora y fundamento de la nueva creación.',
+  '1corinthians-wisdom-contrast': 'Contrasta la sabiduría del mundo con la verdadera sabiduría de Dios revelada en Cristo.',
+  
+  '2corinthians-old-new-covenant': 'Contrasta el viejo y nuevo pacto, mostrando la superioridad del nuevo en Cristo.',
+  '2corinthians-reconciliation': 'Desarrolla el tema de la reconciliación con Dios a través de Cristo.',
+  '2corinthians-promises-fulfilled': 'Presenta a Cristo como el "Sí" de Dios a todas sus promesas.',
+  
+  'galatians-abraham-promise': 'Muestra cómo Cristo es el cumplimiento de la promesa a Abraham.',
+  'galatians-law-tutor': 'Presenta la ley como tutor temporal hasta la venida de Cristo.',
+  'galatians-sarah-hagar': 'Usa la alegoría de Sara y Agar para contrastar los pactos.',
+  'galatians-freedom-christ': 'Contrasta la esclavitud bajo la ley con la libertad en Cristo.',
+  
+  'ephesians-unity-christ': 'Desarrolla el tema de la unidad de judíos y gentiles en Cristo.',
+  'ephesians-church-body': 'Presenta la iglesia como el cuerpo de Cristo creciendo hacia la madurez.',
+  'ephesians-spiritual-warfare': 'Sitúa la vida cristiana como participación en la victoria de Cristo sobre principados y potestades.',
+  'ephesians-creation-theme': 'Conecta la nueva creación en Cristo con los propósitos eternos de Dios.',
+  
+  'philippians-humility-exaltation': 'Presenta a Jesús como ejemplo supremo de humildad que lleva a la exaltación.',
+  'philippians-suffering-glory': 'Desarrolla el tema de participar en los sufrimientos de Cristo para participar de su gloria.',
+  'philippians-joy-christ': 'Presenta a Cristo como la fuente del verdadero gozo en todas las circunstancias.',
+  
+  'colossians-image-god': 'Presenta a Cristo como la imagen perfecta y la plenitud de Dios.',
+  'colossians-supremacy-christ': 'Desarrolla el tema de la supremacía de Cristo sobre toda la creación.',
+  'colossians-shadow-reality': 'Contrasta las sombras de la ley con la realidad encontrada en Cristo.',
+  'colossians-hidden-christ': 'Presenta la vida cristiana como escondida con Cristo en Dios.',
+  
   // Christ Pointers - Detailed descriptions
   'genesis-promise-seed': 'La promesa de la simiente de la mujer que aplastará la cabeza de la serpiente (Génesis 3:15) apunta a la victoria de Cristo sobre Satanás.',
   'genesis-isaac-sacrifice': 'La ofrenda de Isaac por Abraham prefigura el sacrificio de Dios de Su Hijo.',
