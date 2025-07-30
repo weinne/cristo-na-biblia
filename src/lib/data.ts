@@ -194,29 +194,29 @@ export const books: Book[] = [
   {
     id: "deuteronomy",
     testament: "old",
-    name: "Deuteronômio",
-    shortName: "Deut",
+    nameKey: "book-deuteronomy",
+    shortNameKey: "abbr-deuteronomy",
     categories: ["promise-fulfillment", "typology", "longitudinal-themes"],
-    description: "A renovação da aliança e as instruções finais de Moisés antes de entrar na Terra Prometida.",
+    descriptionKey: "christ-in-deuteronomy",
     christPointers: [
       {
         category: "promise-fulfillment",
-        description: "A promessa de um profeta como Moisés encontra seu cumprimento em Cristo.",
+        descriptionKey: "deuteronomy-prophet-promise",
         verses: ["Deuteronômio 18:15-19"]
       },
       {
         category: "typology",
-        description: "A entrada na Terra Prometida prefigura o descanso espiritual encontrado em Cristo.",
+        descriptionKey: "deuteronomy-promised-land",
         verses: ["Deuteronômio 3:18-20"]
       },
       {
         category: "longitudinal-themes",
-        description: "O tema da obediência à lei encontra seu cumprimento em Cristo, que obedeceu perfeitamente à lei de Deus.",
+        descriptionKey: "deuteronomy-law-obedience",
         verses: ["Deuteronômio 6:4-9", "Deuteronômio 30:11-14"]
       },
       {
         category: "redemptive-historical",
-        description: "As bênçãos e maldições da aliança encontram resolução em Cristo, que levou a maldição para dar-nos a bênção.",
+        descriptionKey: "deuteronomy-blessings-curses",
         verses: ["Deuteronômio 28-30"]
       }
     ]

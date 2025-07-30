@@ -140,6 +140,13 @@ export const pt = {
   'more': 'Mostrar mais',
   'less': 'Mostrar menos',
   
+  // Additional missing translations
+  'exploring-books': 'Explorando livros da Bíblia e descobrindo Cristo em cada um.',
+  'who-am-i': 'Quem sou eu',
+  'about-the-project': 'Sobre o Projeto',
+  'project-created': 'Projeto criado com amor para explorar Cristo em toda a Escritura.',
+  'all-rights-reserved': 'Todos os direitos reservados',
+  
   // Bible Books (Old Testament)
   'book-genesis': 'Gênesis',
   'book-exodus': 'Êxodo',
@@ -280,6 +287,20 @@ export const pt = {
   'abbr-jude': 'Jd',
   'abbr-revelation': 'Ap',
   
+  'christ-in-deuteronomy': 'Em Deuteronômio, Cristo é o profeta maior que Moisés, que falaria as palavras de Deus e a quem devemos ouvir.',
+  'christ-in-joshua': 'Em Josué, Cristo é nosso líder e comandante que nos guia para a terra prometida e nos dá descanso de nossos inimigos.',
+  'christ-in-judges': 'Em Juízes, Cristo é o libertador perfeito que definitivamente resgata seu povo da opressão do pecado e da morte.',
+  'christ-in-ruth': 'Em Rute, Cristo é nosso parente redentor que paga o preço para nos redimir e nos traz de volta à família de Deus.',
+  'christ-in-1-samuel': 'Em 1 Samuel, Cristo é o rei ungido de Deus, o verdadeiro Davi que governa com justiça e retidão.',
+  'christ-in-2-samuel': 'Em 2 Samuel, Cristo é o descendente prometido de Davi cujo reino será estabelecido para sempre.',
+  // Additional descriptions as needed...
+  
+  // Christ Pointers for Deuteronomy - Detailed descriptions
+  'deuteronomy-prophet-promise': 'A promessa de um profeta como Moisés encontra seu cumprimento em Cristo.',
+  'deuteronomy-promised-land': 'A entrada na Terra Prometida prefigura o descanso espiritual encontrado em Cristo.',
+  'deuteronomy-law-obedience': 'O tema da obediência à lei encontra seu cumprimento em Cristo, que obedeceu perfeitamente à lei de Deus.',
+  'deuteronomy-blessings-curses': 'As bênçãos e maldições da aliança encontram resolução em Cristo, que levou a maldição para dar-nos a bênção.',
+
   // Book descriptions
   'christ-in-genesis': 'Em Gênesis, Cristo é revelado como o Criador, a semente prometida da mulher, o Cordeiro de Deus, e o Filho de Abraão.',
   'christ-in-exodus': 'Em Êxodo, Cristo é prefigurado no cordeiro pascal, no maná do céu, na água da rocha, e como o mediador da aliança.',
