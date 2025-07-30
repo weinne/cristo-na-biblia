@@ -62,7 +62,7 @@ const BookDetail = () => {
               {getTestamentTranslation(book.testament)}
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-primary dark:text-gray-100">
-              {book.name}
+              {t(book.nameKey)}
             </h1>
           </motion.div>
           
@@ -79,7 +79,7 @@ const BookDetail = () => {
                   to="/categories" 
                   className="text-xs bg-white dark:bg-gray-800 text-primary dark:text-gray-200 border border-border px-3 py-1 rounded-full hover:bg-secondary/50 dark:hover:bg-gray-700/50 transition-colors"
                 >
-                  {category.name}
+                  {t(category.nameKey)}
                 </Link>
               ))}
             </motion.div>

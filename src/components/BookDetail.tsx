@@ -79,7 +79,7 @@ const formatBibleReference = (reference: string): string => {
     'Apocalipse': 'REV', 'Ap': 'REV', 'Apocalipsis': 'REV'
   };
 
-  const regex = /^((?:\d+\s+)?[A-Za-zÀ-ú]+)(?:\s+(\d+)(?:[:\.](\d+)(?:-(\d+))?)?)?/;
+  const regex = /^((?:\d+\s+)?[A-Za-zÀ-ú]+)(?:\s+(\d+)(?:[:.](\d+)(?:-(\d+))?)?)?/;
   const match = reference.match(regex);
   
   if (!match) return reference;
@@ -140,7 +140,7 @@ const BookDetail = ({ book }: BookDetailProps) => {
                 <div className="absolute top-0 left-0 w-1 h-full bg-accent"></div>
                 <div className="mb-3">
                   <Link 
-                    to={`/categories/${pointer.category}`} 
+                    to="/categories" 
                     className="text-xs rounded-full px-2 py-1 bg-accent/10 text-accent w-fit hover:bg-accent/20 transition-colors"
                   >
                     {t(category?.nameKey || `category-${pointer.category}`)}

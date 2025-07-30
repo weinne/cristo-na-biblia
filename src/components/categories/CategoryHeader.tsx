@@ -6,11 +6,6 @@ import { useLanguage } from '@/contexts/LanguageContext';
 const CategoryHeader = () => {
   const { t, language } = useLanguage();
   
-  // Added logging to debug translation issues
-  console.log('CategoryHeader language:', language);
-  console.log('hermeneutic-methods translation:', t('hermeneutic-methods'));
-  console.log('greidanus-categories-title translation:', t('greidanus-categories-title'));
-  
   return (
     <section className="pt-32 pb-10 px-6 md:px-12 bg-gradient-to-b from-secondary dark:from-gray-800 to-background">
       <div className="max-w-5xl mx-auto text-center space-y-6">

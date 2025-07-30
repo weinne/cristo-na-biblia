@@ -11,18 +11,6 @@ interface CategoryListProps {
 const CategoryList = ({ categories }: CategoryListProps) => {
   const { t, language } = useLanguage();
   
-  // Enhanced debug logging
-  console.log('Current language:', language);
-  console.log('Categories being rendered:', categories);
-  
-  // Log category translations for debugging
-  categories.forEach((category, index) => {
-    const translationKey = category.id === 'redemptive-historical' ? 
-      'category-redemptive-historical' : 
-      `category-${category.id}`;
-    console.log(`Category ${index} (${category.id}) translation:`, t(translationKey));
-  });
-  
   return (
     <motion.div 
       initial={{ opacity: 0, y: 20 }}
@@ -31,7 +19,6 @@ const CategoryList = ({ categories }: CategoryListProps) => {
       className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
     >
       {categories.map((category, index) => {
-        console.log(`Rendering category ${index}:`, category.id);
         return (
           <CategoryCard key={category.id} category={category} index={index} />
         );
