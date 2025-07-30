@@ -807,29 +807,29 @@ export const books: Book[] = [
   {
     id: "hosea",
     testament: "old",
-    name: "Oséias",
-    shortName: "Osé",
+    nameKey: "book-hosea",
+    shortNameKey: "abbr-hosea",
     categories: ["typology", "analogy", "new-testament-references"],
-    description: "O amor fiel de Deus por Israel apesar de sua infidelidade.",
+    descriptionKey: "christ-in-hosea",
     christPointers: [
       {
         category: "typology",
-        description: "O casamento de Oséias com Gômer prefigura o amor fiel de Cristo pela sua noiva infiel, a Igreja.",
+        descriptionKey: "hosea-marriage-typology",
         verses: ["Oséias 1-3"]
       },
       {
         category: "analogy",
-        description: "O amor redentor de Deus por Israel é análogo ao amor redentor de Cristo.",
+        descriptionKey: "hosea-love-analogy",
         verses: ["Oséias 11:1", "Oséias 14:4-7"]
       },
       {
         category: "new-testament-references",
-        description: "A citação 'Do Egito chamei o meu filho' aplicada a Cristo.",
+        descriptionKey: "hosea-egypt-son",
         verses: ["Oséias 11:1"]
       },
       {
         category: "promise-fulfillment",
-        description: "A promessa de restauração e reconciliação cumprida em Cristo.",
+        descriptionKey: "hosea-restoration-promise",
         verses: ["Oséias 13:14", "Oséias 14:1-9"]
       }
     ]
@@ -837,24 +837,24 @@ export const books: Book[] = [
   {
     id: "joel",
     testament: "old",
-    name: "Joel",
-    shortName: "Joel",
+    nameKey: "book-joel",
+    shortNameKey: "abbr-joel",
     categories: ["promise-fulfillment", "new-testament-references", "redemptive-historical"],
-    description: "Profecias sobre o Dia do Senhor e o derramamento do Espírito.",
+    descriptionKey: "christ-in-joel",
     christPointers: [
       {
         category: "promise-fulfillment",
-        description: "A profecia do derramamento do Espírito cumprida em Pentecostes após a ascensão de Cristo.",
+        descriptionKey: "joel-spirit-outpouring",
         verses: ["Joel 2:28-32"]
       },
       {
         category: "new-testament-references",
-        description: "A citação de Joel 2:32 por Pedro aplicada à salvação em Cristo.",
+        descriptionKey: "joel-salvation-call",
         verses: ["Joel 2:32"]
       },
       {
         category: "redemptive-historical",
-        description: "O Dia do Senhor como prelúdio do julgamento e salvação finais em Cristo.",
+        descriptionKey: "joel-day-lord",
         verses: ["Joel 2:1-11", "Joel 3:1-16"]
       }
     ]
@@ -862,24 +862,24 @@ export const books: Book[] = [
   {
     id: "amos",
     testament: "old",
-    name: "Amós",
-    shortName: "Amós",
+    nameKey: "book-amos",
+    shortNameKey: "abbr-amos",
     categories: ["promise-fulfillment", "redemptive-historical", "contrast"],
-    description: "Julgamento sobre Israel e as nações, com promessa de restauração.",
+    descriptionKey: "christ-in-amos",
     christPointers: [
       {
         category: "promise-fulfillment",
-        description: "A promessa de restaurar o 'tabernáculo caído de Davi' cumprida em Cristo.",
+        descriptionKey: "amos-tabernacle-david",
         verses: ["Amós 9:11-15"]
       },
       {
         category: "redemptive-historical",
-        description: "O julgamento sobre Israel como parte do plano redentor que culmina em Cristo.",
+        descriptionKey: "amos-judgment-redemptive",
         verses: ["Amós 3:1-15", "Amós 9:8-10"]
       },
       {
         category: "contrast",
-        description: "A exigência de justiça verdadeira que se encontra plenamente em Cristo.",
+        descriptionKey: "amos-justice-contrast",
         verses: ["Amós 5:21-24"]
       }
     ]
@@ -887,24 +887,24 @@ export const books: Book[] = [
   {
     id: "obadiah",
     testament: "old",
-    name: "Obadias",
-    shortName: "Obad",
+    nameKey: "book-obadiah",
+    shortNameKey: "abbr-obadiah",
     categories: ["redemptive-historical", "longitudinal-themes"],
-    description: "Profecia contra Edom e a promessa da vitória final de Israel.",
+    descriptionKey: "christ-in-obadiah",
     christPointers: [
       {
         category: "redemptive-historical",
-        description: "O julgamento de Edom como parte do plano redentor de Deus que culmina em Cristo.",
+        descriptionKey: "obadiah-edom-judgment",
         verses: ["Obadias 1:15-16"]
       },
       {
         category: "longitudinal-themes",
-        description: "O tema do reino de Deus triunfando sobre seus inimigos encontra cumprimento em Cristo.",
+        descriptionKey: "obadiah-kingdom-triumph",
         verses: ["Obadias 1:17-21"]
       },
       {
         category: "typology",
-        description: "A inimizade histórica entre Edom (Esaú) e Israel (Jacó) prefigura o conflito entre a semente da serpente e a semente da mulher que culmina na vitória de Cristo.",
+        descriptionKey: "obadiah-enmity-conflict",
         verses: ["Obadias 1:10-14"]
       }
     ]
@@ -912,24 +912,24 @@ export const books: Book[] = [
   {
     id: "jonah",
     testament: "old",
-    name: "Jonas",
-    shortName: "Jon",
+    nameKey: "book-jonah",
+    shortNameKey: "abbr-jonah",
     categories: ["typology", "new-testament-references", "redemptive-historical"],
-    description: "A história de Jonas e o chamado ao arrependimento de Nínive.",
+    descriptionKey: "christ-in-jonah",
     christPointers: [
       {
         category: "typology",
-        description: "Os três dias de Jonas no grande peixe prefiguram a morte e ressurreição de Cristo.",
+        descriptionKey: "jonah-three-days",
         verses: ["Jonas 1:17-2:10"]
       },
       {
         category: "new-testament-references",
-        description: "Jesus cita o 'sinal de Jonas' como tipo de sua morte e ressurreição.",
+        descriptionKey: "jonah-sign-reference",
         verses: ["Jonas 1:17"]
       },
       {
         category: "redemptive-historical",
-        description: "A misericórdia de Deus para com os gentios em Nínive aponta para a inclusão dos gentios em Cristo.",
+        descriptionKey: "jonah-gentiles-mercy",
         verses: ["Jonas 3:1-10", "Jonas 4:1-11"]
       }
     ]
@@ -937,29 +937,29 @@ export const books: Book[] = [
   {
     id: "micah",
     testament: "old",
-    name: "Miquéias",
-    shortName: "Miq",
+    nameKey: "book-micah",
+    shortNameKey: "abbr-micah",
     categories: ["promise-fulfillment", "new-testament-references", "redemptive-historical"],
-    description: "Julgamento, promessa de restauração e a vinda do Messias.",
+    descriptionKey: "christ-in-micah",
     christPointers: [
       {
         category: "promise-fulfillment",
-        description: "A profecia sobre o nascimento do Messias em Belém cumprida em Cristo.",
+        descriptionKey: "micah-bethlehem-birth",
         verses: ["Miquéias 5:2"]
       },
       {
         category: "new-testament-references",
-        description: "A citação de Miquéias 5:2 aplicada ao nascimento de Jesus em Belém.",
+        descriptionKey: "micah-bethlehem-citation",
         verses: ["Miquéias 5:2"]
       },
       {
         category: "redemptive-historical",
-        description: "A promessa de um governante que pastorearia seu povo em nome do Senhor cumprida em Cristo.",
+        descriptionKey: "micah-ruler-shepherd",
         verses: ["Miquéias 5:4-5"]
       },
       {
         category: "analogy",
-        description: "O perdão incomparável de Deus que lança os pecados nas profundezas do mar se manifesta plenamente em Cristo.",
+        descriptionKey: "micah-forgiveness-seas",
         verses: ["Miquéias 7:18-20"]
       }
     ]
@@ -967,24 +967,24 @@ export const books: Book[] = [
   {
     id: "nahum",
     testament: "old",
-    name: "Naum",
-    shortName: "Nau",
+    nameKey: "book-nahum",
+    shortNameKey: "abbr-nahum",
     categories: ["redemptive-historical", "analogy"],
-    description: "Profecia sobre a destruição de Nínive.",
+    descriptionKey: "christ-in-nahum",
     christPointers: [
       {
         category: "redemptive-historical",
-        description: "O julgamento de Nínive como parte do plano redentor de Deus que conduz a Cristo.",
+        descriptionKey: "nahum-nineveh-judgment",
         verses: ["Naum 1:1-8", "Naum 3:1-19"]
       },
       {
         category: "analogy",
-        description: "O caráter de Deus como justo juiz e refúgio para os que nele confiam se manifesta plenamente em Cristo.",
+        descriptionKey: "nahum-god-character",
         verses: ["Naum 1:7-8"]
       },
       {
         category: "longitudinal-themes",
-        description: "O tema do julgamento divino sobre os opressores do povo de Deus encontra sua culminação em Cristo.",
+        descriptionKey: "nahum-divine-judgment",
         verses: ["Naum 1:2-6"]
       }
     ]
@@ -992,24 +992,24 @@ export const books: Book[] = [
   {
     id: "habakkuk",
     testament: "old",
-    name: "Habacuque",
-    shortName: "Hab",
+    nameKey: "book-habakkuk",
+    shortNameKey: "abbr-habakkuk",
     categories: ["new-testament-references", "redemptive-historical", "longitudinal-themes"],
-    description: "Diálogo entre o profeta e Deus sobre injustiça e fé.",
+    descriptionKey: "christ-in-habakkuk",
     christPointers: [
       {
         category: "new-testament-references",
-        description: "A declaração 'o justo viverá pela fé' citada no Novo Testamento em relação à justificação pela fé em Cristo.",
+        descriptionKey: "habakkuk-just-by-faith",
         verses: ["Habacuque 2:4"]
       },
       {
         category: "redemptive-historical",
-        description: "A tensão entre justiça e julgamento resolvida em Cristo.",
+        descriptionKey: "habakkuk-justice-tension",
         verses: ["Habacuque 1:1-17"]
       },
       {
         category: "longitudinal-themes",
-        description: "O tema da fé e confiança em Deus em tempos difíceis encontra sua plena expressão em Cristo.",
+        descriptionKey: "habakkuk-faith-trust",
         verses: ["Habacuque 3:16-19"]
       }
     ]
@@ -1017,24 +1017,24 @@ export const books: Book[] = [
   {
     id: "zephaniah",
     testament: "old",
-    name: "Sofonias",
-    shortName: "Sof",
+    nameKey: "book-zephaniah",
+    shortNameKey: "abbr-zephaniah",
     categories: ["redemptive-historical", "promise-fulfillment"],
-    description: "Profecia sobre o Dia do Senhor, julgamento e restauração.",
+    descriptionKey: "christ-in-zephaniah",
     christPointers: [
       {
         category: "redemptive-historical",
-        description: "O Dia do Senhor como julgamento e salvação prefigura o papel dual de Cristo como juiz e salvador.",
+        descriptionKey: "zephaniah-day-lord-dual",
         verses: ["Sofonias 1:7-18", "Sofonias 3:8-13"]
       },
       {
         category: "promise-fulfillment",
-        description: "A promessa de restauração e regozijo encontra seu cumprimento em Cristo.",
+        descriptionKey: "zephaniah-restoration-joy",
         verses: ["Sofonias 3:14-20"]
       },
       {
         category: "typology",
-        description: "O 'restante de Israel' que confia no nome do Senhor prefigura o remanescente fiel que confia em Cristo.",
+        descriptionKey: "zephaniah-remnant-faithful",
         verses: ["Sofonias 3:12-13"]
       }
     ]
@@ -1042,24 +1042,24 @@ export const books: Book[] = [
   {
     id: "haggai",
     testament: "old",
-    name: "Ageu",
-    shortName: "Ag",
+    nameKey: "book-haggai",
+    shortNameKey: "abbr-haggai",
     categories: ["typology", "promise-fulfillment", "redemptive-historical"],
-    description: "Mensagem para reconstruir o templo após o retorno do exílio.",
+    descriptionKey: "christ-in-haggai",
     christPointers: [
       {
         category: "typology",
-        description: "A reconstrução do templo prefigura Cristo como o verdadeiro templo.",
+        descriptionKey: "haggai-temple-rebuild",
         verses: ["Ageu 2:1-9"]
       },
       {
         category: "promise-fulfillment",
-        description: "A promessa de que a glória futura do templo seria maior que a anterior cumprida em Cristo.",
+        descriptionKey: "haggai-glory-greater",
         verses: ["Ageu 2:6-9"]
       },
       {
         category: "redemptive-historical",
-        description: "A escolha de Zorobabel como 'anel de selar' aponta para seu descendente Cristo.",
+        descriptionKey: "haggai-zerubbabel-signet",
         verses: ["Ageu 2:20-23"]
       }
     ]
@@ -1067,29 +1067,29 @@ export const books: Book[] = [
   {
     id: "zechariah",
     testament: "old",
-    name: "Zacarias",
-    shortName: "Zac",
+    nameKey: "book-zechariah",
+    shortNameKey: "abbr-zechariah",
     categories: ["typology", "promise-fulfillment", "new-testament-references"],
-    description: "Visões e profecias sobre a restauração de Israel e a vinda do Messias.",
+    descriptionKey: "christ-in-zechariah",
     christPointers: [
       {
         category: "typology",
-        description: "Josué, o sumo sacerdote, e Zorobabel prefiguram os papéis sacerdotal e real de Cristo.",
+        descriptionKey: "zechariah-priest-king-typology",
         verses: ["Zacarias 3:1-10", "Zacarias 4:1-14", "Zacarias 6:9-15"]
       },
       {
         category: "promise-fulfillment",
-        description: "Profecias diretas sobre o Messias cumpridas em Cristo.",
+        descriptionKey: "zechariah-messianic-prophecies",
         verses: ["Zacarias 9:9-10", "Zacarias 12:10", "Zacarias 13:1", "Zacarias 13:7"]
       },
       {
         category: "new-testament-references",
-        description: "Profecias citadas no Novo Testamento em referência a Cristo.",
+        descriptionKey: "zechariah-nt-citations",
         verses: ["Zacarias 9:9", "Zacarias 11:12-13", "Zacarias 12:10", "Zacarias 13:7"]
       },
       {
         category: "typology",
-        description: "A fonte aberta para purificação prefigura o sangue purificador de Cristo.",
+        descriptionKey: "zechariah-cleansing-fountain",
         verses: ["Zacarias 13:1"]
       }
     ]
@@ -1097,29 +1097,29 @@ export const books: Book[] = [
   {
     id: "malachi",
     testament: "old",
-    name: "Malaquias",
-    shortName: "Mal",
+    nameKey: "book-malachi",
+    shortNameKey: "abbr-malachi",
     categories: ["promise-fulfillment", "new-testament-references", "redemptive-historical"],
-    description: "Repreensões, avisos e a promessa da vinda do mensageiro do Senhor.",
+    descriptionKey: "christ-in-malachi",
     christPointers: [
       {
         category: "promise-fulfillment",
-        description: "A profecia sobre o mensageiro que prepararia o caminho cumprida em João Batista antes de Cristo.",
+        descriptionKey: "malachi-messenger-way",
         verses: ["Malaquias 3:1", "Malaquias 4:5-6"]
       },
       {
         category: "new-testament-references",
-        description: "A referência ao 'sol da justiça' aplicada a Cristo como a luz do mundo.",
+        descriptionKey: "malachi-sun-righteousness",
         verses: ["Malaquias 4:2"]
       },
       {
         category: "redemptive-historical",
-        description: "O prenúncio do 'dia do Senhor' aponta para a primeira e segunda vindas de Cristo.",
+        descriptionKey: "malachi-day-lord-coming",
         verses: ["Malaquias 3:1-5", "Malaquias 4:1-6"]
       },
       {
         category: "contrast",
-        description: "O contraste entre o sacerdócio corrupto e o 'mensageiro da aliança' puro que viria purificar.",
+        descriptionKey: "malachi-priesthood-contrast",
         verses: ["Malaquias 1:6-14", "Malaquias 2:1-9", "Malaquias 3:1-4"]
       }
     ]

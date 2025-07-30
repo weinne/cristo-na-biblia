@@ -497,5 +497,58 @@ export const pt = {
   'psalms-messianic-psalms': 'Os salmos messiânicos descrevem diretamente Cristo como Rei, Sacerdote e Sofredor.',
   'psalms-messianic-promises': 'Promessas sobre o Messias que são cumpridas em Cristo.',
   'psalms-nt-references': 'Salmos frequentemente citados no Novo Testamento em referência a Cristo.',
-  'psalms-david-type': 'Davi como rei e autor de muitos Salmos prefigura Cristo, o Rei definitivo.'
+  'psalms-david-type': 'Davi como rei e autor de muitos Salmos prefigura Cristo, o Rei definitivo.',
+
+  // Minor Prophets Christ Pointers
+  'hosea-marriage-typology': 'O casamento de Oséias com Gômer prefigura o amor fiel de Cristo pela sua noiva infiel, a Igreja.',
+  'hosea-love-analogy': 'O amor redentor de Deus por Israel é análogo ao amor redentor de Cristo.',
+  'hosea-egypt-son': 'A citação "Do Egito chamei o meu filho" aplicada a Cristo.',
+  'hosea-restoration-promise': 'A promessa de restauração e reconciliação cumprida em Cristo.',
+
+  'joel-spirit-outpouring': 'A profecia do derramamento do Espírito cumprida em Pentecostes após a ascensão de Cristo.',
+  'joel-salvation-call': 'A citação de Joel 2:32 por Pedro aplicada à salvação em Cristo.',
+  'joel-day-lord': 'O Dia do Senhor como prelúdio do julgamento e salvação finais em Cristo.',
+
+  'amos-tabernacle-david': 'A promessa de restaurar o "tabernáculo caído de Davi" cumprida em Cristo.',
+  'amos-judgment-redemptive': 'O julgamento sobre Israel como parte do plano redentor que culmina em Cristo.',
+  'amos-justice-contrast': 'A exigência de justiça verdadeira que se encontra plenamente em Cristo.',
+
+  'obadiah-edom-judgment': 'O julgamento de Edom como parte do plano redentor de Deus que culmina em Cristo.',
+  'obadiah-kingdom-triumph': 'O tema do reino de Deus triunfando sobre seus inimigos encontra cumprimento em Cristo.',
+  'obadiah-enmity-conflict': 'A inimizade histórica entre Edom (Esaú) e Israel (Jacó) prefigura o conflito entre a semente da serpente e a semente da mulher que culmina na vitória de Cristo.',
+
+  'jonah-three-days': 'Os três dias de Jonas no grande peixe prefiguram a morte e ressurreição de Cristo.',
+  'jonah-sign-reference': 'Jesus cita o "sinal de Jonas" como tipo de sua morte e ressurreição.',
+  'jonah-gentiles-mercy': 'A misericórdia de Deus para com os gentios em Nínive aponta para a inclusão dos gentios em Cristo.',
+
+  'micah-bethlehem-birth': 'A profecia sobre o nascimento do Messias em Belém cumprida em Cristo.',
+  'micah-bethlehem-citation': 'A citação de Miquéias 5:2 aplicada ao nascimento de Jesus em Belém.',
+  'micah-ruler-shepherd': 'A promessa de um governante que pastorearia seu povo em nome do Senhor cumprida em Cristo.',
+  'micah-forgiveness-seas': 'O perdão incomparável de Deus que lança os pecados nas profundezas do mar se manifesta plenamente em Cristo.',
+
+  'nahum-nineveh-judgment': 'O julgamento de Nínive como parte do plano redentor de Deus que conduz a Cristo.',
+  'nahum-god-character': 'O caráter de Deus como justo juiz e refúgio para os que nele confiam se manifesta plenamente em Cristo.',
+  'nahum-divine-judgment': 'O tema do julgamento divino sobre os opressores do povo de Deus encontra sua culminação em Cristo.',
+
+  'habakkuk-just-by-faith': 'A declaração "o justo viverá pela fé" citada no Novo Testamento em relação à justificação pela fé em Cristo.',
+  'habakkuk-justice-tension': 'A tensão entre justiça e julgamento resolvida em Cristo.',
+  'habakkuk-faith-trust': 'O tema da fé e confiança em Deus em tempos difíceis encontra sua plena expressão em Cristo.',
+
+  'zephaniah-day-lord-dual': 'O Dia do Senhor como julgamento e salvação prefigura o papel dual de Cristo como juiz e salvador.',
+  'zephaniah-restoration-joy': 'A promessa de restauração e regozijo encontra seu cumprimento em Cristo.',
+  'zephaniah-remnant-faithful': 'O "restante de Israel" que confia no nome do Senhor prefigura o remanescente fiel que confia em Cristo.',
+
+  'haggai-temple-rebuild': 'A reconstrução do templo prefigura Cristo como o verdadeiro templo.',
+  'haggai-glory-greater': 'A promessa de que a glória futura do templo seria maior que a anterior cumprida em Cristo.',
+  'haggai-zerubbabel-signet': 'A escolha de Zorobabel como "anel de selar" aponta para seu descendente Cristo.',
+
+  'zechariah-priest-king-typology': 'Josué, o sumo sacerdote, e Zorobabel prefiguram os papéis sacerdotal e real de Cristo.',
+  'zechariah-messianic-prophecies': 'Profecias diretas sobre o Messias cumpridas em Cristo.',
+  'zechariah-nt-citations': 'Profecias citadas no Novo Testamento em referência a Cristo.',
+  'zechariah-cleansing-fountain': 'A fonte aberta para purificação prefigura o sangue purificador de Cristo.',
+
+  'malachi-messenger-way': 'A profecia sobre o mensageiro que prepararia o caminho cumprida em João Batista antes de Cristo.',
+  'malachi-sun-righteousness': 'A referência ao "sol da justiça" aplicada a Cristo como a luz do mundo.',
+  'malachi-day-lord-coming': 'O prenúncio do "dia do Senhor" aponta para a primeira e segunda vindas de Cristo.',
+  'malachi-priesthood-contrast': 'O contraste entre o sacerdócio corrupto e o "mensageiro da aliança" puro que viria purificar.'
 };

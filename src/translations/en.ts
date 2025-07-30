@@ -402,5 +402,58 @@ export const en = {
   'psalms-messianic-psalms': 'The messianic psalms directly describe Christ as King, Priest, and Sufferer.',
   'psalms-messianic-promises': 'Promises about the Messiah that are fulfilled in Christ.',
   'psalms-nt-references': 'Psalms frequently quoted in the New Testament in reference to Christ.',
-  'psalms-david-type': 'David as king and author of many Psalms prefigures Christ, the ultimate King.'
+  'psalms-david-type': 'David as king and author of many Psalms prefigures Christ, the ultimate King.',
+
+  // Minor Prophets Christ Pointers
+  'hosea-marriage-typology': 'Hosea\'s marriage to Gomer prefigures Christ\'s faithful love for His unfaithful bride, the Church.',
+  'hosea-love-analogy': 'God\'s redeeming love for Israel is analogous to Christ\'s redeeming love.',
+  'hosea-egypt-son': 'The citation "Out of Egypt I called my son" applied to Christ.',
+  'hosea-restoration-promise': 'The promise of restoration and reconciliation fulfilled in Christ.',
+
+  'joel-spirit-outpouring': 'The prophecy of the outpouring of the Spirit fulfilled at Pentecost after Christ\'s ascension.',
+  'joel-salvation-call': 'Peter\'s citation of Joel 2:32 applied to salvation in Christ.',
+  'joel-day-lord': 'The Day of the Lord as a prelude to final judgment and salvation in Christ.',
+
+  'amos-tabernacle-david': 'The promise to restore the "fallen tabernacle of David" fulfilled in Christ.',
+  'amos-judgment-redemptive': 'The judgment on Israel as part of the redemptive plan that culminates in Christ.',
+  'amos-justice-contrast': 'The demand for true justice that is fully found in Christ.',
+
+  'obadiah-edom-judgment': 'The judgment of Edom as part of God\'s redemptive plan that culminates in Christ.',
+  'obadiah-kingdom-triumph': 'The theme of God\'s kingdom triumphing over its enemies finds fulfillment in Christ.',
+  'obadiah-enmity-conflict': 'The historical enmity between Edom (Esau) and Israel (Jacob) prefigures the conflict between the seed of the serpent and the seed of the woman that culminates in Christ\'s victory.',
+
+  'jonah-three-days': 'Jonah\'s three days in the great fish prefigure Christ\'s death and resurrection.',
+  'jonah-sign-reference': 'Jesus cites the "sign of Jonah" as a type of His death and resurrection.',
+  'jonah-gentiles-mercy': 'God\'s mercy toward the Gentiles in Nineveh points to the inclusion of Gentiles in Christ.',
+
+  'micah-bethlehem-birth': 'The prophecy about the Messiah\'s birth in Bethlehem fulfilled in Christ.',
+  'micah-bethlehem-citation': 'The citation of Micah 5:2 applied to Jesus\' birth in Bethlehem.',
+  'micah-ruler-shepherd': 'The promise of a ruler who would shepherd his people in the Lord\'s name fulfilled in Christ.',
+  'micah-forgiveness-seas': 'God\'s incomparable forgiveness that casts sins into the depths of the sea is fully manifested in Christ.',
+
+  'nahum-nineveh-judgment': 'The judgment of Nineveh as part of God\'s redemptive plan that leads to Christ.',
+  'nahum-god-character': 'God\'s character as righteous judge and refuge for those who trust in Him is fully manifested in Christ.',
+  'nahum-divine-judgment': 'The theme of divine judgment on the oppressors of God\'s people finds its culmination in Christ.',
+
+  'habakkuk-just-by-faith': 'The declaration "the righteous shall live by faith" cited in the New Testament regarding justification by faith in Christ.',
+  'habakkuk-justice-tension': 'The tension between justice and judgment resolved in Christ.',
+  'habakkuk-faith-trust': 'The theme of faith and trust in God during difficult times finds its full expression in Christ.',
+
+  'zephaniah-day-lord-dual': 'The Day of the Lord as judgment and salvation prefigures Christ\'s dual role as judge and savior.',
+  'zephaniah-restoration-joy': 'The promise of restoration and rejoicing finds its fulfillment in Christ.',
+  'zephaniah-remnant-faithful': 'The "remnant of Israel" that trusts in the Lord\'s name prefigures the faithful remnant that trusts in Christ.',
+
+  'haggai-temple-rebuild': 'The rebuilding of the temple prefigures Christ as the true temple.',
+  'haggai-glory-greater': 'The promise that the future glory of the temple would be greater than the former fulfilled in Christ.',
+  'haggai-zerubbabel-signet': 'The choice of Zerubbabel as "signet ring" points to his descendant Christ.',
+
+  'zechariah-priest-king-typology': 'Joshua the high priest and Zerubbabel prefigure Christ\'s priestly and royal roles.',
+  'zechariah-messianic-prophecies': 'Direct prophecies about the Messiah fulfilled in Christ.',
+  'zechariah-nt-citations': 'Prophecies cited in the New Testament in reference to Christ.',
+  'zechariah-cleansing-fountain': 'The fountain opened for purification prefigures the cleansing blood of Christ.',
+
+  'malachi-messenger-way': 'The prophecy about the messenger who would prepare the way fulfilled in John the Baptist before Christ.',
+  'malachi-sun-righteousness': 'The reference to the "sun of righteousness" applied to Christ as the light of the world.',
+  'malachi-day-lord-coming': 'The foretelling of the "day of the Lord" points to Christ\'s first and second comings.',
+  'malachi-priesthood-contrast': 'The contrast between the corrupt priesthood and the pure "messenger of the covenant" who would come to purify.'
 };
