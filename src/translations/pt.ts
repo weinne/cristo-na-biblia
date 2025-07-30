@@ -66,6 +66,9 @@ export const pt = {
   'involved-description': 'Estamos continuamente expandindo este projeto e adoraríamos receber seu feedback e contribuições. Se você tem insights, sugestões ou deseja contribuir com conteúdo, entre em contato conosco.',
 
   // Categories Page
+  'hermeneutic-methods': 'Métodos Hermenêuticos',
+  'greidanus-categories-title': 'Categorias de Greidanus',
+  'explore-seven-ways': 'Explore sete maneiras pelas quais Cristo é revelado no texto bíblico, desde promessas até tipologia e referências do Novo Testamento.',
   'all-categories': 'Todas as Categorias',
   'category-description': 'Explore as diferentes maneiras pelas quais Cristo é revelado nas Escrituras. Cada categoria representa um método pelo qual Jesus é apresentado no texto bíblico.',
   'explore-category': 'Explorar Categoria',
@@ -124,6 +127,9 @@ export const pt = {
   'loading': 'Carregando...',
   'no-results': 'Nenhum resultado encontrado.',
   'search-placeholder': 'Buscar...',
+  'search-bible-passage': 'Buscar passagem bíblica...',
+  'search-results-count': 'Encontrados {count} resultados',
+  'no-passages-found': 'Nenhuma passagem encontrada.',
   'clear': 'Limpar',
   'apply': 'Aplicar',
   'cancel': 'Cancelar',
@@ -133,6 +139,13 @@ export const pt = {
   'create': 'Criar',
   'more': 'Mostrar mais',
   'less': 'Mostrar menos',
+  
+  // Additional missing translations
+  'exploring-books': 'Explorando livros da Bíblia e descobrindo Cristo em cada um.',
+  'who-am-i': 'Quem sou eu',
+  'about-the-project': 'Sobre o Projeto',
+  'project-created': 'Projeto criado com amor para explorar Cristo em toda a Escritura.',
+  'all-rights-reserved': 'Todos os direitos reservados',
   
   // Bible Books (Old Testament)
   'book-genesis': 'Gênesis',
@@ -274,6 +287,122 @@ export const pt = {
   'abbr-jude': 'Jd',
   'abbr-revelation': 'Ap',
   
+  
+  // Christ Pointers for Deuteronomy - Detailed descriptions
+  'deuteronomy-prophet-promise': 'A promessa de um profeta como Moisés encontra seu cumprimento em Cristo.',
+  'deuteronomy-promised-land': 'A entrada na Terra Prometida prefigura o descanso espiritual encontrado em Cristo.',
+  'deuteronomy-law-obedience': 'O tema da obediência à lei encontra seu cumprimento em Cristo, que obedeceu perfeitamente à lei de Deus.',
+  'deuteronomy-blessings-curses': 'As bênçãos e maldições da aliança encontram resolução em Cristo, que levou a maldição para dar-nos a bênção.',
+
+  // Christ Pointers for Joshua
+  'joshua-leader-type': 'Josué como líder que conduz o povo à terra prometida prefigura Cristo que conduz seu povo ao descanso eterno.',
+  'joshua-kingdom-progress': 'A conquista da terra representa o progresso do reino de Deus que será completado em Cristo.',
+  'joshua-rahab-type': 'Raabe e o cordão escarlate prefiguram a salvação através do sangue de Cristo.',
+
+  // Christ Pointers for Judges
+  'judges-liberators-type': 'Os juízes como libertadores temporários prefiguram Cristo como o libertador definitivo.',
+  'judges-temporary-contrast': 'A incapacidade dos juízes de trazer libertação permanente contrasta com a libertação completa em Cristo.',
+  'judges-need-king': 'O caos e a necessidade de um rei apontam para o reinado perfeito de Cristo.',
+
+  // Christ Pointers for Ruth
+  'ruth-boaz-redeemer': 'Boaz como resgatador (goel) prefigura Cristo como nosso Resgatador.',
+  'ruth-gentile-inclusion': 'A inclusão de Rute, uma moabita, na linhagem de Davi aponta para a inclusão dos gentios no reino de Cristo.',
+  'ruth-redemption-theme': 'O tema da redenção através do parente-resgatador aponta para a redenção em Cristo.',
+
+  // Christ Pointers for 1 Samuel
+  '1samuel-david-anointed': 'Davi como rei ungido mas rejeitado prefigura Cristo.',
+  '1samuel-kingdom-established': 'O estabelecimento do reino através de Davi aponta para o reino eterno de Cristo.',
+  '1samuel-david-goliath': 'A vitória de Davi sobre Golias prefigura a vitória de Cristo sobre os inimigos do povo de Deus.',
+
+  // Christ Pointers for 2 Samuel
+  '2samuel-davidic-covenant': 'A aliança davídica promete um descendente que reinará para sempre, cumprido em Cristo.',
+  '2samuel-david-perfect-king': 'Davi como rei segundo o coração de Deus prefigura Cristo como o Rei perfeito.',
+  '2samuel-kingdom-foreshadow': 'O reino de Davi como prenúncio do reino de Cristo.',
+
+  // Christ Pointers for 1 Kings
+  '1kings-temple-type': 'O templo construído por Salomão prefigura Cristo como o verdadeiro templo.',
+  '1kings-solomon-failure': 'O fracasso de Salomão e os reis subsequentes contrasta com o reinado perfeito de Cristo.',
+  '1kings-solomon-wisdom': 'A sabedoria de Salomão prefigura a sabedoria superior de Cristo.',
+
+  // Christ Pointers for 2 Kings
+  '2kings-kings-failure': 'O fracasso dos reis de Israel e Judá contrasta com a fidelidade de Cristo como Rei.',
+  '2kings-elisha-ministry': 'O ministério de Eliseu com seus milagres de cura e ressurreição prefigura o ministério de Cristo.',
+  '2kings-exile-restoration': 'O exílio e a esperança de restauração apontam para a restauração definitiva em Cristo.',
+
+  // Christ Pointers for 1 Chronicles
+  '1chronicles-genealogies-messiah': 'As genealogias traçam a linhagem do Messias.',
+  '1chronicles-david-worship': 'Davi como rei e o estabelecimento da adoração prefiguram o reinado e a verdadeira adoração em Cristo.',
+  '1chronicles-davidic-promise': 'A aliança com Davi promete um descendente que reinará para sempre.',
+
+  // Christ Pointers for 2 Chronicles
+  '2chronicles-temple-presence': 'O tema do templo como lugar da presença de Deus encontra cumprimento em Cristo.',
+  '2chronicles-reform-apostasy': 'Os períodos de reforma seguidos de apostasia apontam para a necessidade de uma reforma definitiva em Cristo.',
+  '2chronicles-cyrus-decree': 'O decreto de Ciro para retornar e reconstruir aponta para a restauração espiritual em Cristo.',
+
+  // Christ Pointers for Ezra
+  'ezra-return-from-exile': 'O retorno do exílio como etapa na história redentiva que conduz a Cristo.',
+  'ezra-temple-reconstruction': 'A reconstrução do templo prefigura Cristo como o verdadeiro templo.',
+  'ezra-covenant-restoration': 'O tema da restauração do povo da aliança encontra sua plenitude em Cristo.',
+
+  // Christ Pointers for Nehemiah
+  'nehemiah-jerusalem-restoration': 'A restauração de Jerusalém como parte do plano que prepara para a vinda de Cristo.',
+  'nehemiah-sacrificial-leadership': 'A liderança sacrificial de Neemias prefigura aspectos do sacrifício de Cristo por seu povo.',
+  'nehemiah-covenant-renewal': 'A renovação da aliança aponta para a nova aliança em Cristo.',
+
+  // Christ Pointers for Esther
+  'esther-self-sacrifice': 'Ester arriscando sua vida pelo seu povo prefigura o sacrifício de Cristo.',
+  'esther-people-preservation': 'A preservação do povo judeu em face da ameaça de extinção é crucial para o plano redentor que culmina em Cristo.',
+  'esther-divine-providence': 'O tema da providência divina por trás dos eventos históricos encontra sua expressão máxima na vinda de Cristo no \'cumprimento do tempo\'.',
+
+  // Christ Pointers for Job
+  'job-righteous-sufferer': 'Jó como justo sofredor prefigura Cristo, o sofredor inocente.',
+  'job-redemption-restoration': 'O tema da redenção e restauração de Jó aponta para a redenção final em Cristo.',
+  'job-limited-mediator': 'Jó como mediador limitado contrasta com Cristo, o perfeito mediador.',
+
+  // Christ Pointers for Proverbs
+  'proverbs-wisdom-personified': 'A personificação da Sabedoria aponta para Cristo como a Sabedoria de Deus encarnada.',
+  'proverbs-wisdom-theme': 'O tema da sabedoria encontra sua expressão plena em Cristo, \'em quem estão escondidos todos os tesouros da sabedoria e do conhecimento\'.',
+  'proverbs-wisdom-search': 'A busca pela sabedoria em Provérbios encontra resposta definitiva em Cristo, que se tornou para nós sabedoria da parte de Deus.',
+
+  // Christ Pointers for Ecclesiastes
+  'ecclesiastes-vanity-contrast': 'A vaidade e insatisfação da vida terrena contrasta com o propósito e a plenitude encontrados em Cristo.',
+  'ecclesiastes-meaning-search': 'A busca pelo significado encontra sua resposta em Cristo, que dá sentido à existência humana.',
+  'ecclesiastes-wisdom-limitations': 'As limitações da sabedoria humana apontam para a necessidade da sabedoria divina revelada plenamente em Cristo.',
+
+  // Christ Pointers for Song of Solomon
+  'song-bridegroom-bride': 'O amor entre o noivo e a noiva simboliza o amor entre Cristo e sua Igreja.',
+  'song-love-intimacy': 'A intimidade e o deleite do amor humano refletem analogicamente o relacionamento de Cristo com seu povo.',
+  'song-faithful-love': 'O tema do amor comprometido e fiel encontra sua expressão mais plena no amor de Cristo pela Igreja.',
+
+  // Christ Pointers for Isaiah
+  'isaiah-messianic-prophecies': 'Profecias diretas sobre o nascimento, ministério e sofrimento do Messias cumpridas em Cristo.',
+  'isaiah-suffering-servant': 'O servo sofredor prefigura o sofrimento substitutivo de Cristo.',
+  'isaiah-nt-quotations': 'Textos de Isaías frequentemente citados no Novo Testamento em referência a Cristo.',
+  'isaiah-new-creation': 'A promessa de um novo céu e nova terra aponta para a restauração definitiva em Cristo.',
+
+  // Christ Pointers for Jeremiah
+  'jeremiah-new-covenant': 'A promessa de uma nova aliança cumprida em Cristo.',
+  'jeremiah-rejected-prophet': 'Jeremias como profeta rejeitado e sofredor prefigura Cristo.',
+  'jeremiah-judgment-plan': 'O juízo sobre Judá como parte do plano redentor de Deus que culmina em Cristo.',
+  'jeremiah-righteous-branch': 'A promessa de um \'Renovo justo\' da linhagem de Davi cumprida em Cristo.',
+
+  // Christ Pointers for Lamentations
+  'lamentations-prophet-suffering': 'O sofrimento e as lamentações do profeta prefiguram o sofrimento de Cristo pela sua cidade.',
+  'lamentations-destruction-plan': 'A destruição de Jerusalém como parte do plano redentor de Deus que conduz a Cristo.',
+  'lamentations-gods-faithfulness': 'O tema da fidelidade e das misericórdias de Deus em meio ao julgamento encontra sua expressão plena em Cristo.',
+
+  // Christ Pointers for Ezekiel
+  'ezekiel-priest-prophet-shepherd': 'Ezequiel como sacerdote-profeta, vigilante e pastor prefigura Cristo em seus papéis.',
+  'ezekiel-new-heart-spirit': 'A promessa de um coração novo e espírito novo cumprida através de Cristo.',
+  'ezekiel-temple-vision': 'A visão do templo aponta para Cristo como o verdadeiro templo.',
+  'ezekiel-david-shepherd': 'A promessa de Davi como pastor do povo de Deus cumprida em Cristo.',
+
+  // Christ Pointers for Daniel
+  'daniel-son-of-man': 'A visão do Filho do Homem vindo com as nuvens do céu cumprida em Cristo.',
+  'daniel-faithful-man': 'Daniel como homem fiel e justo em terra estrangeira prefigura Cristo.',
+  'daniel-seventy-weeks': 'A profecia das setenta semanas que aponta para a vinda de Cristo.',
+  'daniel-eternal-kingdom': 'As visões dos reinos mundiais que culminam no reino eterno de Deus estabelecido por Cristo.',
+
   // Book descriptions
   'christ-in-genesis': 'Em Gênesis, Cristo é revelado como o Criador, a semente prometida da mulher, o Cordeiro de Deus, e o Filho de Abraão.',
   'christ-in-exodus': 'Em Êxodo, Cristo é prefigurado no cordeiro pascal, no maná do céu, na água da rocha, e como o mediador da aliança.',
@@ -340,5 +469,208 @@ export const pt = {
   'christ-in-2-john': 'Em 2 João, Cristo é a verdade que permanece em nós e estará conosco para sempre.',
   'christ-in-3-john': 'Em 3 João, Cristo é a verdade na qual devemos andar e pela qual devemos trabalhar juntos.',
   'christ-in-jude': 'Em Judas, Cristo é aquele que pode nos guardar de tropeçar e nos apresentar irrepreensíveis diante da sua glória.',
-  'christ-in-revelation': 'Em Apocalipse, Cristo é o Alfa e Ômega, o Cordeiro que foi morto, o Rei dos reis que retorna em glória para julgar e reinar eternamente.'
+  'christ-in-revelation': 'Em Apocalipse, Cristo é o Alfa e Ômega, o Cordeiro que foi morto, o Rei dos reis que retorna em glória para julgar e reinar eternamente.',
+  
+  // Christ Pointers - New Testament detailed descriptions
+  'matthew-promise-fulfillment': 'Mateus frequentemente nota como Jesus cumpriu as profecias do Antigo Testamento.',
+  'matthew-nt-references': 'Conecta explicitamente Jesus às profecias do Antigo Testamento sobre o Messias.',
+  'matthew-genealogy': 'Apresenta a genealogia de Jesus como cumprimento das promessas a Abraão e Davi.',
+  'matthew-new-moses': 'Apresenta Jesus como o novo Moisés que dá a nova lei no Sermão do Monte.',
+  
+  'mark-servant-type': 'Apresenta Jesus como o Servo do Senhor, conectando-o aos Cânticos do Servo em Isaías.',
+  'mark-kingdom-god': 'Enfatiza o reino de Deus que irrompe na história através de Jesus.',
+  'mark-ot-fulfillment': 'Cita o Antigo Testamento para mostrar Jesus como cumprimento das Escrituras.',
+  
+  'luke-historical-context': 'Situa a vida de Jesus no contexto da história mundial e do plano redentor de Deus.',
+  'luke-universal-salvation': 'Mostra como Jesus cumpre as promessas a Israel e traz salvação para todas as nações.',
+  'luke-salvation-theme': 'Desenvolve o tema da salvação para os perdidos e marginalizados.',
+  'luke-holy-spirit': 'Enfatiza o papel do Espírito Santo na vida e ministério de Jesus.',
+  
+  'john-word-incarnate': 'Identifica Jesus como o Verbo eterno que se fez carne.',
+  'john-eternal-life': 'Apresenta Jesus como doador da vida eterna através da fé.',
+  'john-light-darkness': 'Contrasta Jesus como luz verdadeira com as trevas do mundo.',
+  'john-signs-deity': 'Os sinais de Jesus revelam sua divindade e messianidade.',
+  'john-good-shepherd': 'Jesus se identifica como o Bom Pastor que dá a vida pelas ovelhas.',
+  
+  'acts-gospel-expansion': 'Mostra como o evangelho se expande de Jerusalém para os confins da terra, cumprindo o plano de Deus.',
+  'acts-spirit-promise': 'Mostra o derramamento do Espírito como cumprimento da promessa de Jesus e das profecias do Antigo Testamento.',
+  'acts-ot-interpretation': 'Os sermões frequentemente interpretam o Antigo Testamento à luz de Cristo.',
+  'acts-kingdom-theme': 'Desenvolve o tema do reino de Deus que continua a se expandir após a ascensão de Cristo.',
+  
+  'romans-adam-christ': 'Traça o plano redentor de Deus de Adão a Cristo.',
+  'romans-israel-promises': 'Mostra como Cristo cumpre as promessas de Deus a Israel.',
+  'romans-justification': 'Apresenta a justificação pela fé como paralelo à fé de Abraão.',
+  'romans-sacrificial-system': 'Contrasta o único sacrifício de Cristo com o sistema sacrificial repetitivo.',
+  
+  '1corinthians-ot-types': 'Usa eventos do Antigo Testamento como tipos que apontam para realidades em Cristo.',
+  '1corinthians-passover-firstfruits': 'Apresenta Cristo como a verdadeira páscoa e primícias da ressurreição.',
+  '1corinthians-new-creation': 'Situa Cristo como o clímax da história redentora e o fundamento da nova criação.',
+  '1corinthians-wisdom-contrast': 'Contrasta a sabedoria do mundo com a verdadeira sabedoria de Deus revelada em Cristo.',
+  
+  '2corinthians-old-new-covenant': 'Contrasta a velha e nova aliança, mostrando a superioridade da nova em Cristo.',
+  '2corinthians-reconciliation': 'Desenvolve o tema da reconciliação com Deus através de Cristo.',
+  '2corinthians-promises-fulfilled': 'Apresenta Cristo como o "Sim" de Deus a todas as suas promessas.',
+  
+  'galatians-abraham-promise': 'Mostra como Cristo é o cumprimento da promessa a Abraão.',
+  'galatians-law-tutor': 'Apresenta a lei como tutor temporário até a vinda de Cristo.',
+  'galatians-sarah-hagar': 'Usa a alegoria de Sara e Agar para contrastar as alianças.',
+  'galatians-freedom-christ': 'Contrasta a escravidão sob a lei com a liberdade em Cristo.',
+  
+  'ephesians-unity-christ': 'Desenvolve o tema da unidade de judeus e gentios em Cristo.',
+  'ephesians-church-body': 'Apresenta a igreja como o corpo de Cristo que cresce em direção à maturidade.',
+  'ephesians-spiritual-warfare': 'Situa a vida cristã como participação na vitória de Cristo sobre os principados e potestades.',
+  'ephesians-creation-theme': 'Conecta a nova criação em Cristo com os propósitos eternos de Deus.',
+  
+  'philippians-humility-exaltation': 'Apresenta Jesus como exemplo supremo de humildade que leva à exaltação.',
+  'philippians-suffering-glory': 'Desenvolve o tema de participar nos sofrimentos de Cristo para participar de sua glória.',
+  'philippians-joy-christ': 'Apresenta Cristo como a fonte da verdadeira alegria em todas as circunstâncias.',
+  
+  'colossians-image-god': 'Apresenta Cristo como a imagem perfeita e a plenitude de Deus.',
+  'colossians-supremacy-christ': 'Desenvolve o tema da supremacia de Cristo sobre toda a criação.',
+  'colossians-shadow-reality': 'Contrasta as sombras da lei com a realidade encontrada em Cristo.',
+  'colossians-hidden-christ': 'Apresenta a vida cristã como escondida com Cristo em Deus.',
+  
+  '1thessalonians-second-coming': 'Apresenta a segunda vinda de Cristo como o clímax da história redentora.',
+  '1thessalonians-sanctification': 'Desenvolve o tema da santificação como obra contínua de Cristo no crente.',
+  '1thessalonians-day-lord': 'Usa a linguagem do Dia do Senhor do Antigo Testamento e a aplica à volta de Cristo.',
+  
+  '2thessalonians-judge-redeemer': 'Continua o tema escatológico da vinda de Cristo como juiz e redentor.',
+  '2thessalonians-antichrist-contrast': 'Contrasta Cristo com o anticristo, mostrando a superioridade do verdadeiro Messias.',
+  '2thessalonians-faithfulness': 'Enfatiza a fidelidade de Cristo em meio à apostasia e perseguição.',
+  
+  '1timothy-mediator': 'Apresenta Cristo como o único mediador entre Deus e os homens.',
+  '1timothy-ransom-all': 'Desenvolve o tema de Cristo como resgate por todos os homens.',
+  '1timothy-appearing-glory': 'Conecta a primeira aparição de Cristo em humildade com sua segunda aparição em glória.',
+  
+  '2timothy-righteous-judge': 'Apresenta Cristo como o justo juiz que recompensará a fidelidade.',
+  '2timothy-suffering-glory': 'Desenvolve o tema de sofrer com Cristo para reinar com ele.',
+  '2timothy-appearing-kingdom': 'Conecta a obra salvífica de Cristo com seu reino vindouro.',
+  
+  'titus-blessed-hope': 'Apresenta a manifestação de Cristo como o cumprimento da esperança prometida por Deus.',
+  'titus-grace-teaching': 'Desenvolve o tema da graça que ensina a viver de maneira piedosa.',
+  'titus-works-contrast': 'Contrasta as boas obras que fluem da graça com a tentativa de justificação pelas obras da lei.',
+  
+  'philemon-reconciliation': 'Usa a reconciliação entre Filemom e Onésimo como modelo da reconciliação em Cristo.',
+  'philemon-transformation': 'Mostra como Cristo transforma relacionamentos e identidades.',
+  'philemon-intercession': 'Apresenta Paulo como intercessor, prefigurando a intercessão de Cristo.',
+  
+  'hebrews-high-priest': 'Apresenta Cristo como sumo sacerdote superior segundo a ordem de Melquisedeque.',
+  'hebrews-better-covenant': 'Contrasta a nova aliança em Cristo com a antiga aliança.',
+  'hebrews-shadow-substance': 'Contrasta as sombras da lei com a substância encontrada em Cristo.',
+  'hebrews-once-for-all': 'Enfatiza o sacrifício único e definitivo de Cristo.',
+  
+  'james-wisdom-from-above': 'Contrasta a sabedoria terrena com a sabedoria celestial encontrada em Cristo.',
+  'james-faith-works': 'Desenvolve o tema da fé que se manifesta em obras, demonstrada perfeitamente por Cristo.',
+  'james-promised-coming': 'Aponta para a segunda vinda de Cristo como esperança dos aflitos.',
+  
+  '1peter-living-stone': 'Apresenta Cristo como a pedra viva e angular rejeitada pelos homens mas escolhida por Deus.',
+  '1peter-suffering-glory': 'Conecta o sofrimento de Cristo com sua glória vindoura.',
+  '1peter-example-following': 'Apresenta Cristo como exemplo no sofrimento injusto.',
+  '1peter-shepherd-souls': 'Apresenta Cristo como o Pastor e Bispo das almas.',
+  
+  '2peter-knowledge-growth': 'Enfatiza o crescimento no conhecimento de Cristo como chave da vida cristã.',
+  '2peter-divine-nature': 'Desenvolve o tema da participação na natureza divina através de Cristo.',
+  '2peter-day-of-lord': 'Conecta a paciência de Deus com a segunda vinda de Cristo.',
+  
+  '1john-word-of-life': 'Apresenta Cristo como o Verbo da vida que estava com o Pai e foi manifestado.',
+  '1john-light-fellowship': 'Desenvolve o tema de Cristo como luz e base da comunhão com Deus.',
+  '1john-love-definition': 'Define o amor verdadeiro pela manifestação do amor de Deus em Cristo.',
+  '1john-advocate-father': 'Apresenta Cristo como nosso advogado junto ao Pai.',
+  
+  '2john-truth-love': 'Equilibra verdade e amor como manifestados perfeitamente em Cristo.',
+  '2john-antichrist-warning': 'Adverte contra falsos ensinos que negam a pessoa e obra de Cristo.',
+  
+  '3john-walking-truth': 'Enfatiza a importância de andar na verdade que é Cristo.',
+  '3john-supporting-truth': 'Desenvolve o tema de apoiar aqueles que trabalham pela verdade do evangelho.',
+  
+  'jude-kept-by-jesus': 'Apresenta Cristo como aquele que guarda e preserva os crentes.',
+  'jude-examples-judgment': 'Usa exemplos do Antigo Testamento como tipos de juízo que prefiguram o juízo final de Cristo.',
+  'jude-faith-delivered': 'Enfatiza a importância de batalhar pela fé centrada em Cristo.',
+  
+  'revelation-alpha-omega': 'Apresenta Cristo como o Alfa e Ômega, o primeiro e o último.',
+  'revelation-lamb-slain': 'Desenvolve a imagem de Cristo como o Cordeiro que foi morto mas vive para sempre.',
+  'revelation-king-of-kings': 'Apresenta Cristo como Rei dos reis e Senhor dos senhores.',
+  'revelation-new-creation': 'Mostra Cristo como aquele que faz todas as coisas novas.',
+  'revelation-overcomer': 'Apresenta Cristo como o vencedor supremo que dá vitória aos que nele creem.',
+  
+  // Christ Pointers - Detailed descriptions
+  'genesis-promise-seed': 'A promessa da semente da mulher que esmagará a cabeça da serpente (Gênesis 3:15) aponta para a vitória de Cristo sobre Satanás.',
+  'genesis-isaac-sacrifice': 'A oferta de Isaque por Abraão prefigura o sacrifício de Deus de Seu Filho.',
+  'genesis-joseph-type': 'José como um tipo de Cristo: traído pelos irmãos, aparentemente derrotado mas elevado à glória, e se tornando o salvador de muitos.',
+  'genesis-creation-theme': 'O tema da criação e seu cabeça, Adão, encontra cumprimento no último Adão, Cristo, que inaugura uma nova criação.',
+  'genesis-abraham-promise': 'A promessa a Abraão de que em sua descendência todas as famílias da terra seriam abençoadas encontra cumprimento em Cristo.',
+  
+  'exodus-passover-lamb': 'O cordeiro da Páscoa prefigura Cristo como o Cordeiro de Deus cujo sangue protege do juízo.',
+  'exodus-moses-mediator': 'Moisés como libertador e mediador prefigura a maior libertação e mediação de Cristo.',
+  'exodus-redemption-theme': 'O tema da redenção da escravidão aponta para a redenção de Cristo do pecado.',
+  'exodus-manna-bread': 'O maná no deserto prefigura Cristo como o pão da vida.',
+  'exodus-tabernacle-dwelling': 'O tabernáculo aponta para Cristo como a habitação de Deus entre o povo.',
+  
+  'leviticus-sacrificial-system': 'O sistema sacrificial prefigura o sacrifício único de Cristo.',
+  'leviticus-repetitive-contrast': 'A natureza repetitiva dos sacrifícios levíticos contrasta com o sacrifício perfeito de Cristo, oferecido uma vez por todas.',
+  'leviticus-day-atonement': 'O Dia da Expiação prefigura a obra expiatória de Cristo na cruz.',
+  'leviticus-holiness-theme': 'O tema da santidade encontra sua perfeita expressão em Cristo, que é completamente santo e torna santo o seu povo.',
+  
+  'numbers-bronze-serpent': 'A serpente de bronze levantada no deserto prefigura Cristo levantado na cruz para cura e salvação.',
+  'numbers-rock-water': 'A rocha que proveu água prefigura Cristo como a fonte da água viva.',
+  'numbers-provision-theme': 'O tema da provisão de Deus no deserto aponta para a provisão completa em Cristo.',
+  'numbers-priestly-blessing': 'As bênçãos sacerdotais prefiguram as bênçãos espirituais em Cristo.',
+  
+  'psalms-messianic-psalms': 'Os salmos messiânicos descrevem diretamente Cristo como Rei, Sacerdote e Sofredor.',
+  'psalms-messianic-promises': 'Promessas sobre o Messias que são cumpridas em Cristo.',
+  'psalms-nt-references': 'Salmos frequentemente citados no Novo Testamento em referência a Cristo.',
+  'psalms-david-type': 'Davi como rei e autor de muitos Salmos prefigura Cristo, o Rei definitivo.',
+
+  // Minor Prophets Christ Pointers
+  'hosea-marriage-typology': 'O casamento de Oséias com Gômer prefigura o amor fiel de Cristo pela sua noiva infiel, a Igreja.',
+  'hosea-love-analogy': 'O amor redentor de Deus por Israel é análogo ao amor redentor de Cristo.',
+  'hosea-egypt-son': 'A citação "Do Egito chamei o meu filho" aplicada a Cristo.',
+  'hosea-restoration-promise': 'A promessa de restauração e reconciliação cumprida em Cristo.',
+
+  'joel-spirit-outpouring': 'A profecia do derramamento do Espírito cumprida em Pentecostes após a ascensão de Cristo.',
+  'joel-salvation-call': 'A citação de Joel 2:32 por Pedro aplicada à salvação em Cristo.',
+  'joel-day-lord': 'O Dia do Senhor como prelúdio do julgamento e salvação finais em Cristo.',
+
+  'amos-tabernacle-david': 'A promessa de restaurar o "tabernáculo caído de Davi" cumprida em Cristo.',
+  'amos-judgment-redemptive': 'O julgamento sobre Israel como parte do plano redentor que culmina em Cristo.',
+  'amos-justice-contrast': 'A exigência de justiça verdadeira que se encontra plenamente em Cristo.',
+
+  'obadiah-edom-judgment': 'O julgamento de Edom como parte do plano redentor de Deus que culmina em Cristo.',
+  'obadiah-kingdom-triumph': 'O tema do reino de Deus triunfando sobre seus inimigos encontra cumprimento em Cristo.',
+  'obadiah-enmity-conflict': 'A inimizade histórica entre Edom (Esaú) e Israel (Jacó) prefigura o conflito entre a semente da serpente e a semente da mulher que culmina na vitória de Cristo.',
+
+  'jonah-three-days': 'Os três dias de Jonas no grande peixe prefiguram a morte e ressurreição de Cristo.',
+  'jonah-sign-reference': 'Jesus cita o "sinal de Jonas" como tipo de sua morte e ressurreição.',
+  'jonah-gentiles-mercy': 'A misericórdia de Deus para com os gentios em Nínive aponta para a inclusão dos gentios em Cristo.',
+
+  'micah-bethlehem-birth': 'A profecia sobre o nascimento do Messias em Belém cumprida em Cristo.',
+  'micah-bethlehem-citation': 'A citação de Miquéias 5:2 aplicada ao nascimento de Jesus em Belém.',
+  'micah-ruler-shepherd': 'A promessa de um governante que pastorearia seu povo em nome do Senhor cumprida em Cristo.',
+  'micah-forgiveness-seas': 'O perdão incomparável de Deus que lança os pecados nas profundezas do mar se manifesta plenamente em Cristo.',
+
+  'nahum-nineveh-judgment': 'O julgamento de Nínive como parte do plano redentor de Deus que conduz a Cristo.',
+  'nahum-god-character': 'O caráter de Deus como justo juiz e refúgio para os que nele confiam se manifesta plenamente em Cristo.',
+  'nahum-divine-judgment': 'O tema do julgamento divino sobre os opressores do povo de Deus encontra sua culminação em Cristo.',
+
+  'habakkuk-just-by-faith': 'A declaração "o justo viverá pela fé" citada no Novo Testamento em relação à justificação pela fé em Cristo.',
+  'habakkuk-justice-tension': 'A tensão entre justiça e julgamento resolvida em Cristo.',
+  'habakkuk-faith-trust': 'O tema da fé e confiança em Deus em tempos difíceis encontra sua plena expressão em Cristo.',
+
+  'zephaniah-day-lord-dual': 'O Dia do Senhor como julgamento e salvação prefigura o papel dual de Cristo como juiz e salvador.',
+  'zephaniah-restoration-joy': 'A promessa de restauração e regozijo encontra seu cumprimento em Cristo.',
+  'zephaniah-remnant-faithful': 'O "restante de Israel" que confia no nome do Senhor prefigura o remanescente fiel que confia em Cristo.',
+
+  'haggai-temple-rebuild': 'A reconstrução do templo prefigura Cristo como o verdadeiro templo.',
+  'haggai-glory-greater': 'A promessa de que a glória futura do templo seria maior que a anterior cumprida em Cristo.',
+  'haggai-zerubbabel-signet': 'A escolha de Zorobabel como "anel de selar" aponta para seu descendente Cristo.',
+
+  'zechariah-priest-king-typology': 'Josué, o sumo sacerdote, e Zorobabel prefiguram os papéis sacerdotal e real de Cristo.',
+  'zechariah-messianic-prophecies': 'Profecias diretas sobre o Messias cumpridas em Cristo.',
+  'zechariah-nt-citations': 'Profecias citadas no Novo Testamento em referência a Cristo.',
+  'zechariah-cleansing-fountain': 'A fonte aberta para purificação prefigura o sangue purificador de Cristo.',
+
+  'malachi-messenger-way': 'A profecia sobre o mensageiro que prepararia o caminho cumprida em João Batista antes de Cristo.',
+  'malachi-sun-righteousness': 'A referência ao "sol da justiça" aplicada a Cristo como a luz do mundo.',
+  'malachi-day-lord-coming': 'O prenúncio do "dia do Senhor" aponta para a primeira e segunda vindas de Cristo.',
+  'malachi-priesthood-contrast': 'O contraste entre o sacerdócio corrupto e o "mensageiro da aliança" puro que viria purificar.'
 };

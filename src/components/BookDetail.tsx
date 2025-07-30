@@ -125,8 +125,8 @@ const BookDetail = ({ book }: BookDetailProps) => {
             {getTestamentTranslation(book.testament)}
           </span>
         </div>
-        <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">{book.name}</h1>
-        <p className="text-lg text-muted-foreground">{book.description}</p>
+        <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">{t(book.nameKey)}</h1>
+        <p className="text-lg text-muted-foreground">{t(book.descriptionKey)}</p>
       </div>
 
       <div className="mb-8">
@@ -143,10 +143,10 @@ const BookDetail = ({ book }: BookDetailProps) => {
                     to={`/categories/${pointer.category}`} 
                     className="text-xs rounded-full px-2 py-1 bg-accent/10 text-accent w-fit hover:bg-accent/20 transition-colors"
                   >
-                    {category?.name}
+                    {t(category?.nameKey || `category-${pointer.category}`)}
                   </Link>
                 </div>
-                <p className="mb-4 text-foreground">{pointer.description}</p>
+                <p className="mb-4 text-foreground">{t(pointer.descriptionKey)}</p>
                 <div className="flex flex-wrap gap-2">
                   {pointer.verses.map((verse, idx) => {
                     const formattedVerse = formatBibleReference(verse);

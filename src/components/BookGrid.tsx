@@ -83,7 +83,7 @@ const BookCard = ({ book }: BookCardProps) => {
       className="group"
     >
       <div className="glass-card p-4 rounded-md flex flex-col items-center justify-center text-center h-32 transition-all duration-300 group-hover:shadow-md group-hover:scale-[1.03]">
-        <h3 className="font-bold text-lg text-primary mb-1">{book.shortName}</h3>
+        <h3 className="font-bold text-lg text-primary mb-1">{t(book.shortNameKey)}</h3>
         <p className="text-xs text-muted-foreground mb-2">
           {book.testament === 'old' ? t('old-testament') : t('new-testament')}
         </p>

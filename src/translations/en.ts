@@ -155,6 +155,9 @@ export const en = {
   'loading': 'Loading...',
   'no-results': 'No results found.',
   'search-placeholder': 'Search...',
+  'search-bible-passage': 'Search Bible passage...',
+  'search-results-count': 'Found {count} results',
+  'no-passages-found': 'No passages found.',
   'clear': 'Clear',
   'apply': 'Apply',
   'cancel': 'Cancel',
@@ -371,5 +374,208 @@ export const en = {
   'christ-in-2-john': 'In 2 John, Christ is the truth who abides in us and will be with us forever.',
   'christ-in-3-john': 'In 3 John, Christ is the truth in which we must walk and for which we must work together.',
   'christ-in-jude': 'In Jude, Christ is the one able to keep us from stumbling and present us blameless before His glory.',
-  'christ-in-revelation': 'In Revelation, Christ is the Alpha and Omega, the Lamb that was slain, the King of kings who returns in glory to judge and reign eternally.'
+  'christ-in-revelation': 'In Revelation, Christ is the Alpha and Omega, the Lamb that was slain, the King of kings who returns in glory to judge and reign eternally.',
+  
+  // Christ Pointers - New Testament detailed descriptions
+  'matthew-promise-fulfillment': 'Matthew frequently notes how Jesus fulfilled Old Testament prophecies.',
+  'matthew-nt-references': 'Explicitly connects Jesus to Old Testament prophecies about the Messiah.',
+  'matthew-genealogy': 'Presents Jesus\' genealogy as fulfillment of promises to Abraham and David.',
+  'matthew-new-moses': 'Presents Jesus as the new Moses who gives the new law in the Sermon on the Mount.',
+  
+  'mark-servant-type': 'Presents Jesus as the Servant of the Lord, connecting him to the Servant Songs in Isaiah.',
+  'mark-kingdom-god': 'Emphasizes the kingdom of God breaking into history through Jesus.',
+  'mark-ot-fulfillment': 'Quotes the Old Testament to show Jesus as fulfillment of Scripture.',
+  
+  'luke-historical-context': 'Places Jesus\' life in the context of world history and God\'s redemptive plan.',
+  'luke-universal-salvation': 'Shows how Jesus fulfills promises to Israel and brings salvation to all nations.',
+  'luke-salvation-theme': 'Develops the theme of salvation for the lost and marginalized.',
+  'luke-holy-spirit': 'Emphasizes the role of the Holy Spirit in Jesus\' life and ministry.',
+  
+  'john-word-incarnate': 'Identifies Jesus as the eternal Word made flesh.',
+  'john-eternal-life': 'Presents Jesus as the giver of eternal life through faith.',
+  'john-light-darkness': 'Contrasts Jesus as the true light with the darkness of the world.',
+  'john-signs-deity': 'Jesus\' signs reveal his divinity and messiahship.',
+  'john-good-shepherd': 'Jesus identifies himself as the Good Shepherd who lays down his life for the sheep.',
+  
+  'acts-gospel-expansion': 'Shows how the gospel expands from Jerusalem to the ends of the earth, fulfilling God\'s plan.',
+  'acts-spirit-promise': 'Shows the outpouring of the Spirit as fulfillment of Jesus\' promise and Old Testament prophecies.',
+  'acts-ot-interpretation': 'The sermons frequently interpret the Old Testament in light of Christ.',
+  'acts-kingdom-theme': 'Develops the theme of God\'s kingdom continuing to expand after Christ\'s ascension.',
+  
+  'romans-adam-christ': 'Traces God\'s redemptive plan from Adam to Christ.',
+  'romans-israel-promises': 'Shows how Christ fulfills God\'s promises to Israel.',
+  'romans-justification': 'Presents justification by faith as parallel to Abraham\'s faith.',
+  'romans-sacrificial-system': 'Contrasts Christ\'s one sacrifice with the repetitive sacrificial system.',
+  
+  '1corinthians-ot-types': 'Uses Old Testament events as types pointing to realities in Christ.',
+  '1corinthians-passover-firstfruits': 'Presents Christ as the true Passover and firstfruits of resurrection.',
+  '1corinthians-new-creation': 'Places Christ as the climax of redemptive history and foundation of new creation.',
+  '1corinthians-wisdom-contrast': 'Contrasts worldly wisdom with true wisdom of God revealed in Christ.',
+  
+  '2corinthians-old-new-covenant': 'Contrasts old and new covenant, showing the superiority of the new in Christ.',
+  '2corinthians-reconciliation': 'Develops the theme of reconciliation with God through Christ.',
+  '2corinthians-promises-fulfilled': 'Presents Christ as God\'s "Yes" to all his promises.',
+  
+  'galatians-abraham-promise': 'Shows how Christ is the fulfillment of the promise to Abraham.',
+  'galatians-law-tutor': 'Presents the law as temporary tutor until Christ\'s coming.',
+  'galatians-sarah-hagar': 'Uses the allegory of Sarah and Hagar to contrast the covenants.',
+  'galatians-freedom-christ': 'Contrasts slavery under law with freedom in Christ.',
+  
+  'ephesians-unity-christ': 'Develops the theme of unity of Jews and Gentiles in Christ.',
+  'ephesians-church-body': 'Presents the church as Christ\'s body growing toward maturity.',
+  'ephesians-spiritual-warfare': 'Places Christian life as participation in Christ\'s victory over principalities and powers.',
+  'ephesians-creation-theme': 'Connects the new creation in Christ with God\'s eternal purposes.',
+  
+  'philippians-humility-exaltation': 'Presents Jesus as supreme example of humility leading to exaltation.',
+  'philippians-suffering-glory': 'Develops the theme of sharing in Christ\'s sufferings to share in his glory.',
+  'philippians-joy-christ': 'Presents Christ as the source of true joy in all circumstances.',
+  
+  'colossians-image-god': 'Presents Christ as the perfect image and fullness of God.',
+  'colossians-supremacy-christ': 'Develops the theme of Christ\'s supremacy over all creation.',
+  'colossians-shadow-reality': 'Contrasts the shadows of the law with the reality found in Christ.',
+  'colossians-hidden-christ': 'Presents Christian life as hidden with Christ in God.',
+  
+  '1thessalonians-second-coming': 'Presents Christ\'s second coming as the climax of redemptive history.',
+  '1thessalonians-sanctification': 'Develops the theme of sanctification as Christ\'s ongoing work in the believer.',
+  '1thessalonians-day-lord': 'Uses Old Testament Day of the Lord language and applies it to Christ\'s return.',
+  
+  '2thessalonians-judge-redeemer': 'Continues the eschatological theme of Christ\'s coming as judge and redeemer.',
+  '2thessalonians-antichrist-contrast': 'Contrasts Christ with the antichrist, showing the superiority of the true Messiah.',
+  '2thessalonians-faithfulness': 'Emphasizes Christ\'s faithfulness amid apostasy and persecution.',
+  
+  '1timothy-mediator': 'Presents Christ as the one mediator between God and men.',
+  '1timothy-ransom-all': 'Develops the theme of Christ as a ransom for all men.',
+  '1timothy-appearing-glory': 'Connects Christ\'s first appearing in humility with his second appearing in glory.',
+  
+  '2timothy-righteous-judge': 'Presents Christ as the righteous judge who will reward faithfulness.',
+  '2timothy-suffering-glory': 'Develops the theme of suffering with Christ to reign with him.',
+  '2timothy-appearing-kingdom': 'Connects Christ\'s saving work with his coming kingdom.',
+  
+  'titus-blessed-hope': 'Presents Christ\'s manifestation as the fulfillment of God\'s promised hope.',
+  'titus-grace-teaching': 'Develops the theme of grace that teaches how to live godly lives.',
+  'titus-works-contrast': 'Contrasts good works flowing from grace with attempts at justification by works of law.',
+  
+  'philemon-reconciliation': 'Uses the reconciliation between Philemon and Onesimus as a model of reconciliation in Christ.',
+  'philemon-transformation': 'Shows how Christ transforms relationships and identities.',
+  'philemon-intercession': 'Presents Paul as intercessor, prefiguring Christ\'s intercession.',
+  
+  'hebrews-high-priest': 'Presents Christ as superior high priest according to the order of Melchizedek.',
+  'hebrews-better-covenant': 'Contrasts the new covenant in Christ with the old covenant.',
+  'hebrews-shadow-substance': 'Contrasts the shadows of the law with the substance found in Christ.',
+  'hebrews-once-for-all': 'Emphasizes Christ\'s unique and definitive sacrifice.',
+  
+  'james-wisdom-from-above': 'Contrasts earthly wisdom with heavenly wisdom found in Christ.',
+  'james-faith-works': 'Develops the theme of faith manifested in works, perfectly demonstrated by Christ.',
+  'james-promised-coming': 'Points to Christ\'s second coming as hope for the afflicted.',
+  
+  '1peter-living-stone': 'Presents Christ as the living and cornerstone rejected by men but chosen by God.',
+  '1peter-suffering-glory': 'Connects Christ\'s suffering with his coming glory.',
+  '1peter-example-following': 'Presents Christ as example in unjust suffering.',
+  '1peter-shepherd-souls': 'Presents Christ as the Shepherd and Overseer of souls.',
+  
+  '2peter-knowledge-growth': 'Emphasizes growth in knowledge of Christ as key to Christian life.',
+  '2peter-divine-nature': 'Develops the theme of participation in divine nature through Christ.',
+  '2peter-day-of-lord': 'Connects God\'s patience with Christ\'s second coming.',
+  
+  '1john-word-of-life': 'Presents Christ as the Word of life who was with the Father and was manifested.',
+  '1john-light-fellowship': 'Develops the theme of Christ as light and basis of fellowship with God.',
+  '1john-love-definition': 'Defines true love by God\'s manifestation of love in Christ.',
+  '1john-advocate-father': 'Presents Christ as our advocate with the Father.',
+  
+  '2john-truth-love': 'Balances truth and love as perfectly manifested in Christ.',
+  '2john-antichrist-warning': 'Warns against false teachings that deny the person and work of Christ.',
+  
+  '3john-walking-truth': 'Emphasizes the importance of walking in the truth that is Christ.',
+  '3john-supporting-truth': 'Develops the theme of supporting those who work for the truth of the gospel.',
+  
+  'jude-kept-by-jesus': 'Presents Christ as the one who keeps and preserves believers.',
+  'jude-examples-judgment': 'Uses Old Testament examples as types of judgment prefiguring Christ\'s final judgment.',
+  'jude-faith-delivered': 'Emphasizes the importance of contending for the faith centered in Christ.',
+  
+  'revelation-alpha-omega': 'Presents Christ as the Alpha and Omega, the first and the last.',
+  'revelation-lamb-slain': 'Develops the image of Christ as the Lamb who was slain but lives forever.',
+  'revelation-king-of-kings': 'Presents Christ as King of kings and Lord of lords.',
+  'revelation-new-creation': 'Shows Christ as the one who makes all things new.',
+  'revelation-overcomer': 'Presents Christ as the supreme overcomer who gives victory to those who believe in him.',
+  
+  // Christ Pointers - Detailed descriptions  
+  'genesis-promise-seed': 'The promise of the woman\'s seed who will crush the serpent\'s head (Genesis 3:15) points to Christ\'s victory over Satan.',
+  'genesis-isaac-sacrifice': 'Abraham\'s offering of Isaac prefigures God\'s sacrifice of His Son.',
+  'genesis-joseph-type': 'Joseph as a type of Christ: betrayed by brothers, apparently defeated but elevated to glory, and becoming the savior of many.',
+  'genesis-creation-theme': 'The theme of creation and its head, Adam, finds fulfillment in the last Adam, Christ, who inaugurates a new creation.',
+  'genesis-abraham-promise': 'The promise to Abraham that in his seed all families of the earth would be blessed finds fulfillment in Christ.',
+  
+  'exodus-passover-lamb': 'The Passover lamb prefigures Christ as the Lamb of God whose blood protects from judgment.',
+  'exodus-moses-mediator': 'Moses as deliverer and mediator prefigures the greater deliverance and mediation of Christ.',
+  'exodus-redemption-theme': 'The theme of redemption from slavery points to Christ\'s redemption from sin.',
+  'exodus-manna-bread': 'The manna in the wilderness prefigures Christ as the bread of life.',
+  'exodus-tabernacle-dwelling': 'The tabernacle points to Christ as God\'s dwelling among His people.',
+  
+  'leviticus-sacrificial-system': 'The sacrificial system prefigures the unique sacrifice of Christ.',
+  'leviticus-repetitive-contrast': 'The repetitive nature of Levitical sacrifices contrasts with Christ\'s perfect sacrifice, offered once for all.',
+  'leviticus-day-atonement': 'The Day of Atonement prefigures Christ\'s atoning work on the cross.',
+  'leviticus-holiness-theme': 'The theme of holiness finds its perfect expression in Christ, who is completely holy and makes His people holy.',
+  
+  'numbers-bronze-serpent': 'The bronze serpent lifted up in the wilderness prefigures Christ lifted up on the cross for healing and salvation.',
+  'numbers-rock-water': 'The rock that provided water prefigures Christ as the source of living water.',
+  'numbers-provision-theme': 'The theme of God\'s provision in the wilderness points to complete provision in Christ.',
+  'numbers-priestly-blessing': 'The priestly blessings prefigure the spiritual blessings in Christ.',
+  
+  'psalms-messianic-psalms': 'The messianic psalms directly describe Christ as King, Priest, and Sufferer.',
+  'psalms-messianic-promises': 'Promises about the Messiah that are fulfilled in Christ.',
+  'psalms-nt-references': 'Psalms frequently quoted in the New Testament in reference to Christ.',
+  'psalms-david-type': 'David as king and author of many Psalms prefigures Christ, the ultimate King.',
+
+  // Minor Prophets Christ Pointers
+  'hosea-marriage-typology': 'Hosea\'s marriage to Gomer prefigures Christ\'s faithful love for His unfaithful bride, the Church.',
+  'hosea-love-analogy': 'God\'s redeeming love for Israel is analogous to Christ\'s redeeming love.',
+  'hosea-egypt-son': 'The citation "Out of Egypt I called my son" applied to Christ.',
+  'hosea-restoration-promise': 'The promise of restoration and reconciliation fulfilled in Christ.',
+
+  'joel-spirit-outpouring': 'The prophecy of the outpouring of the Spirit fulfilled at Pentecost after Christ\'s ascension.',
+  'joel-salvation-call': 'Peter\'s citation of Joel 2:32 applied to salvation in Christ.',
+  'joel-day-lord': 'The Day of the Lord as a prelude to final judgment and salvation in Christ.',
+
+  'amos-tabernacle-david': 'The promise to restore the "fallen tabernacle of David" fulfilled in Christ.',
+  'amos-judgment-redemptive': 'The judgment on Israel as part of the redemptive plan that culminates in Christ.',
+  'amos-justice-contrast': 'The demand for true justice that is fully found in Christ.',
+
+  'obadiah-edom-judgment': 'The judgment of Edom as part of God\'s redemptive plan that culminates in Christ.',
+  'obadiah-kingdom-triumph': 'The theme of God\'s kingdom triumphing over its enemies finds fulfillment in Christ.',
+  'obadiah-enmity-conflict': 'The historical enmity between Edom (Esau) and Israel (Jacob) prefigures the conflict between the seed of the serpent and the seed of the woman that culminates in Christ\'s victory.',
+
+  'jonah-three-days': 'Jonah\'s three days in the great fish prefigure Christ\'s death and resurrection.',
+  'jonah-sign-reference': 'Jesus cites the "sign of Jonah" as a type of His death and resurrection.',
+  'jonah-gentiles-mercy': 'God\'s mercy toward the Gentiles in Nineveh points to the inclusion of Gentiles in Christ.',
+
+  'micah-bethlehem-birth': 'The prophecy about the Messiah\'s birth in Bethlehem fulfilled in Christ.',
+  'micah-bethlehem-citation': 'The citation of Micah 5:2 applied to Jesus\' birth in Bethlehem.',
+  'micah-ruler-shepherd': 'The promise of a ruler who would shepherd his people in the Lord\'s name fulfilled in Christ.',
+  'micah-forgiveness-seas': 'God\'s incomparable forgiveness that casts sins into the depths of the sea is fully manifested in Christ.',
+
+  'nahum-nineveh-judgment': 'The judgment of Nineveh as part of God\'s redemptive plan that leads to Christ.',
+  'nahum-god-character': 'God\'s character as righteous judge and refuge for those who trust in Him is fully manifested in Christ.',
+  'nahum-divine-judgment': 'The theme of divine judgment on the oppressors of God\'s people finds its culmination in Christ.',
+
+  'habakkuk-just-by-faith': 'The declaration "the righteous shall live by faith" cited in the New Testament regarding justification by faith in Christ.',
+  'habakkuk-justice-tension': 'The tension between justice and judgment resolved in Christ.',
+  'habakkuk-faith-trust': 'The theme of faith and trust in God during difficult times finds its full expression in Christ.',
+
+  'zephaniah-day-lord-dual': 'The Day of the Lord as judgment and salvation prefigures Christ\'s dual role as judge and savior.',
+  'zephaniah-restoration-joy': 'The promise of restoration and rejoicing finds its fulfillment in Christ.',
+  'zephaniah-remnant-faithful': 'The "remnant of Israel" that trusts in the Lord\'s name prefigures the faithful remnant that trusts in Christ.',
+
+  'haggai-temple-rebuild': 'The rebuilding of the temple prefigures Christ as the true temple.',
+  'haggai-glory-greater': 'The promise that the future glory of the temple would be greater than the former fulfilled in Christ.',
+  'haggai-zerubbabel-signet': 'The choice of Zerubbabel as "signet ring" points to his descendant Christ.',
+
+  'zechariah-priest-king-typology': 'Joshua the high priest and Zerubbabel prefigure Christ\'s priestly and royal roles.',
+  'zechariah-messianic-prophecies': 'Direct prophecies about the Messiah fulfilled in Christ.',
+  'zechariah-nt-citations': 'Prophecies cited in the New Testament in reference to Christ.',
+  'zechariah-cleansing-fountain': 'The fountain opened for purification prefigures the cleansing blood of Christ.',
+
+  'malachi-messenger-way': 'The prophecy about the messenger who would prepare the way fulfilled in John the Baptist before Christ.',
+  'malachi-sun-righteousness': 'The reference to the "sun of righteousness" applied to Christ as the light of the world.',
+  'malachi-day-lord-coming': 'The foretelling of the "day of the Lord" points to Christ\'s first and second comings.',
+  'malachi-priesthood-contrast': 'The contrast between the corrupt priesthood and the pure "messenger of the covenant" who would come to purify.'
 };
