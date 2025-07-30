@@ -530,6 +530,69 @@ export const pt = {
   'colossians-shadow-reality': 'Contrasta as sombras da lei com a realidade encontrada em Cristo.',
   'colossians-hidden-christ': 'Apresenta a vida cristã como escondida com Cristo em Deus.',
   
+  '1thessalonians-second-coming': 'Apresenta a segunda vinda de Cristo como o clímax da história redentora.',
+  '1thessalonians-sanctification': 'Desenvolve o tema da santificação como obra contínua de Cristo no crente.',
+  '1thessalonians-day-lord': 'Usa a linguagem do Dia do Senhor do Antigo Testamento e a aplica à volta de Cristo.',
+  
+  '2thessalonians-judge-redeemer': 'Continua o tema escatológico da vinda de Cristo como juiz e redentor.',
+  '2thessalonians-antichrist-contrast': 'Contrasta Cristo com o anticristo, mostrando a superioridade do verdadeiro Messias.',
+  '2thessalonians-faithfulness': 'Enfatiza a fidelidade de Cristo em meio à apostasia e perseguição.',
+  
+  '1timothy-mediator': 'Apresenta Cristo como o único mediador entre Deus e os homens.',
+  '1timothy-ransom-all': 'Desenvolve o tema de Cristo como resgate por todos os homens.',
+  '1timothy-appearing-glory': 'Conecta a primeira aparição de Cristo em humildade com sua segunda aparição em glória.',
+  
+  '2timothy-righteous-judge': 'Apresenta Cristo como o justo juiz que recompensará a fidelidade.',
+  '2timothy-suffering-glory': 'Desenvolve o tema de sofrer com Cristo para reinar com ele.',
+  '2timothy-appearing-kingdom': 'Conecta a obra salvífica de Cristo com seu reino vindouro.',
+  
+  'titus-blessed-hope': 'Apresenta a manifestação de Cristo como o cumprimento da esperança prometida por Deus.',
+  'titus-grace-teaching': 'Desenvolve o tema da graça que ensina a viver de maneira piedosa.',
+  'titus-works-contrast': 'Contrasta as boas obras que fluem da graça com a tentativa de justificação pelas obras da lei.',
+  
+  'philemon-reconciliation': 'Usa a reconciliação entre Filemom e Onésimo como modelo da reconciliação em Cristo.',
+  'philemon-transformation': 'Mostra como Cristo transforma relacionamentos e identidades.',
+  'philemon-intercession': 'Apresenta Paulo como intercessor, prefigurando a intercessão de Cristo.',
+  
+  'hebrews-high-priest': 'Apresenta Cristo como sumo sacerdote superior segundo a ordem de Melquisedeque.',
+  'hebrews-better-covenant': 'Contrasta a nova aliança em Cristo com a antiga aliança.',
+  'hebrews-shadow-substance': 'Contrasta as sombras da lei com a substância encontrada em Cristo.',
+  'hebrews-once-for-all': 'Enfatiza o sacrifício único e definitivo de Cristo.',
+  
+  'james-wisdom-from-above': 'Contrasta a sabedoria terrena com a sabedoria celestial encontrada em Cristo.',
+  'james-faith-works': 'Desenvolve o tema da fé que se manifesta em obras, demonstrada perfeitamente por Cristo.',
+  'james-promised-coming': 'Aponta para a segunda vinda de Cristo como esperança dos aflitos.',
+  
+  '1peter-living-stone': 'Apresenta Cristo como a pedra viva e angular rejeitada pelos homens mas escolhida por Deus.',
+  '1peter-suffering-glory': 'Conecta o sofrimento de Cristo com sua glória vindoura.',
+  '1peter-example-following': 'Apresenta Cristo como exemplo no sofrimento injusto.',
+  '1peter-shepherd-souls': 'Apresenta Cristo como o Pastor e Bispo das almas.',
+  
+  '2peter-knowledge-growth': 'Enfatiza o crescimento no conhecimento de Cristo como chave da vida cristã.',
+  '2peter-divine-nature': 'Desenvolve o tema da participação na natureza divina através de Cristo.',
+  '2peter-day-of-lord': 'Conecta a paciência de Deus com a segunda vinda de Cristo.',
+  
+  '1john-word-of-life': 'Apresenta Cristo como o Verbo da vida que estava com o Pai e foi manifestado.',
+  '1john-light-fellowship': 'Desenvolve o tema de Cristo como luz e base da comunhão com Deus.',
+  '1john-love-definition': 'Define o amor verdadeiro pela manifestação do amor de Deus em Cristo.',
+  '1john-advocate-father': 'Apresenta Cristo como nosso advogado junto ao Pai.',
+  
+  '2john-truth-love': 'Equilibra verdade e amor como manifestados perfeitamente em Cristo.',
+  '2john-antichrist-warning': 'Adverte contra falsos ensinos que negam a pessoa e obra de Cristo.',
+  
+  '3john-walking-truth': 'Enfatiza a importância de andar na verdade que é Cristo.',
+  '3john-supporting-truth': 'Desenvolve o tema de apoiar aqueles que trabalham pela verdade do evangelho.',
+  
+  'jude-kept-by-jesus': 'Apresenta Cristo como aquele que guarda e preserva os crentes.',
+  'jude-examples-judgment': 'Usa exemplos do Antigo Testamento como tipos de juízo que prefiguram o juízo final de Cristo.',
+  'jude-faith-delivered': 'Enfatiza a importância de batalhar pela fé centrada em Cristo.',
+  
+  'revelation-alpha-omega': 'Apresenta Cristo como o Alfa e Ômega, o primeiro e o último.',
+  'revelation-lamb-slain': 'Desenvolve a imagem de Cristo como o Cordeiro que foi morto mas vive para sempre.',
+  'revelation-king-of-kings': 'Apresenta Cristo como Rei dos reis e Senhor dos senhores.',
+  'revelation-new-creation': 'Mostra Cristo como aquele que faz todas as coisas novas.',
+  'revelation-overcomer': 'Apresenta Cristo como o vencedor supremo que dá vitória aos que nele creem.',
+  
   // Christ Pointers - Detailed descriptions
   'genesis-promise-seed': 'A promessa da semente da mulher que esmagará a cabeça da serpente (Gênesis 3:15) aponta para a vitória de Cristo sobre Satanás.',
   'genesis-isaac-sacrifice': 'A oferta de Isaque por Abraão prefigura o sacrifício de Deus de Seu Filho.',

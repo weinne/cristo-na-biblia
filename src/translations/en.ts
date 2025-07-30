@@ -435,6 +435,69 @@ export const en = {
   'colossians-shadow-reality': 'Contrasts the shadows of the law with the reality found in Christ.',
   'colossians-hidden-christ': 'Presents Christian life as hidden with Christ in God.',
   
+  '1thessalonians-second-coming': 'Presents Christ\'s second coming as the climax of redemptive history.',
+  '1thessalonians-sanctification': 'Develops the theme of sanctification as Christ\'s ongoing work in the believer.',
+  '1thessalonians-day-lord': 'Uses Old Testament Day of the Lord language and applies it to Christ\'s return.',
+  
+  '2thessalonians-judge-redeemer': 'Continues the eschatological theme of Christ\'s coming as judge and redeemer.',
+  '2thessalonians-antichrist-contrast': 'Contrasts Christ with the antichrist, showing the superiority of the true Messiah.',
+  '2thessalonians-faithfulness': 'Emphasizes Christ\'s faithfulness amid apostasy and persecution.',
+  
+  '1timothy-mediator': 'Presents Christ as the one mediator between God and men.',
+  '1timothy-ransom-all': 'Develops the theme of Christ as a ransom for all men.',
+  '1timothy-appearing-glory': 'Connects Christ\'s first appearing in humility with his second appearing in glory.',
+  
+  '2timothy-righteous-judge': 'Presents Christ as the righteous judge who will reward faithfulness.',
+  '2timothy-suffering-glory': 'Develops the theme of suffering with Christ to reign with him.',
+  '2timothy-appearing-kingdom': 'Connects Christ\'s saving work with his coming kingdom.',
+  
+  'titus-blessed-hope': 'Presents Christ\'s manifestation as the fulfillment of God\'s promised hope.',
+  'titus-grace-teaching': 'Develops the theme of grace that teaches how to live godly lives.',
+  'titus-works-contrast': 'Contrasts good works flowing from grace with attempts at justification by works of law.',
+  
+  'philemon-reconciliation': 'Uses the reconciliation between Philemon and Onesimus as a model of reconciliation in Christ.',
+  'philemon-transformation': 'Shows how Christ transforms relationships and identities.',
+  'philemon-intercession': 'Presents Paul as intercessor, prefiguring Christ\'s intercession.',
+  
+  'hebrews-high-priest': 'Presents Christ as superior high priest according to the order of Melchizedek.',
+  'hebrews-better-covenant': 'Contrasts the new covenant in Christ with the old covenant.',
+  'hebrews-shadow-substance': 'Contrasts the shadows of the law with the substance found in Christ.',
+  'hebrews-once-for-all': 'Emphasizes Christ\'s unique and definitive sacrifice.',
+  
+  'james-wisdom-from-above': 'Contrasts earthly wisdom with heavenly wisdom found in Christ.',
+  'james-faith-works': 'Develops the theme of faith manifested in works, perfectly demonstrated by Christ.',
+  'james-promised-coming': 'Points to Christ\'s second coming as hope for the afflicted.',
+  
+  '1peter-living-stone': 'Presents Christ as the living and cornerstone rejected by men but chosen by God.',
+  '1peter-suffering-glory': 'Connects Christ\'s suffering with his coming glory.',
+  '1peter-example-following': 'Presents Christ as example in unjust suffering.',
+  '1peter-shepherd-souls': 'Presents Christ as the Shepherd and Overseer of souls.',
+  
+  '2peter-knowledge-growth': 'Emphasizes growth in knowledge of Christ as key to Christian life.',
+  '2peter-divine-nature': 'Develops the theme of participation in divine nature through Christ.',
+  '2peter-day-of-lord': 'Connects God\'s patience with Christ\'s second coming.',
+  
+  '1john-word-of-life': 'Presents Christ as the Word of life who was with the Father and was manifested.',
+  '1john-light-fellowship': 'Develops the theme of Christ as light and basis of fellowship with God.',
+  '1john-love-definition': 'Defines true love by God\'s manifestation of love in Christ.',
+  '1john-advocate-father': 'Presents Christ as our advocate with the Father.',
+  
+  '2john-truth-love': 'Balances truth and love as perfectly manifested in Christ.',
+  '2john-antichrist-warning': 'Warns against false teachings that deny the person and work of Christ.',
+  
+  '3john-walking-truth': 'Emphasizes the importance of walking in the truth that is Christ.',
+  '3john-supporting-truth': 'Develops the theme of supporting those who work for the truth of the gospel.',
+  
+  'jude-kept-by-jesus': 'Presents Christ as the one who keeps and preserves believers.',
+  'jude-examples-judgment': 'Uses Old Testament examples as types of judgment prefiguring Christ\'s final judgment.',
+  'jude-faith-delivered': 'Emphasizes the importance of contending for the faith centered in Christ.',
+  
+  'revelation-alpha-omega': 'Presents Christ as the Alpha and Omega, the first and the last.',
+  'revelation-lamb-slain': 'Develops the image of Christ as the Lamb who was slain but lives forever.',
+  'revelation-king-of-kings': 'Presents Christ as King of kings and Lord of lords.',
+  'revelation-new-creation': 'Shows Christ as the one who makes all things new.',
+  'revelation-overcomer': 'Presents Christ as the supreme overcomer who gives victory to those who believe in him.',
+  
   // Christ Pointers - Detailed descriptions  
   'genesis-promise-seed': 'The promise of the woman\'s seed who will crush the serpent\'s head (Genesis 3:15) points to Christ\'s victory over Satan.',
   'genesis-isaac-sacrifice': 'Abraham\'s offering of Isaac prefigures God\'s sacrifice of His Son.',

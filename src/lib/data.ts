@@ -1481,24 +1481,24 @@ export const books: Book[] = [
   {
     id: "1thessalonians",
     testament: "new",
-    name: "1 Tessalonicenses",
-    shortName: "1 Tes",
+    nameKey: "book-1-thessalonians",
+    shortNameKey: "abbr-1-thessalonians",
     categories: ["redemptive-historical", "longitudinal-themes"],
-    description: "Encorajamento à igreja perseguida e ensinamentos sobre a volta de Cristo.",
+    descriptionKey: "christ-in-1-thessalonians",
     christPointers: [
       {
         category: "redemptive-historical",
-        description: "Apresenta a segunda vinda de Cristo como o clímax da história redentora.",
+        descriptionKey: "1thessalonians-second-coming",
         verses: ["1 Tessalonicenses 4:13-5:11"]
       },
       {
         category: "longitudinal-themes",
-        description: "Desenvolve o tema da santificação como obra contínua de Cristo no crente.",
+        descriptionKey: "1thessalonians-sanctification",
         verses: ["1 Tessalonicenses 4:1-12", "1 Tessalonicenses 5:23-24"]
       },
       {
         category: "analogy",
-        description: "Usa a linguagem do Dia do Senhor do Antigo Testamento e a aplica à volta de Cristo.",
+        descriptionKey: "1thessalonians-day-lord",
         verses: ["1 Tessalonicenses 5:1-11"]
       }
     ]
@@ -1506,24 +1506,24 @@ export const books: Book[] = [
   {
     id: "2thessalonians",
     testament: "new",
-    name: "2 Tessalonicenses",
-    shortName: "2 Tes",
+    nameKey: "book-2-thessalonians",
+    shortNameKey: "abbr-2-thessalonians",
     categories: ["longitudinal-themes", "contrast"],
-    description: "Mais ensinamentos sobre a segunda vinda de Cristo e a apostasia.",
+    descriptionKey: "christ-in-2-thessalonians",
     christPointers: [
       {
         category: "longitudinal-themes",
-        description: "Continua o tema escatológico da vinda de Cristo como juiz e redentor.",
+        descriptionKey: "2thessalonians-judge-redeemer",
         verses: ["2 Tessalonicenses 1:5-12"]
       },
       {
         category: "contrast",
-        description: "Contrasta Cristo com o 'homem da iniquidade'.",
+        descriptionKey: "2thessalonians-antichrist-contrast",
         verses: ["2 Tessalonicenses 2:1-12"]
       },
       {
         category: "redemptive-historical",
-        description: "Situa a segunda vinda de Cristo como o evento que trará a plena revelação da justiça de Deus.",
+        descriptionKey: "2thessalonians-faithfulness",
         verses: ["2 Tessalonicenses 1:5-10"]
       }
     ]
@@ -1531,24 +1531,24 @@ export const books: Book[] = [
   {
     id: "1timothy",
     testament: "new",
-    name: "1 Timóteo",
-    shortName: "1 Tim",
+    nameKey: "book-1-timothy",
+    shortNameKey: "abbr-1-timothy",
     categories: ["longitudinal-themes", "analogy"],
-    description: "Instruções para Timóteo sobre a liderança da igreja e o combate às falsas doutrinas.",
+    descriptionKey: "christ-in-1-timothy",
     christPointers: [
       {
         category: "longitudinal-themes",
-        description: "Desenvolve o tema da igreja como 'casa de Deus', onde Cristo é a verdade central.",
+        descriptionKey: "1timothy-mediator",
         verses: ["1 Timóteo 3:14-16"]
       },
       {
         category: "analogy",
-        description: "Apresenta Cristo como o único mediador entre Deus e os homens, analogamente mas superior aos mediadores do Antigo Testamento.",
+        descriptionKey: "1timothy-ransom-all",
         verses: ["1 Timóteo 2:5-6"]
       },
       {
         category: "redemptive-historical",
-        description: "Apresenta o evangelho como a culminação do plano redentor de Deus.",
+        descriptionKey: "1timothy-appearing-glory",
         verses: ["1 Timóteo 1:12-17"]
       }
     ]
@@ -1556,24 +1556,24 @@ export const books: Book[] = [
   {
     id: "2timothy",
     testament: "new",
-    name: "2 Timóteo",
-    shortName: "2 Tim",
+    nameKey: "book-2-timothy",
+    shortNameKey: "abbr-2-timothy",
     categories: ["typology", "longitudinal-themes", "redemptive-historical"],
-    description: "Exortações finais de Paulo a Timóteo antes de sua morte.",
+    descriptionKey: "christ-in-2-timothy",
     christPointers: [
       {
         category: "typology",
-        description: "Apresenta Paulo como modelo para Timóteo, assim como Cristo é modelo para todos os crentes.",
+        descriptionKey: "2timothy-righteous-judge",
         verses: ["2 Timóteo 3:10-14"]
       },
       {
         category: "longitudinal-themes",
-        description: "Desenvolve o tema da perseverança fiel até o fim, seguindo o exemplo de Cristo.",
+        descriptionKey: "2timothy-suffering-glory",
         verses: ["2 Timóteo 2:1-13"]
       },
       {
         category: "redemptive-historical",
-        description: "Situa a morte e ressurreição de Cristo como o fundamento do evangelho a ser preservado.",
+        descriptionKey: "2timothy-appearing-kingdom",
         verses: ["2 Timóteo 2:8-13", "2 Timóteo 1:8-12"]
       }
     ]
@@ -1581,24 +1581,24 @@ export const books: Book[] = [
   {
     id: "titus",
     testament: "new",
-    name: "Tito",
-    shortName: "Tit",
+    nameKey: "book-titus",
+    shortNameKey: "abbr-titus",
     categories: ["promise-fulfillment", "longitudinal-themes"],
-    description: "Instruções para Tito sobre estabelecer líderes e ensinar a sã doutrina em Creta.",
+    descriptionKey: "christ-in-titus",
     christPointers: [
       {
         category: "promise-fulfillment",
-        description: "Apresenta a manifestação de Cristo como o cumprimento da esperança prometida por Deus.",
+        descriptionKey: "titus-blessed-hope",
         verses: ["Tito 2:11-14", "Tito 3:4-7"]
       },
       {
         category: "longitudinal-themes",
-        description: "Desenvolve o tema da graça que ensina a viver de maneira piedosa.",
+        descriptionKey: "titus-grace-teaching",
         verses: ["Tito 2:11-14"]
       },
       {
         category: "contrast",
-        description: "Contrasta as boas obras que fluem da graça com a tentativa de justificação pelas obras da lei.",
+        descriptionKey: "titus-works-contrast",
         verses: ["Tito 3:4-8"]
       }
     ]
@@ -1606,24 +1606,24 @@ export const books: Book[] = [
   {
     id: "philemon",
     testament: "new",
-    name: "Filemom",
-    shortName: "Fil",
+    nameKey: "book-philemon",
+    shortNameKey: "abbr-philemon",
     categories: ["analogy", "typology"],
-    description: "Carta pessoal pedindo a Filemom que receba de volta seu escravo Onésimo como irmão.",
+    descriptionKey: "christ-in-philemon",
     christPointers: [
       {
         category: "analogy",
-        description: "Paulo como intercessor por Onésimo é análogo a Cristo como nosso intercessor.",
+        descriptionKey: "philemon-intercession",
         verses: ["Filemom 1:8-20"]
       },
       {
         category: "typology",
-        description: "A reconciliação entre Filemom e Onésimo é tipo da reconciliação entre Deus e os crentes através de Cristo.",
+        descriptionKey: "philemon-reconciliation",
         verses: ["Filemom 1:15-16"]
       },
       {
         category: "longitudinal-themes",
-        description: "O tema da transformação de relacionamentos pela graça de Cristo.",
+        descriptionKey: "philemon-transformation",
         verses: ["Filemom 1:15-16"]
       }
     ]
@@ -1631,29 +1631,29 @@ export const books: Book[] = [
   {
     id: "hebrews",
     testament: "new",
-    name: "Hebreus",
-    shortName: "Heb",
+    nameKey: "book-hebrews",
+    shortNameKey: "abbr-hebrews",
     categories: ["typology", "contrast", "new-testament-references"],
-    description: "Demonstra a superioridade de Cristo sobre as instituições e figuras do Antigo Testamento.",
+    descriptionKey: "christ-in-hebrews",
     christPointers: [
       {
         category: "contrast",
-        description: "Cristo é superior aos anjos, a Moisés, ao sacerdócio levítico e à antiga aliança.",
+        descriptionKey: "hebrews-better-covenant",
         verses: ["Hebreus 1:4-14", "Hebreus 3:1-6", "Hebreus 7-10"]
       },
       {
         category: "typology",
-        description: "Melquisedeque como tipo do sacerdócio eterno de Cristo.",
+        descriptionKey: "hebrews-high-priest",
         verses: ["Hebreus 7:1-28"]
       },
       {
         category: "new-testament-references",
-        description: "Interpreta extensivamente as Escrituras do Antigo Testamento à luz de Cristo.",
+        descriptionKey: "hebrews-shadow-substance",
         verses: ["Hebreus 1:5-14", "Hebreus 2:5-18", "Hebreus 10:1-18"]
       },
       {
         category: "typology",
-        description: "O sistema sacrificial e o tabernáculo como tipos que apontam para a obra de Cristo.",
+        descriptionKey: "hebrews-once-for-all",
         verses: ["Hebreus 9:1-28", "Hebreus 10:1-18"]
       }
     ]
@@ -1661,24 +1661,24 @@ export const books: Book[] = [
   {
     id: "james",
     testament: "new",
-    name: "Tiago",
-    shortName: "Tia",
+    nameKey: "book-james",
+    shortNameKey: "abbr-james",
     categories: ["longitudinal-themes", "analogy"],
-    description: "Exortações práticas sobre a fé que se manifesta em obras.",
+    descriptionKey: "christ-in-james",
     christPointers: [
       {
         category: "longitudinal-themes",
-        description: "Desenvolve o tema da lei cumprida e aplicada à luz dos ensinamentos de Cristo.",
+        descriptionKey: "james-faith-works",
         verses: ["Tiago 1:22-25", "Tiago 2:8-13"]
       },
       {
         category: "analogy",
-        description: "Usa exemplos do Antigo Testamento de maneira análoga à vida cristã.",
+        descriptionKey: "james-wisdom-from-above",
         verses: ["Tiago 2:21-25", "Tiago 5:10-11", "Tiago 5:17-18"]
       },
       {
         category: "new-testament-references",
-        description: "Faz alusões aos ensinamentos de Jesus, especialmente do Sermão do Monte.",
+        descriptionKey: "james-promised-coming",
         verses: ["Tiago 1:2-4", "Tiago 4:11-12", "Tiago 5:12"]
       }
     ]
@@ -1686,29 +1686,29 @@ export const books: Book[] = [
   {
     id: "1peter",
     testament: "new",
-    name: "1 Pedro",
-    shortName: "1 Pe",
+    nameKey: "book-1-peter",
+    shortNameKey: "abbr-1-peter",
     categories: ["typology", "new-testament-references", "longitudinal-themes"],
-    description: "Encorajamento aos cristãos que enfrentam perseguição.",
+    descriptionKey: "christ-in-1-peter",
     christPointers: [
       {
         category: "typology",
-        description: "Usa imagens do êxodo e do templo aplicadas à igreja como povo de Deus em Cristo.",
+        descriptionKey: "1peter-living-stone",
         verses: ["1 Pedro 1:13-21", "1 Pedro 2:4-10"]
       },
       {
         category: "new-testament-references",
-        description: "Interpreta as profecias do Antigo Testamento à luz de Cristo.",
+        descriptionKey: "1peter-suffering-glory",
         verses: ["1 Pedro 1:10-12", "1 Pedro 2:21-25"]
       },
       {
         category: "longitudinal-themes",
-        description: "Desenvolve o tema do sofrimento seguido de glória baseado no padrão de Cristo.",
+        descriptionKey: "1peter-example-following",
         verses: ["1 Pedro 1:3-12", "1 Pedro 4:12-19", "1 Pedro 5:1-11"]
       },
       {
         category: "typology",
-        description: "Apresenta o dilúvio no tempo de Noé como tipo do batismo.",
+        descriptionKey: "1peter-shepherd-souls",
         verses: ["1 Pedro 3:18-22"]
       }
     ]
@@ -1716,24 +1716,24 @@ export const books: Book[] = [
   {
     id: "2peter",
     testament: "new",
-    name: "2 Pedro",
-    shortName: "2 Pe",
+    nameKey: "book-2-peter",
+    shortNameKey: "abbr-2-peter",
     categories: ["redemptive-historical", "longitudinal-themes"],
-    description: "Advertências contra falsos mestres e lembrete da volta de Cristo.",
+    descriptionKey: "christ-in-2-peter",
     christPointers: [
       {
         category: "redemptive-historical",
-        description: "Situa a segunda vinda de Cristo como o clímax da história redentora e início da nova criação.",
+        descriptionKey: "2peter-day-of-lord",
         verses: ["2 Pedro 3:1-13"]
       },
       {
         category: "longitudinal-themes",
-        description: "Desenvolve o tema do crescimento no conhecimento de Cristo.",
+        descriptionKey: "2peter-knowledge-growth",
         verses: ["2 Pedro 1:3-11", "2 Pedro 3:18"]
       },
       {
         category: "contrast",
-        description: "Contrasta o conhecimento verdadeiro de Cristo com os falsos ensinamentos.",
+        descriptionKey: "2peter-divine-nature",
         verses: ["2 Pedro 2:1-22"]
       }
     ]
@@ -1741,44 +1741,49 @@ export const books: Book[] = [
   {
     id: "1john",
     testament: "new",
-    name: "1 João",
-    shortName: "1 João",
+    nameKey: "book-1-john",
+    shortNameKey: "abbr-1-john",
     categories: ["contrast", "longitudinal-themes"],
-    description: "Testes da vida cristã autêntica: crer em Cristo e amar uns aos outros.",
+    descriptionKey: "christ-in-1-john",
     christPointers: [
       {
         category: "contrast",
-        description: "Contrasta a verdade sobre Cristo com as falsas doutrinas.",
+        descriptionKey: "1john-light-fellowship",
         verses: ["1 João 2:18-27", "1 João 4:1-6"]
       },
       {
         category: "longitudinal-themes",
-        description: "Desenvolve o tema do amor como expressão da nova vida em Cristo.",
+        descriptionKey: "1john-love-definition",
         verses: ["1 João 3:11-24", "1 João 4:7-21"]
       },
       {
         category: "longitudinal-themes",
-        description: "Desenvolve o tema da comunhão com Deus através de Cristo.",
+        descriptionKey: "1john-word-of-life",
         verses: ["1 João 1:1-4", "1 João 5:11-13"]
+      },
+      {
+        category: "analogy", 
+        descriptionKey: "1john-advocate-father",
+        verses: ["1 João 2:1-2"]
       }
     ]
   },
   {
     id: "2john",
     testament: "new",
-    name: "2 João",
-    shortName: "2 João",
+    nameKey: "book-2-john",
+    shortNameKey: "abbr-2-john",
     categories: ["contrast", "longitudinal-themes"],
-    description: "Breve carta exortando a permanecer na verdade e amor, e a rejeitar falsos mestres.",
+    descriptionKey: "christ-in-2-john",
     christPointers: [
       {
         category: "contrast",
-        description: "Contrasta a verdade sobre Cristo encarnado com as falsas doutrinas.",
+        descriptionKey: "2john-antichrist-warning",
         verses: ["2 João 1:7-11"]
       },
       {
         category: "longitudinal-themes",
-        description: "Desenvolve o tema de andar na verdade e no amor como mandamento de Cristo.",
+        descriptionKey: "2john-truth-love",
         verses: ["2 João 1:4-6"]
       }
     ]
@@ -1786,19 +1791,19 @@ export const books: Book[] = [
   {
     id: "3john",
     testament: "new",
-    name: "3 João",
-    shortName: "3 João",
+    nameKey: "book-3-john",
+    shortNameKey: "abbr-3-john",
     categories: ["typology", "longitudinal-themes"],
-    description: "Breve carta elogiando Gaio por sua hospitalidade e advertindo contra Diótrefes.",
+    descriptionKey: "christ-in-3-john",
     christPointers: [
       {
         category: "typology",
-        description: "Gaio como exemplo de hospitalidade cristã que reflete a generosidade de Cristo.",
+        descriptionKey: "3john-walking-truth",
         verses: ["3 João 1:5-8"]
       },
       {
         category: "longitudinal-themes",
-        description: "Desenvolve o tema de cooperar com a verdade como aplicação da vida em Cristo.",
+        descriptionKey: "3john-supporting-truth",
         verses: ["3 João 1:3-4", "3 João 1:11-12"]
       }
     ]
@@ -1806,24 +1811,24 @@ export const books: Book[] = [
   {
     id: "jude",
     testament: "new",
-    name: "Judas",
-    shortName: "Jud",
+    nameKey: "book-jude",
+    shortNameKey: "abbr-jude",
     categories: ["typology", "redemptive-historical"],
-    description: "Exortação a lutar pela fé contra falsos mestres.",
+    descriptionKey: "christ-in-jude",
     christPointers: [
       {
         category: "typology",
-        description: "Usa exemplos do Antigo Testamento como tipos de juízo que prefiguram o juízo final de Cristo.",
+        descriptionKey: "jude-examples-judgment",
         verses: ["Judas 1:5-7", "Judas 1:11"]
       },
       {
         category: "redemptive-historical",
-        description: "Situa a preservação dos crentes como obra de Cristo até sua vinda gloriosa.",
+        descriptionKey: "jude-kept-by-jesus",
         verses: ["Judas 1:14-15", "Judas 1:24-25"]
       },
       {
         category: "longitudinal-themes",
-        description: "Desenvolve o tema da apostasia em contraste com a fidelidade à fé em Cristo.",
+        descriptionKey: "jude-faith-delivered",
         verses: ["Judas 1:3-4", "Judas 1:17-23"]
       }
     ]
@@ -1831,30 +1836,35 @@ export const books: Book[] = [
   {
     id: "revelation",
     testament: "new",
-    name: "Apocalipse",
-    shortName: "Apoc",
+    nameKey: "book-revelation",
+    shortNameKey: "abbr-revelation",
     categories: ["typology", "redemptive-historical", "longitudinal-themes"],
-    description: "Visão apocalíptica da vitória final de Cristo e a consumação de todas as coisas.",
+    descriptionKey: "christ-in-revelation",
     christPointers: [
       {
         category: "typology",
-        description: "Usa imagens do Antigo Testamento (templo, Babilônia, êxodo, etc.) como tipos que encontram seu cumprimento em Cristo.",
+        descriptionKey: "revelation-lamb-slain",
         verses: ["Apocalipse 1:12-20", "Apocalipse 5:1-14", "Apocalipse 21:1-22:5"]
       },
       {
         category: "redemptive-historical",
-        description: "Apresenta a história redentora culminando na vitória final de Cristo e na nova criação.",
+        descriptionKey: "revelation-new-creation",
         verses: ["Apocalipse 19:11-21", "Apocalipse 21:1-8"]
       },
       {
         category: "longitudinal-themes",
-        description: "Desenvolve os temas da redenção, juízo, reinado e adoração, todos centrados em Cristo.",
+        descriptionKey: "revelation-alpha-omega",
         verses: ["Apocalipse 5:9-14", "Apocalipse 7:9-17", "Apocalipse 11:15-19"]
       },
       {
         category: "contrast",
-        description: "Contrasta o reino de Cristo com os reinos deste mundo.",
+        descriptionKey: "revelation-king-of-kings",
         verses: ["Apocalipse 13:1-18", "Apocalipse 17:1-18:24", "Apocalipse 19:11-21"]
+      },
+      {
+        category: "typology",
+        descriptionKey: "revelation-overcomer",
+        verses: ["Apocalipse 2-3", "Apocalipse 12:11"]
       }
     ]
   }
