@@ -93,6 +93,11 @@ export const books: Book[] = [
         category: "promise-fulfillment",
         descriptionKey: "genesis-abraham-promise",
         verses: ["Gênesis 12:1-3", "Gênesis 22:18"]
+      },
+      {
+        category: "redemptive-historical",
+        descriptionKey: "genesis-redemptive-historical",
+        verses: ["Gênesis 3:15", "Gênesis 12:1-3"]
       }
     ]
   },
@@ -128,6 +133,11 @@ export const books: Book[] = [
         category: "typology",
         descriptionKey: "exodus-tabernacle-dwelling",
         verses: ["Êxodo 25-40"]
+      },
+      {
+        category: "redemptive-historical",
+        descriptionKey: "exodus-redemptive-historical",
+        verses: ["Êxodo 6:6-8", "Êxodo 19:3-6"]
       }
     ]
   },
