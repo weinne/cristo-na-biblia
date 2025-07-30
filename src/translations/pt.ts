@@ -344,6 +344,35 @@ export const pt = {
   'ezra-temple-reconstruction': 'A reconstrução do templo prefigura Cristo como o verdadeiro templo.',
   'ezra-covenant-restoration': 'O tema da restauração do povo da aliança encontra sua plenitude em Cristo.',
 
+  // Christ Pointers for Nehemiah
+  'nehemiah-jerusalem-restoration': 'A restauração de Jerusalém como parte do plano que prepara para a vinda de Cristo.',
+  'nehemiah-sacrificial-leadership': 'A liderança sacrificial de Neemias prefigura aspectos do sacrifício de Cristo por seu povo.',
+  'nehemiah-covenant-renewal': 'A renovação da aliança aponta para a nova aliança em Cristo.',
+
+  // Christ Pointers for Esther
+  'esther-self-sacrifice': 'Ester arriscando sua vida pelo seu povo prefigura o sacrifício de Cristo.',
+  'esther-people-preservation': 'A preservação do povo judeu em face da ameaça de extinção é crucial para o plano redentor que culmina em Cristo.',
+  'esther-divine-providence': 'O tema da providência divina por trás dos eventos históricos encontra sua expressão máxima na vinda de Cristo no \'cumprimento do tempo\'.',
+
+  // Christ Pointers for Job
+  'job-righteous-sufferer': 'Jó como justo sofredor prefigura Cristo, o sofredor inocente.',
+  'job-redemption-restoration': 'O tema da redenção e restauração de Jó aponta para a redenção final em Cristo.',
+  'job-limited-mediator': 'Jó como mediador limitado contrasta com Cristo, o perfeito mediador.',
+
+  // Christ Pointers for Proverbs
+  'proverbs-wisdom-personified': 'A personificação da Sabedoria aponta para Cristo como a Sabedoria de Deus encarnada.',
+  'proverbs-wisdom-theme': 'O tema da sabedoria encontra sua expressão plena em Cristo, \'em quem estão escondidos todos os tesouros da sabedoria e do conhecimento\'.',
+  'proverbs-wisdom-search': 'A busca pela sabedoria em Provérbios encontra resposta definitiva em Cristo, que se tornou para nós sabedoria da parte de Deus.',
+
+  // Christ Pointers for Ecclesiastes
+  'ecclesiastes-vanity-contrast': 'A vaidade e insatisfação da vida terrena contrasta com o propósito e a plenitude encontrados em Cristo.',
+  'ecclesiastes-meaning-search': 'A busca pelo significado encontra sua resposta em Cristo, que dá sentido à existência humana.',
+  'ecclesiastes-wisdom-limitations': 'As limitações da sabedoria humana apontam para a necessidade da sabedoria divina revelada plenamente em Cristo.',
+
+  // Christ Pointers for Song of Solomon
+  'song-bridegroom-bride': 'O amor entre o noivo e a noiva simboliza o amor entre Cristo e sua Igreja.',
+  'song-love-intimacy': 'A intimidade e o deleite do amor humano refletem analogicamente o relacionamento de Cristo com seu povo.',
+
   // Book descriptions
   'christ-in-genesis': 'Em Gênesis, Cristo é revelado como o Criador, a semente prometida da mulher, o Cordeiro de Deus, e o Filho de Abraão.',
   'christ-in-exodus': 'Em Êxodo, Cristo é prefigurado no cordeiro pascal, no maná do céu, na água da rocha, e como o mediador da aliança.',

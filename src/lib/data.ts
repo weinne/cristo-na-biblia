@@ -476,24 +476,24 @@ export const books: Book[] = [
   {
     id: "nehemiah",
     testament: "old",
-    name: "Neemias",
-    shortName: "Nee",
+    nameKey: "book-nehemiah",
+    shortNameKey: "abbr-nehemiah",
     categories: ["redemptive-historical", "typology"],
-    description: "A reconstrução dos muros de Jerusalém e a reforma da comunidade.",
+    descriptionKey: "christ-in-nehemiah",
     christPointers: [
       {
         category: "redemptive-historical",
-        description: "A restauração de Jerusalém como parte do plano que prepara para a vinda de Cristo.",
+        descriptionKey: "nehemiah-jerusalem-restoration",
         verses: ["Neemias 2:1-20"]
       },
       {
         category: "typology",
-        description: "A liderança sacrificial de Neemias prefigura aspectos do sacrifício de Cristo por seu povo.",
+        descriptionKey: "nehemiah-sacrificial-leadership",
         verses: ["Neemias 5:14-19"]
       },
       {
         category: "longitudinal-themes",
-        description: "A renovação da aliança aponta para a nova aliança em Cristo.",
+        descriptionKey: "nehemiah-covenant-renewal",
         verses: ["Neemias 8-10"]
       }
     ]
@@ -501,24 +501,24 @@ export const books: Book[] = [
   {
     id: "esther",
     testament: "old",
-    name: "Ester",
-    shortName: "Est",
+    nameKey: "book-esther",
+    shortNameKey: "abbr-esther",
     categories: ["typology", "redemptive-historical"],
-    description: "A providência de Deus na preservação do seu povo através de Ester.",
+    descriptionKey: "christ-in-esther",
     christPointers: [
       {
         category: "typology",
-        description: "Ester arriscando sua vida pelo seu povo prefigura o sacrifício de Cristo.",
+        descriptionKey: "esther-self-sacrifice",
         verses: ["Ester 4:14-16"]
       },
       {
         category: "redemptive-historical",
-        description: "A preservação do povo judeu em face da ameaça de extinção é crucial para o plano redentor que culmina em Cristo.",
+        descriptionKey: "esther-people-preservation",
         verses: ["Ester 7:1-10", "Ester 9:20-22"]
       },
       {
         category: "longitudinal-themes",
-        description: "O tema da providência divina por trás dos eventos históricos encontra sua expressão máxima na vinda de Cristo no 'cumprimento do tempo'.",
+        descriptionKey: "esther-divine-providence",
         verses: ["Ester 4:14"]
       }
     ]
@@ -528,24 +528,24 @@ export const books: Book[] = [
   {
     id: "job",
     testament: "old",
-    name: "Jó",
-    shortName: "Jó",
+    nameKey: "book-job",
+    shortNameKey: "abbr-job",
     categories: ["typology", "longitudinal-themes", "contrast"],
-    description: "A história do sofrimento de Jó e a soberania de Deus.",
+    descriptionKey: "christ-in-job",
     christPointers: [
       {
         category: "typology",
-        description: "Jó como justo sofredor prefigura Cristo, o sofredor inocente.",
+        descriptionKey: "job-righteous-sufferer",
         verses: ["Jó 1-2", "Jó 16:18-21"]
       },
       {
         category: "longitudinal-themes",
-        description: "O tema da redenção e restauração de Jó aponta para a redenção final em Cristo.",
+        descriptionKey: "job-redemption-restoration",
         verses: ["Jó 19:25-27", "Jó 42:7-17"]
       },
       {
         category: "contrast",
-        description: "Jó como mediador limitado contrasta com Cristo, o perfeito mediador.",
+        descriptionKey: "job-limited-mediator",
         verses: ["Jó 9:32-33", "Jó 16:19-21"]
       }
     ]
@@ -583,24 +583,24 @@ export const books: Book[] = [
   {
     id: "proverbs",
     testament: "old",
-    name: "Provérbios",
-    shortName: "Prov",
+    nameKey: "book-proverbs",
+    shortNameKey: "abbr-proverbs",
     categories: ["typology", "longitudinal-themes"],
-    description: "Coleção de provérbios e ditados que ensinam sabedoria prática.",
+    descriptionKey: "christ-in-proverbs",
     christPointers: [
       {
         category: "typology",
-        description: "A personificação da Sabedoria aponta para Cristo como a Sabedoria de Deus encarnada.",
+        descriptionKey: "proverbs-wisdom-personified",
         verses: ["Provérbios 8:22-31"]
       },
       {
         category: "longitudinal-themes",
-        description: "O tema da sabedoria encontra sua expressão plena em Cristo, 'em quem estão escondidos todos os tesouros da sabedoria e do conhecimento'.",
+        descriptionKey: "proverbs-wisdom-theme",
         verses: ["Provérbios 1:1-7", "Provérbios 9:1-6"]
       },
       {
         category: "contrast",
-        description: "A busca pela sabedoria em Provérbios encontra resposta definitiva em Cristo, que se tornou para nós sabedoria da parte de Deus.",
+        descriptionKey: "proverbs-wisdom-search",
         verses: ["Provérbios 2:1-15", "Provérbios 4:5-9"]
       }
     ]
@@ -608,24 +608,24 @@ export const books: Book[] = [
   {
     id: "ecclesiastes",
     testament: "old",
-    name: "Eclesiastes",
-    shortName: "Ecl",
+    nameKey: "book-ecclesiastes",
+    shortNameKey: "abbr-ecclesiastes",
     categories: ["contrast", "longitudinal-themes"],
-    description: "Reflexão sobre o significado da vida 'debaixo do sol'.",
+    descriptionKey: "christ-in-ecclesiastes",
     christPointers: [
       {
         category: "contrast",
-        description: "A vaidade e insatisfação da vida terrena contrasta com o propósito e a plenitude encontrados em Cristo.",
+        descriptionKey: "ecclesiastes-vanity-contrast",
         verses: ["Eclesiastes 1:2-11", "Eclesiastes 2:1-11"]
       },
       {
         category: "longitudinal-themes",
-        description: "A busca pelo significado encontra sua resposta em Cristo, que dá sentido à existência humana.",
+        descriptionKey: "ecclesiastes-meaning-search",
         verses: ["Eclesiastes 3:1-15", "Eclesiastes 12:13-14"]
       },
       {
         category: "redemptive-historical",
-        description: "As limitações da sabedoria humana apontam para a necessidade da sabedoria divina revelada plenamente em Cristo.",
+        descriptionKey: "ecclesiastes-wisdom-limitations",
         verses: ["Eclesiastes 8:16-17"]
       }
     ]
@@ -633,19 +633,19 @@ export const books: Book[] = [
   {
     id: "songofsolomon",
     testament: "old",
-    name: "Cântico dos Cânticos",
-    shortName: "Cant",
+    nameKey: "book-song-of-solomon",
+    shortNameKey: "abbr-song-of-solomon",
     categories: ["typology", "analogy"],
-    description: "Poema sobre o amor conjugal e celebração do amor humano.",
+    descriptionKey: "christ-in-song-of-solomon",
     christPointers: [
       {
         category: "typology",
-        description: "O amor entre o noivo e a noiva simboliza o amor entre Cristo e sua Igreja.",
+        descriptionKey: "song-bridegroom-bride",
         verses: ["Cânticos 2:8-17", "Cânticos 8:6-7"]
       },
       {
         category: "analogy",
-        description: "A intimidade e o deleite do amor humano refletem analogicamente o relacionamento de Cristo com seu povo.",
+        descriptionKey: "song-love-intimacy",
         verses: ["Cânticos 2:16", "Cânticos 6:3"]
       },
       {
